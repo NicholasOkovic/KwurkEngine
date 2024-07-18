@@ -1,0 +1,1 @@
+﻿D:\LaSalleProjects\3D graphics programming\KwurkEngine\Engine\KwurkEngine\KwurkEngine.vcxproj(70,5): error MSB4019: The imported project "D:\LaSalleProjects\3D graphics programming\KwurkEngine\Engine\VSProps\EngineLib.props" was not found. Confirm that the expression in the Import declaration "..\VSProps\EngineLib.props" is correct, and that the file exists on disk.

@@ -1,0 +1,3 @@
+﻿  WinMain.cpp
+WinMain.obj : error LNK2019: unresolved external symbol "public: void __cdecl KwurkEngine::App::Run(void)" (?Run@App@KwurkEngine@@QEAAXXZ) referenced in function WinMain
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\01_HelloWindow.exe : fatal error LNK1120: 1 unresolved externals

@@ -35,7 +35,7 @@
     <ClCompile Include="Src\TimeUtil.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Inc\Window.cpp">
+    <ClCompile Include="Src\Window.cpp">
       <Filter>Src</Filter>
     </ClCompile>
   </ItemGroup>

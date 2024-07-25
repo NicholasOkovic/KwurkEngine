@@ -1,0 +1,6 @@
+﻿  Precompiled.cpp
+  GraphicsSystem.cpp
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\GraphicsSystem.cpp(98,109): warning C4244: 'argument': conversion from 'float' to 'UINT8', possible loss of data
+  (compiling source file '/Src/GraphicsSystem.cpp')
+  
+  Graphics.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\Graphics.lib

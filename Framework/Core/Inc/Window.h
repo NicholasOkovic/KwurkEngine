@@ -6,17 +6,17 @@ namespace KwurkEngine::Core
 	{
 	public:
 		void Initialize(HINSTANCE instance, const std::wstring& appName, uint32_t width, uint32_t height);
-		void Terminte();
+		void Terminate();
 
 		void ProcessMessage();
 
-		HWND GetWINdowHandle() const;
+		HWND GetWindowHandle() const;
 		bool IsActive() const;
 
 
 	private:
-		HINSTANCE = nullptr;
-		HWND mWIndow = nullptr;
+		HINSTANCE mInstance = nullptr;
+		HWND mWindow = nullptr;
 		RECT mScreenRect{};
 		std::wstring mAppName;
 		bool mActive;

@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs
+Engine/KwurkEngine/x64/Debug/KwurkEngine.pch
+Framework/Core/x64/Debug/Core.pch
+Framework/Graphics/x64/Debug/Graphics.pch
+Framework/Input/x64/Debug/Input.pch
+Framework/Math/x64/Debug/Math.pch

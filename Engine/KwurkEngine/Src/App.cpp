@@ -5,6 +5,7 @@
 using namespace KwurkEngine;
 using namespace KwurkEngine::Core;
 using namespace KwurkEngine::Graphics;
+using namespace KwurkEngine::Input;
 
 void App::Run(const AppConfig& config)
 {
@@ -20,17 +21,23 @@ void App::Run(const AppConfig& config)
 	//init singletons
 	auto handle = myWindow.GetWindowHandle();
 	GraphicsSystem::StaticInitialize(handle, false);
+	InputSystem::StaticInitialize(handle);
 
 	// start state
 	ASSERT(mCurrentState != nullptr, "App: current state is available");
 	mCurrentState->Initialize();
+
+	//GraphicsSystem::Get()->SetClearColor(Colors::Pink);
+	GraphicsSystem* gs = GraphicsSystem::Get();	
+		InputSystem * input = InputSystem::Get();
 
 	//run program
 	mRunning = true;
 	while (mRunning)
 	{
 		myWindow.ProcessMessage();
-		if (!myWindow.IsActive())
+		input->Update();
+		if (!myWindow.IsActive() || input->IsKeyPressed(KeyCode::ESCAPE))
 		{
 			Quit();
 		}
@@ -49,11 +56,17 @@ void App::Run(const AppConfig& config)
 			mCurrentState->Update(deltaTime);
 		}
 
-		//rendering
+		GraphicsSystem* gs = GraphicsSystem::Get();
+		gs->BeginRender();
+			mCurrentState->Render();
+
+
+		gs->EndRender();
 	}
 	//end state
 	mCurrentState->Terminate();
 	//terminate singletons
+	InputSystem::StaticTerminate();
 	GraphicsSystem::StaticTerminate();
 	myWindow.Terminate();
 }

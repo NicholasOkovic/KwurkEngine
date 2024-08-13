@@ -4,8 +4,6 @@
 
 namespace KwurkEngine::Graphics
 {
-	
-
 	class GraphicsSystem final
 	{
 	public:
@@ -31,7 +29,7 @@ namespace KwurkEngine::Graphics
 		void Resize(uint32_t width, uint32_t height);
 
 		void ResetRenderTarget();
-		void ResetViewPort();
+		void ResetViewport();
 
 		void SetClearColor(const Color& color);
 		void SetVSync(bool vSync);

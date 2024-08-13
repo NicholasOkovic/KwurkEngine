@@ -2,8 +2,6 @@
 
 namespace KwurkEngine
 {
-
-	/////smt here
 	class AppState;
 
 	struct AppConfig
@@ -28,7 +26,8 @@ namespace KwurkEngine
 			auto [iter, success] = mAppStates.try_emplace(stateName, nullptr);
 			if (success)
 			{
-				auto& ptr = iter->second; ptr = std::make_unique<StateType>();
+				auto& ptr = iter->second; 
+				ptr = std::make_unique<StateType>();
 				if (mCurrentState == nullptr)
 				{
 					LOG("App: Current state %s", stateName.c_str()); 

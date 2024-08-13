@@ -17,12 +17,12 @@ LRESULT CALLBACK GraphicsSystem::GraphicsSystemMessageHandler(HWND handle, UINT 
 	{
 		switch (message)
 		{
-		case WM_SIZE:
-		{
-			const uint32_t width = static_cast<uint32_t>(LOWORD(lParam));
-			const uint32_t height = static_cast<uint32_t>(HIWORD(lParam));
-			sGraphicsSystem->Resize(width, height);
-		}
+			case WM_SIZE:
+			{
+				const uint32_t width = static_cast<uint32_t>(LOWORD(lParam));
+				const uint32_t height = static_cast<uint32_t>(HIWORD(lParam));
+				sGraphicsSystem->Resize(width, height);
+			}
 			break;
 		}
 	}
@@ -41,7 +41,8 @@ void GraphicsSystem::StaticTerminate()
 {
 	if (sGraphicsSystem != nullptr)
 	{
-		sGraphicsSystem->Terminate(); sGraphicsSystem.reset();
+		sGraphicsSystem->Terminate(); 
+		sGraphicsSystem.reset();
 	}
 }
 
@@ -72,6 +73,7 @@ void GraphicsSystem::Initialize(HWND window, bool fullscreen)
 	swapChainDesc.BufferDesc.RefreshRate.Denominator = 1;
 	swapChainDesc.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT;
 	swapChainDesc.OutputWindow = window;
+	swapChainDesc.SampleDesc.Count = 1;
 	swapChainDesc.SampleDesc.Quality = 0;
 	swapChainDesc.Windowed = !fullscreen;
 	swapChainDesc.SwapEffect = DXGI_SWAP_EFFECT_DISCARD;
@@ -168,7 +170,7 @@ void GraphicsSystem::Resize(uint32_t width, uint32_t height)
 	descDepth.ArraySize = 1;
 	descDepth.Format = DXGI_FORMAT_D24_UNORM_S8_UINT;
 	descDepth.SampleDesc.Count = 1;
-	descDepth.SampleDesc.Quality = 1;
+	descDepth.SampleDesc.Quality = 0;
 	descDepth.Usage = D3D11_USAGE_DEFAULT;
 	descDepth.BindFlags = D3D11_BIND_DEPTH_STENCIL;
 	descDepth.CPUAccessFlags = 0;
@@ -193,9 +195,6 @@ void GraphicsSystem::Resize(uint32_t width, uint32_t height)
 	mViewport.TopLeftY = 0;
 	mImmediateContext->RSSetViewports(1, &mViewport);
 
-
-
-
 }
 
 void GraphicsSystem::ResetRenderTarget()
@@ -203,7 +202,7 @@ void GraphicsSystem::ResetRenderTarget()
 	mImmediateContext->OMSetRenderTargets(1, &mRenderTargetView, mDepthStencilView);
 }
 
-void GraphicsSystem::ResetViewPort()
+void GraphicsSystem::ResetViewport()
 {
 	mImmediateContext->RSSetViewports(1, &mViewport);
 }

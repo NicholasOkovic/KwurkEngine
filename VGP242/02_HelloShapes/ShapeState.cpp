@@ -1,19 +1,17 @@
-
 #include "ShapeState.h"
 
 using namespace KwurkEngine;
 using namespace KwurkEngine::Math;
 using namespace KwurkEngine::Graphics;
 using namespace KwurkEngine::Core;
+using namespace KwurkEngine::Input;
 
 void ShapeState::Initialize()
 {
 	//simple shape in NDC space (-1/1, -1/1, 0/1)
 	//triangle
-
-	mVertices.push_back({ { -0.5f, 0.0f, 0.0f}, Colors::Red });
-	mVertices.push_back({ { 0.5f, 0.75f, 0.0f}, Colors::Green });
-	mVertices.push_back({ { 0.5f, 0.0f, 0.0f}, Colors::Blue });
+	CreateShape();
+	
 
 	auto device = GraphicsSystem::Get()->GetDevice();
 	//================================================
@@ -84,7 +82,7 @@ void ShapeState::Initialize()
 		shaderFile.c_str(),
 		nullptr,
 		D3D_COMPILE_STANDARD_FILE_INCLUDE,
-		"PS", "vs_5_0",
+		"PS", "ps_5_0",
 		shaderFlags, 0,
 		&shaderBlob,
 		&errorBlob);
@@ -130,4 +128,39 @@ void ShapeState::Render()
 	context->IASetVertexBuffers(0, 1, &mVertexBuffer, &stride, &offset);
 	context->Draw((UINT)mVertices.size(), 0);
 
+}
+
+void TriangleShapeState::Update(float deltaTime)
+{
+	if (InputSystem::Get()->IsKeyPressed(KeyCode::UP))
+	{
+		MainApp().ChangeState("SquareShapeState");
+	}
+}
+
+void TriangleShapeState::CreateShape()
+{
+
+	mVertices.push_back({ { -0.5f, 0.0f, 0.0f}, Colors::Red });
+	mVertices.push_back({ { 0.0f, 0.75f, 0.0f}, Colors::Green });
+	mVertices.push_back({ { 0.5f, 0.0f, 0.0f}, Colors::Blue });
+}
+
+void SquareShapeState::Update(float deltaTime)
+{
+	if (InputSystem::Get()->IsKeyPressed(KeyCode::DOWN))
+	{
+		MainApp().ChangeState("TriangleShapeState");
+	}
+}
+
+void SquareShapeState::CreateShape()
+{
+	mVertices.push_back({ { -0.5f, -0.5f, 0.0f}, Colors::Red });
+	mVertices.push_back({ { -0.5f, 0.5f, 0.0f}, Colors::Green });
+	mVertices.push_back({ { 0.5f, 0.5f, 0.0f}, Colors::Blue });
+
+	mVertices.push_back({ { -0.5f, -0.5f, 0.0f}, Colors::Red });
+	mVertices.push_back({ { 0.5f, 0.5f, 0.0f}, Colors::Blue });
+	mVertices.push_back({ { 0.5f, -0.5f, 0.0f}, Colors::Green });
 }

@@ -60,13 +60,15 @@ void Window::Initialize(HINSTANCE instance, const std::wstring& appName, uint32_
 		WS_OVERLAPPEDWINDOW,
 		left,
 		top,
-		(int)winWidth,
-		(int)winHeight,
+		/*(int)*/winWidth,
+		/*(int)*/winHeight,
 		nullptr, nullptr,
 		instance, nullptr
 		);
 	ShowWindow(mWindow, SW_SHOWNORMAL);
-		mActive = (mWindow != nullptr);
+
+
+	mActive = (mWindow != nullptr);
 }
 
 void Window::Terminate()

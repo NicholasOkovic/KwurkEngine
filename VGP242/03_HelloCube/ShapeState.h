@@ -25,11 +25,9 @@ protected:
 
 	KwurkEngine::Graphics::Camera mCamera;
 	KwurkEngine::Graphics::ConstantBuffer mConstantBuffer;
-
-	ID3D11Buffer* mVertexBuffer = nullptr;
-	ID3D11VertexShader* mVertexShader = nullptr;
-	ID3D11InputLayout* mInputLayout = nullptr;
-	ID3D11PixelShader* mPixelShader = nullptr;
+	KwurkEngine::Graphics::MeshBuffer mMeshBuffer;
+	KwurkEngine::Graphics::VertexShader mVertexShader;
+	KwurkEngine::Graphics::PixelShader mPixelShader;
 };
 
 

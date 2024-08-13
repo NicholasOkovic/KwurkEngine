@@ -1,12 +1,2 @@
-﻿  Precompiled.cpp
-  Camera.cpp
-  ConstantBuffer.cpp
-  GraphicsSystem.cpp
-  Generating Code...
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Camera.cpp(22,63): warning C4390: ';': empty controlled statement found; is this the intent?
-  (compiling source file '/Src/Camera.cpp')
-  
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\GraphicsSystem.cpp(124,109): warning C4244: 'argument': conversion from 'float' to 'UINT8', possible loss of data
-  (compiling source file '/Src/GraphicsSystem.cpp')
-  
+﻿  PixelShader.cpp
   Graphics.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\Graphics.lib

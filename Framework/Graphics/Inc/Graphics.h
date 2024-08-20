@@ -7,6 +7,8 @@
 #include "ConstantBuffer.h"
 #include "GraphicsSystem.h"
 #include "MeshBuffer.h"
+#include "MeshBuilder.h"
+#include "MeshTypes.h"
 #include "PixelShader.h"
 #include "VertexTypes.h"
 #include "VertexShader.h"

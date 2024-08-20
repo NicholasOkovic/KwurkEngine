@@ -104,7 +104,7 @@ void ShapeState::Update(float deltaTime)
 {
 	gRotationY += Math::Constants::HalfPi * deltaTime * 0.5f;
 	gRotationX += Math::Constants::HalfPi * deltaTime * 0.25f;
-}
+} 
 
 void ShapeState::Render()
 {

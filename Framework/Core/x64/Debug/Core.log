@@ -1,2 +1,7 @@
-﻿  Window.cpp
-  Core.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\Core.lib
+﻿  TimeUtil.cpp
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Core\Src\TimeUtil.cpp(3,10): error C1853: 'x64\Debug\Core.pch' precompiled header file is from a different version of the compiler, or the precompiled header is C++ and you are using it from C (or vice versa)
+  Window.cpp
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Core\Src\Window.cpp(1,10): error C1853: 'x64\Debug\Core.pch' precompiled header file is from a different version of the compiler, or the precompiled header is C++ and you are using it from C (or vice versa)
+  WindowMessageHandler.cpp
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Core\Src\WindowMessageHandler.cpp(1,10): error C1853: 'x64\Debug\Core.pch' precompiled header file is from a different version of the compiler, or the precompiled header is C++ and you are using it from C (or vice versa)
+  Generating Code...

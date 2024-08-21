@@ -5,4 +5,6 @@ D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Me
 D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\MeshBuilder.obj
 D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\PixelShader.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\PixelShader.obj
 D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Precompiled.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\Precompiled.obj
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Sampler.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\Sampler.obj
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Texture.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\Texture.obj
 D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\VertexShader.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\VertexShader.obj

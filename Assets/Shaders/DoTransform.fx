@@ -16,7 +16,7 @@ struct VS_INPUT
 
 struct VS_OUTPUT
 {
-    float4 postion : SV_Position;
+    float4 position : SV_Position;
     float4 color : COLOR;
     
 };
@@ -24,7 +24,7 @@ struct VS_OUTPUT
 VS_OUTPUT VS(VS_INPUT input)
 {
     VS_OUTPUT output;
-    output.postion = mul(float4(input.position, 1.0f), wvp);
+    output.position = mul(float4(input.position, 1.0f), wvp);
     output.color = input.color;
     return output;
     

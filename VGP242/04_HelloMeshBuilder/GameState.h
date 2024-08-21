@@ -16,6 +16,8 @@ protected:
 	KwurkEngine::Graphics::MeshBuffer mMeshBuffer;
 	KwurkEngine::Graphics::VertexShader mVertexShader;
 	KwurkEngine::Graphics::PixelShader mPixelShader;
+	KwurkEngine::Graphics::Texture mDiffuseTexture;
+	KwurkEngine::Graphics::Sampler mSampler;
 };
 
 

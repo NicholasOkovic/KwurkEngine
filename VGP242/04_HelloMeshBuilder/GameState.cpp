@@ -7,40 +7,38 @@ using namespace KwurkEngine::Core;
 using namespace KwurkEngine::Input;
 
 
-
-void CreateShape()
-{
-
-
-}
-
-
 void GameState::Initialize()
 {
 	//simple shape in NDC space (-1/1, -1/1, 0/1)
 
 	//CreateShape();
 
-		//Vertices for each face(6 for each)
+	//Vertices for each face(6 for each)
 
-	MeshPC mesh = Meshbuilder::CreateSpherePC(30, 30, 1.0f);
+	MeshPX mesh = Meshbuilder::CreateSpherePX(30, 30, 1.0f);
 	
 	mCamera.SetPosition({ 0.0f, 1.0f, -3.0f });
 	mCamera.SetLookAt({ 0.0f, 0.0f, 0.0f });
 
-	mMeshBuffer.Initialize<MeshPC>(mesh);
+	mMeshBuffer.Initialize<MeshPX>(mesh);
 
 	mConstantBuffer.Initialize(sizeof(Matrix4));
 
 	
 
-	std::filesystem::path shaderFile = L"../../Assets/Shaders/DoTransform.fx";
-	mVertexShader.Initialize(shaderFile, Graphics::VE_Position | VE_Color);
+	//std::filesystem::path shaderFile = L"../../Assets/Shaders/DoTransform.fx";
+	std::filesystem::path shaderFile = L"../../Assets/Shaders/DoTexture.fx";
+	mVertexShader.Initialize<VertexPX>(shaderFile);
 	mPixelShader.Initialize(shaderFile);
+
+	mDiffuseTexture.Initialize("../../Assets/Images/misc/basketball.jpg");
+	mSampler.Initialize(Sampler::Filter::Linear, Sampler::AddressMode::Wrap);
 }
 
 void GameState::Terminate()
 {
+	mSampler.Terminate();
+	mDiffuseTexture.Terminate();
 	mPixelShader.Terminate();
 	mVertexShader.Terminate();
 	mConstantBuffer.Terminate();
@@ -59,6 +57,9 @@ void GameState::Render()
 {
 	mVertexShader.Bind();
 	mPixelShader.Bind();
+
+	mDiffuseTexture.BindPS(0);
+	mSampler.BindPS(0);
 
 	//constantbuffer
 	Matrix4 matWorld = Matrix4::RotationY(gRotationY) * Matrix4::RotationX(gRotationX);

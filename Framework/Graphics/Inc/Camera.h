@@ -40,6 +40,16 @@ namespace KwurkEngine::Graphics
 		Math::Matrix4 GetPerspectiveMatrix() const;
 		Math::Matrix4 GetOrthographicMatrix() const;
 
+		//camera movement
+		//3 degrees of freedom translation
+		void Walk(float distance);
+		void Strafe(float distance);
+		void Rise(float distance);
+
+		//2 degrees for rotation
+		void Yaw(float radians);
+		void Pitch(float radians);
+
 	private:
 		ProjectionMode mProjectionMode = ProjectionMode::Perspective;
 

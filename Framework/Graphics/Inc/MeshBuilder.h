@@ -9,6 +9,11 @@ namespace KwurkEngine::Graphics
 	public:
 		//cube
 		static MeshPC CreateCubePC(float size);
+		static MeshPX CreateCubePX(float size);
+
+		//skyboxPX
+		static MeshPX CreateSkyBoxPX(float size);
+		static MeshPX CreateSkySpherePX(int slices, int rings, float radius);
 
 		//rectangle
 		static MeshPC CreateRectPC(float width, float length, float height);

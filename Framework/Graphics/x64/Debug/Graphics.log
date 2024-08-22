@@ -16,40 +16,40 @@ D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Me
 D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(84,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file '/Src/MeshBuilder.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(153,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(329,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file '/Src/MeshBuilder.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(153,18): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(329,18): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
   (compiling source file '/Src/MeshBuilder.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(154,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(330,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file '/Src/MeshBuilder.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(154,18): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(330,18): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
   (compiling source file '/Src/MeshBuilder.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(179,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(355,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file '/Src/MeshBuilder.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(179,18): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(355,18): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
   (compiling source file '/Src/MeshBuilder.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(180,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(356,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file '/Src/MeshBuilder.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(180,18): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(356,18): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
   (compiling source file '/Src/MeshBuilder.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(214,45): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(390,45): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file '/Src/MeshBuilder.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(214,17): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(390,17): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
   (compiling source file '/Src/MeshBuilder.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(237,85): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(413,85): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file '/Src/MeshBuilder.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(237,61): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(413,61): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file '/Src/MeshBuilder.cpp')
   
   Graphics.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\Graphics.lib

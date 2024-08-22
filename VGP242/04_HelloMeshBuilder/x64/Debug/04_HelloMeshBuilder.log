@@ -1,4 +1,4 @@
 ﻿  GameState.cpp
-  WinMain.cpp
-  Generating Code...
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\04_HelloMeshBuilder\GameState.cpp(81,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\04_HelloMeshBuilder\GameState.cpp(81,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
   04_HelloMeshBuilder.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\04_HelloMeshBuilder.exe

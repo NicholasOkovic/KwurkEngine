@@ -9,6 +9,7 @@ public:
 	void Terminate() override;
 	void Update(float deltaTime) override;
 	void Render() override;
+	void DebugUI() override;
 
 protected:
 	void UpdateCamera(float deltaTime);

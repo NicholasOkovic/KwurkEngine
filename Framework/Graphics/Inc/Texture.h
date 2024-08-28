@@ -7,8 +7,6 @@ namespace KwurkEngine::Graphics
 	public:
 		static void UnbindPS(uint32_t slot);
 
-
-
 		Texture() = default;
 		virtual ~Texture();
 

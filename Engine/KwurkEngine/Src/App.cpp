@@ -22,7 +22,7 @@ void App::Run(const AppConfig& config)
 	auto handle = myWindow.GetWindowHandle();
 	GraphicsSystem::StaticInitialize(handle, false);
 	InputSystem::StaticInitialize(handle);
-	DebugUI::StaticInitialize(handle, );
+	DebugUI::StaticInitialize(handle, false, true);
 
 	// start state
 	ASSERT(mCurrentState != nullptr, "App: current state is available");

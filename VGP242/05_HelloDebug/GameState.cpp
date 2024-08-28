@@ -15,7 +15,7 @@ void GameState::Initialize()
 
 	//Vertices for each face(6 for each)
 
-	MeshPX mesh = Meshbuilder::CreateSpherePX(30, 30, 1.0f);
+	MeshPX mesh = Meshbuilder::CreateSkySpherePX(30, 30, 100.0f);
 	//MeshPX mesh = Meshbuilder::CreateCubePX(30.0f);
 	
 	mCamera.SetPosition({ 0.0f, 1.0f, -3.0f });
@@ -32,7 +32,7 @@ void GameState::Initialize()
 	mVertexShader.Initialize<VertexPX>(shaderFile);
 	mPixelShader.Initialize(shaderFile);
 
-	mDiffuseTexture.Initialize("../../Assets/Images/misc/basketball.jpg");
+	mDiffuseTexture.Initialize("../../Assets/Images/skysphere/sky.jpg");
 	//mDiffuseTexture.Initialize("../../Assets/Images/skybox/skybox.jpg");
 	mSampler.Initialize(Sampler::Filter::Linear, Sampler::AddressMode::Wrap);
 }

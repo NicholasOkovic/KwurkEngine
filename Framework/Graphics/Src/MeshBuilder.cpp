@@ -78,7 +78,7 @@ namespace
 			//bottom cap
 			indices.push_back(bottomIndex);
 			indices.push_back(s);
-			indices.push_back(s+1);
+			indices.push_back(s + 1);
 
 			//top cap
 			int topRowIndex = topIndex - slices - 1 + s;
@@ -153,7 +153,7 @@ MeshPX Meshbuilder::CreateCubePX(float size)
 	mesh.vertices.push_back({ { -hs, -hs,  hs}, {1.0f, tt } });
 
 	//left
-	mesh.vertices.push_back({ { -hs, -hs, -hs}, {0.25f, tt } });	/////////////////
+	mesh.vertices.push_back({ { -hs, -hs, -hs}, {0.25f, tt } });	
 	mesh.vertices.push_back({ { -hs,  hs,  hs}, {0.0f, ot } });
 	mesh.vertices.push_back({ { -hs,  hs, -hs}, {0.25f, ot } });
 
@@ -164,10 +164,10 @@ MeshPX Meshbuilder::CreateCubePX(float size)
 	//top
 	mesh.vertices.push_back({ { -hs,  hs, -hs}, {0.25f, ot } });
 	mesh.vertices.push_back({ { -hs,  hs,  hs}, {0.25f, 0.0f } });
-	mesh.vertices.push_back({ { -hs,  hs, -hs}, {0.5f, 0.0f } });
+	mesh.vertices.push_back({ {  hs,  hs,  hs}, {0.5f, 0.0f } });
 
 	mesh.vertices.push_back({ { -hs,  hs, -hs}, {0.25f, ot } });
-	mesh.vertices.push_back({ { -hs,  hs, -hs}, {0.5f, 0.0f } });
+	mesh.vertices.push_back({ {  hs,  hs,  hs}, {0.5f, 0.0f } });
 	mesh.vertices.push_back({ {  hs,  hs, -hs}, {0.5f, ot } });
 
 	//bottom
@@ -197,6 +197,7 @@ MeshPX Meshbuilder::CreateSkyBoxPX(float size)
 	const float hs = size * 0.5f;
 	const float ot = 1.0f / 3.0f;
 	const float tt = 2.0f / 3.0f;
+	const float o = 0.01f;
 
 	//front
 	mesh.vertices.push_back({ { -hs, -hs, -hs}, {0.25f, tt } });
@@ -226,7 +227,7 @@ MeshPX Meshbuilder::CreateSkyBoxPX(float size)
 	mesh.vertices.push_back({ { -hs,  hs,  hs}, {1.0f, ot } });
 
 	//left
-	mesh.vertices.push_back({ { -hs, -hs, -hs}, {0.25f, tt } });	/////////////////
+	mesh.vertices.push_back({ { -hs, -hs, -hs}, {0.25f, tt } });	
 	mesh.vertices.push_back({ { -hs,  hs, -hs}, {0.25f, ot } });
 	mesh.vertices.push_back({ { -hs,  hs,  hs}, {0.0f, ot } });
 
@@ -236,12 +237,12 @@ MeshPX Meshbuilder::CreateSkyBoxPX(float size)
 
 	//top
 	mesh.vertices.push_back({ { -hs,  hs, -hs}, {0.25f, ot } });
-	mesh.vertices.push_back({ { -hs,  hs, -hs}, {0.5f, 0.0f } });
+	mesh.vertices.push_back({ {  hs,  hs,  hs}, {0.5f, 0.0f } });
 	mesh.vertices.push_back({ { -hs,  hs,  hs}, {0.25f, 0.0f } });
 
 	mesh.vertices.push_back({ { -hs,  hs, -hs}, {0.25f, ot } });
 	mesh.vertices.push_back({ {  hs,  hs, -hs}, {0.5f, ot } });
-	mesh.vertices.push_back({ { -hs,  hs, -hs}, {0.5f, 0.0f } });
+	mesh.vertices.push_back({ {  hs,  hs,  hs}, {0.5f, 0.0f } });
 
 	//bottom
 	mesh.vertices.push_back({ { -hs, -hs, -hs}, {0.25f, tt } });
@@ -366,7 +367,7 @@ MeshPX Meshbuilder::CreatePlanePX(int numRows, int numCols, float spacing)
 	{
 		for (int c = 0; c <= numCols; c++)
 		{
-			mesh.vertices.push_back({ {x, y, 0.0f}, {u,v } });
+			mesh.vertices.push_back({ {x, y, 0.0f}, {u, v} });
 			x += spacing;
 			u += uInc;
 		}

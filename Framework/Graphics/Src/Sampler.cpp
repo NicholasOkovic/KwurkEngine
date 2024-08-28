@@ -13,11 +13,8 @@ namespace
 		switch (filter)
 		{
 		case Sampler::Filter::Point:		return D3D11_FILTER_MIN_MAG_MIP_POINT;
-			break;
 		case Sampler::Filter::Linear:		return D3D11_FILTER_MIN_MAG_MIP_LINEAR;
-			break;
 		case Sampler::Filter::Anisotropic:	return D3D11_FILTER_ANISOTROPIC;
-			break;
 		default:
 			ASSERT(false, "Filter: missing filter type");
 			break;
@@ -29,13 +26,9 @@ namespace
 		switch (addressMode)
 		{
 		case Sampler::AddressMode::Border:	return D3D11_TEXTURE_ADDRESS_BORDER;
-			break;
 		case Sampler::AddressMode::Clamp:	return D3D11_TEXTURE_ADDRESS_CLAMP;
-			break;
 		case Sampler::AddressMode::Mirror:	return D3D11_TEXTURE_ADDRESS_MIRROR;
-			break;
 		case Sampler::AddressMode::Wrap:	return D3D11_TEXTURE_ADDRESS_WRAP;
-			break;
 		default:
 			ASSERT(false, "AddressMode: missing address type");
 			break;
@@ -65,7 +58,7 @@ void Sampler::Initialize(Filter filter, AddressMode addressMode)
 	desc.BorderColor[3] = 1.0f;
 	desc.ComparisonFunc = D3D11_COMPARISON_NEVER;
 	desc.MinLOD = 0;
-	desc.MinLOD = D3D11_FLOAT32_MAX;
+	desc.MaxLOD = D3D11_FLOAT32_MAX;
 
 	auto device = GraphicsSystem::Get()->GetDevice();
 	HRESULT hr = device->CreateSamplerState(&desc, &mSampler);

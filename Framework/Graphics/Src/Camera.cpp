@@ -19,7 +19,7 @@ void Camera::SetPosition(const Math::Vector3& position)
 void Camera::SetDirection(const Math::Vector3& direction)
 {
 	Math::Vector3 dir = Math::Normalize(direction);
-	if (Math::Abs(Math::Dot(dir, Math::Vector3::YAxis)) < 0.995f);
+	if (Math::Abs(Math::Dot(dir, Math::Vector3::YAxis)) < 0.995f)
 	{
 		mDirection = dir;
 	}

@@ -6,7 +6,7 @@
 #include <ImGui/Inc/imgui_impl_dx11.h>
 #include <ImGui/Inc/imgui_impl_win32.h>
 
-extern IMGUI_IMPL_API LRESULT Imgui_Implwin32_WndPrcHandler(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
+extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
 using namespace KwurkEngine;
 using namespace KwurkEngine::Graphics;
@@ -47,25 +47,26 @@ namespace
 		case WM_KEYDOWN:
 		case WM_SYSKEYUP:
 		case WM_SYSKEYDOWN:
+		case WM_CHAR:
 
 			return true;
 		}
-		return false;					////////////
+		return false;					
 	}
 
-	LRESULT CALLBACK DebugUIMEssageHandle(HWND window, UINT message, WPARAM wParam, LPARAM lParam)
+	LRESULT CALLBACK DebugUIMessageHandle(HWND window, UINT message, WPARAM wParam, LPARAM lParam)
 	{
 		ImGuiIO& io = ImGui::GetIO();
-		if (io.WantCaptureMouse)
+		if (io.WantCaptureMouse && IsMouseInput(message))
 		{
-			return Imgui_Implwin32_WndPrcHandler(window, message, wParam, lParam);
+			return ImGui_ImplWin32_WndProcHandler(window, message, wParam, lParam);
 		}
-		if (io.WantCaptureKeyboard)
+		if (io.WantCaptureKeyboard && IsKeyBoardInput(message))
 		{
-			return Imgui_Implwin32_WndPrcHandler(window, message, wParam, lParam);
+			return ImGui_ImplWin32_WndProcHandler(window, message, wParam, lParam);
 		}
 		
-		LRESULT result = Imgui_Implwin32_WndPrcHandler(window, message, wParam, lParam);
+		LRESULT result = ImGui_ImplWin32_WndProcHandler(window, message, wParam, lParam);
 		if (result != 0)
 		{
 			return result;
@@ -96,7 +97,7 @@ void DebugUI::StaticInitialize(HWND window, bool docking, bool multiViewPort)
 	ImGui_ImplWin32_Init(window);
 	ImGui_ImplDX11_Init(device, context);
 
-	sWindowMessageHandler.Hook(window);
+	sWindowMessageHandler.Hook(window, DebugUIMessageHandle);
 }
 
 void DebugUI::StaticTerminate()
@@ -125,14 +126,14 @@ void DebugUI::SetTheme(Theme theme)
 	}
 }
 
-void DebugUI::BeginDraw()
+void DebugUI::BeginRender()
 {
 	ImGui_ImplDX11_NewFrame();
 	ImGui_ImplWin32_NewFrame();
 	ImGui::NewFrame();
 }
 
-void DebugUI::EndDraw()
+void DebugUI::EndRender()
 {
 	ImGui::Render();
 	ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());

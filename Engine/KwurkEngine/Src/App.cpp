@@ -23,7 +23,7 @@ void App::Run(const AppConfig& config)
 	GraphicsSystem::StaticInitialize(handle, false);
 	InputSystem::StaticInitialize(handle);
 	DebugUI::StaticInitialize(handle, false, true);
-	SimpleDraw::StaticInitialize();
+	SimpleDraw::StaticInitialize(config.maxDrawLines);
 
 	// start state
 	ASSERT(mCurrentState != nullptr, "App: current state is available");
@@ -68,6 +68,8 @@ void App::Run(const AppConfig& config)
 	}
 	//end state
 	mCurrentState->Terminate();
+
+
 	//terminate singletons
 	SimpleDraw::StaticTerminate();
 	DebugUI::StaticTerminate();

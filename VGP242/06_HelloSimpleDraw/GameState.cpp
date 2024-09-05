@@ -75,14 +75,12 @@ void GameState::Render()
 {
 	if (mDebugDrawType == DebugDrawType::Sphere)
 	{
-		SimpleDraw::AddSphere();
+		SimpleDraw::AddSphere(30, 30, 2.0f, minExtents, lineColor);
 	}
 	else if (mDebugDrawType == DebugDrawType::Line)
 	{
-		SimpleDraw::AddSphere();
+		SimpleDraw::AddLine(minExtents, maxExtents, lineColor);
 	}
-
-	SimpleDraw::AddLine({ 0.0f, 0.0f, 0.0f }, { 1.0f, 1.0f, 1.0f }, Colors::Green);
 	SimpleDraw::Render(mCamera);
 }
 
@@ -90,24 +88,22 @@ void GameState::DebugUI()
 {
 	ImGui::Begin("debug", nullptr, ImGuiWindowFlags_AlwaysAutoResize);
 
-	int currentShape = static_cast<int>(mDebugDrawType);
-	if (ImGui::Combo("DrawType", &currentDrawType, gDrawTypeNames, static_cast<int>(std::size(gDrawTypeNames))))
+	int currentDrawtype = static_cast<int>(mDebugDrawType);
+	if (ImGui::Combo("DrawType", &currentDrawtype, gDrawTypeNames, static_cast<int>(std::size(gDrawTypeNames))))
 	{
-		mDebugDrawType = (DebugDrawType)currentDrawType;
+		mDebugDrawType = (DebugDrawType)currentDrawtype;
 	}
 	if (mDebugDrawType == DebugDrawType::Sphere)
 	{
-
+		ImGui::DragFloat3("Position", &minExtents.x, 0.1f);
 	}
 	else if (mDebugDrawType == DebugDrawType::Line)
 	{
-		ImGui::DragFloat3("StartPos" & minExtents.x, 0.1f);
-		ImGui::DragFloat3("CenterPos" & maxExtents.x, 0.1f);
+		ImGui::DragFloat3("LineStart", &minExtents.x, 0.1f);
+		ImGui::DragFloat3("LineEnd", &maxExtents.x, 0.1f);
 	}
 
-	ImGui::DragFloat3("endPos" &endPos.x, 0.1f);
-	ImGui::ColorEdit3("Color" &lineColor.r);
-
+	ImGui::ColorEdit3("Color", &lineColor.r);
 	ImGui::End();
 }
 

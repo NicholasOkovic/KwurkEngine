@@ -54,7 +54,7 @@ void BlendState::ClearState()
 
 BlendState::~BlendState()
 {
-	ASSERT(mBlendState == nullptr, "Blend");
+	ASSERT(mBlendState == nullptr, "Blendstate: Terminate must be called");
 }
 
 void BlendState::Initialize(Mode mode)
@@ -68,8 +68,10 @@ void BlendState::Initialize(Mode mode)
 	desc.RenderTarget[0].DestBlend = desc.RenderTarget[0].DestBlendAlpha = destBlend;
 	desc.RenderTarget[0].BlendOp = desc.RenderTarget[0].BlendOpAlpha = D3D11_BLEND_OP_ADD;
 	desc.RenderTarget[0].RenderTargetWriteMask  = D3D10_COLOR_WRITE_ENABLE_ALPHA;
-	/////
-
+	
+	auto device = GraphicsSystem::Get()->GetDevice();
+	HRESULT hr = device->CreateBlendState(&desc, &mBlendState);
+	ASSERT(SUCCEEDED(hr), "BlendState: failed to create blend state");
 }
 
 void BlendState::Terminate()
@@ -79,5 +81,6 @@ void BlendState::Terminate()
 
 void BlendState::Set()
 {
-
+	auto context = GraphicsSystem::Get()->GetContext();
+	context->OMSetBlendState(mBlendState, nullptr, UINT_MAX);
 }

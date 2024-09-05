@@ -73,7 +73,7 @@ void MeshBuffer::CreateVertexBuffer(const void* vertices, uint32_t vertexSize, u
 
 	D3D11_BUFFER_DESC bufferDesc{};
 	bufferDesc.ByteWidth = static_cast<UINT>(mVertexCount * mVertexSize);
-	bufferDesc.Usage = (isDynamic)? D3D11_USAGE_DYNAMIC : D3D11_USAGE_DEFAULT;
+	bufferDesc.Usage = (isDynamic) ? D3D11_USAGE_DYNAMIC : D3D11_USAGE_DEFAULT;
 	bufferDesc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
 	bufferDesc.MiscFlags = 0;
 	bufferDesc.StructureByteStride = 0;

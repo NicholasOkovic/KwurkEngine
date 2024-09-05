@@ -25,7 +25,7 @@ namespace KwurkEngine::Graphics
 
 		void AddGroundPlane(int size, Color& color);
 
-		void AddTransform(int slices, int rings, const Color& color);
+		void AddTransform(const Math::Matrix4& m);
 
 		void Render(const Camera& camera);
 		

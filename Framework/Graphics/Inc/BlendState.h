@@ -20,11 +20,12 @@ namespace KwurkEngine::Graphics
 		~BlendState();
 
 		BlendState(const BlendState&) = delete;
-		void Set();
+		BlendState& operator=(const BlendState&) = delete;
 
 		void Initialize(Mode mode);
 		void Terminate();
 
+		void Set();
 
 	private:
 		ID3D11BlendState* mBlendState = nullptr;

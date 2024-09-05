@@ -81,7 +81,7 @@ void VertexShader::Initialize(const std::filesystem::path& filePath, uint32_t fo
 		shaderBlob->GetBufferPointer(),
 		shaderBlob->GetBufferSize(),
 		&mInputLayout);
-	ASSERT(SUCCEEDED(hr), "Failed to create inout layout");
+	ASSERT(SUCCEEDED(hr), "Failed to create input layout");
 	SafeRelease(shaderBlob);
 	SafeRelease(errorBlob);
 }

@@ -21,7 +21,6 @@ public:
 
 protected:
 	void UpdateCamera(float deltaTime);
-
 	KwurkEngine::Graphics::Camera mCamera;
 	DebugDrawType mDebugDrawType = DebugDrawType::None;
 

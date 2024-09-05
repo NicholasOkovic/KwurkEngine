@@ -35,8 +35,8 @@ namespace
 		ConstantBuffer mConstantBuffer;
 		MeshBuffer mMeshBuffer;
 
-		std::unique_ptr<VertexPC[]> mLinevertices;
-		std::unique_ptr<VertexPC[]> mFacevertices;
+		std::unique_ptr<VertexPC[]> mLineVertices;
+		std::unique_ptr<VertexPC[]> mFaceVertices;
 
 		uint32_t mLineVertexCount = 0;
 		uint32_t mFaceVertexCount = 0;
@@ -52,10 +52,10 @@ namespace
 		mMeshBuffer.Initialize(nullptr, sizeof(VertexPC), maxVertexCount);
 		
 
-		mLinevertices = std::make_unique<VertexPC[]>(maxVertexCount);
-		mFacevertices = std::make_unique<VertexPC[]>(maxVertexCount);
-		mLinevertices = 0;
-		mFacevertices = 0;
+		mLineVertices = std::make_unique<VertexPC[]>(maxVertexCount);
+		mFaceVertices = std::make_unique<VertexPC[]>(maxVertexCount);
+		mLineVertexCount = 0;
+		mFaceVertexCount = 0;
 		mMaxVertexCount = maxVertexCount;
 
 	}
@@ -83,9 +83,9 @@ namespace
 	{
 		if (mFaceVertexCount + 3 <= mMaxVertexCount)
 		{
-			mFaceVertices[mLineVertexCount++] = VertexPC{ v0, color };
-			mFaceVertices[mLineVertexCount++] = VertexPC{ v1, color };
-			mFaceVertices[mLineVertexCount++] = VertexPC{ v2, color };
+			mFaceVertices[mFaceVertexCount++] = VertexPC{ v0, color };
+			mFaceVertices[mFaceVertexCount++] = VertexPC{ v1, color };
+			mFaceVertices[mFaceVertexCount++] = VertexPC{ v2, color };
 		}
 	}
 
@@ -93,8 +93,26 @@ namespace
 	{
 		const Matrix4 matView = camera.GetViewMatrix();
 		const Matrix4 matProj = camera.GetProjectionMatrix();
-		const Matrix4 transform = camera.GetProjectionMatrix();
+		const Matrix4 transform = Transpose(matView * matProj);
+		mConstantBuffer.Update(&transform);
+		mConstantBuffer.BindVS(0);
+
+		mVertexShader.Bind();
+		mPixelShader.Bind();
+
+		mMeshBuffer.Update(mLineVertices.get(), mLineVertexCount);
+		mMeshBuffer.SetTopology(MeshBuffer::Topology::Lines);
+		mMeshBuffer.Render();
+
+		mMeshBuffer.Update(mFaceVertices.get(), mFaceVertexCount);
+		mMeshBuffer.SetTopology(MeshBuffer::Topology::Triangles);
+		mMeshBuffer.Render();
+
+		mLineVertexCount = 0;
+		mFaceVertexCount = 0;
 	}
+
+	std::unique_ptr<SimpleDrawImpl> sInstance;
 }
 
 void SimpleDraw::StaticInitialize(uint32_t maxVertexCount)
@@ -105,20 +123,18 @@ void SimpleDraw::StaticInitialize(uint32_t maxVertexCount)
 
 void SimpleDraw::StaticTerminate()
 {
-	sInstance.Terminate();
+	sInstance->Terminate();
 	sInstance.reset();
 }
 
 void SimpleDraw::AddLine(const Math::Vector3& v0, const Math::Vector3 v1, const Color& color)
 {
-
-	sInstance->AddFace(v0, v1, v2, color);
-
+	sInstance->AddLine(v0, v1, color);
 }
 
 void SimpleDraw::AddFace(const Math::Vector3& v0, const Math::Vector3 v1, const Math::Vector3 v2, const Color& color)
 {
-
+	sInstance->AddFace(v0, v1, v2, color);
 }
 
 void SimpleDraw::AddAABB(const Math::Vector3& min, const Math::Vector3 max, const Color& color)
@@ -154,9 +170,9 @@ void SimpleDraw::AddAABB(float minX, float minY, float minZ, float maxX, float m
 	AddLine(tlf, tlb, color);
 	AddLine(trf, trb, color);
 
-
+	//bottom
 	AddLine(blf, blb, color);
-	AddLine(brf, brb, color);	///
+	AddLine(brf, brb, color);
 }
 
 void SimpleDraw::AddFilledAABB(const Math::Vector3& min, const Math::Vector3 max, const Color& color)
@@ -257,8 +273,8 @@ void SimpleDraw::AddGroundCircle(int slices, int radius, const Math::Vector3& po
 		float slice0 = static_cast<float>(s);
 		float rot0 = slice0 * horzRot;
 
-		float slize1 = static_cast<float>(s + 1);
-		float rot1 = slize1 * horzRot;
+		float slice1 = static_cast<float>(s + 1);
+		float rot1 = slice1 * horzRot;
 
 		v0 = {
 			sin(rot0) * radius,
@@ -285,23 +301,20 @@ void SimpleDraw::AddGroundPlane(int size, Color& color)
 	}
 }
 
-void SimpleDraw::AddTransform(int slices, int rings, const Color& color)
+void SimpleDraw::AddTransform(const Math::Matrix4& m)
 {
 	const Vector3 side = { m._11, m._12, m._13 };
-	const Vector3 up = { m._11, m._12, m._13 };
-	const Vector3 look = { m._11, m._12, m._13 };
-	const Vector3 pos = { m._11, m._12, m._13 };
+	const Vector3 up = { m._21, m._22, m._23 };
+	const Vector3 look = { m._31, m._32, m._33 };
+	const Vector3 pos = { m._41, m._42, m._43 };
 
-
-	AddLine(pos, pos + side, color); //////////
+	AddLine(pos, pos + side, Colors::Red);
+	AddLine(pos, pos + up, Colors::Green);
+	AddLine(pos, pos + look, Colors::Blue);
 
 }
 
-void KwurkEngine::Graphics::SimpleDraw::Render(const Camera& camera)
+void SimpleDraw::Render(const Camera& camera)
 {
-}
-
-void SimpleDraw::AddTransform(int slices, int rings, const Color& color)
-{
-
+	sInstance->Render(camera);
 }

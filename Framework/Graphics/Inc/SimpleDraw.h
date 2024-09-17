@@ -21,9 +21,9 @@ namespace KwurkEngine::Graphics
 		void AddFilledAABB(float minX, float minY, float minZ, float maxX, float maxY, float maxZ, const Color& color);
 
 		void AddSphere(int slices, int rings, float radius,const Math::Vector3& pos, const Color& color);
-		void AddGroundCircle(int slices, int radius, const Math::Vector3& pos, const Color& color);
+		void AddGroundCircle(int slices, float radius, const Math::Vector3& pos, const Color& color);
 
-		void AddGroundPlane(int size, Color& color);
+		void AddGroundPlane(float size, const Color& color);
 
 		void AddTransform(const Math::Matrix4& m);
 

@@ -46,7 +46,7 @@ namespace
 	void SimpleDrawImpl::Initialize(uint32_t maxVertexCount)
 	{
 		std::filesystem::path shaderFile = "../../Assets/Shaders/DoTransform.fx";
-		mVertexShader.Initialize<Vertex>(shaderFile);
+		mVertexShader.Initialize<VertexPC>(shaderFile);
 		mPixelShader.Initialize(shaderFile);
 		mConstantBuffer.Initialize(sizeof(Matrix4));
 		mMeshBuffer.Initialize(nullptr, sizeof(VertexPC), maxVertexCount);
@@ -263,7 +263,7 @@ void SimpleDraw::AddSphere(int slices, int rings, float radius, const Math::Vect
 
 }
 
-void SimpleDraw::AddGroundCircle(int slices, int radius, const Math::Vector3& pos, const Color& color)
+void SimpleDraw::AddGroundCircle(int slices, float radius, const Math::Vector3& pos, const Color& color)
 {
 	Vector3 v0 = Vector3::Zero;
 	Vector3 v1 = Vector3::Zero;
@@ -291,7 +291,7 @@ void SimpleDraw::AddGroundCircle(int slices, int radius, const Math::Vector3& po
 	}
 }
 
-void SimpleDraw::AddGroundPlane(int size, Color& color)
+void SimpleDraw::AddGroundPlane(float size, const Color& color)
 {
 	const float hs = size * 0.5f;
 	for (int i = 0; i <= size; i++)

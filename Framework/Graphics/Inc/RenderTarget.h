@@ -21,11 +21,11 @@ namespace KwurkEngine::Graphics
 
 	private:
 		ID3D11RenderTargetView* mRenderTargetView = nullptr;
-		ID3D10DepthStencilView* mDepthStencilView = nullptr;
+		ID3D11DepthStencilView* mDepthStencilView = nullptr;
 		D3D11_VIEWPORT mViewport{};
 
 		ID3D11RenderTargetView* mOldRenderTargetView = nullptr;
-		ID3D10DepthStencilView* mOldDepthStencilView = nullptr;
+		ID3D11DepthStencilView* mOldDepthStencilView = nullptr;
 		D3D11_VIEWPORT mOldViewport{};
 	};
 

@@ -1,6 +1,1 @@
-﻿  GameState.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\06_HelloSimpleDraw\GameState.cpp(36,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\06_HelloSimpleDraw\GameState.cpp(36,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-  WinMain.cpp
-  Generating Code...
-  06_HelloSimpleDraw.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\06_HelloSimpleDraw.exe
+﻿  06_HelloSimpleDraw.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\06_HelloSimpleDraw.exe

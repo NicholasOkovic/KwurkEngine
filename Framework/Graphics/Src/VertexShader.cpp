@@ -58,32 +58,36 @@ void VertexShader::Initialize(const std::filesystem::path& filePath, uint32_t fo
 		"VS", "vs_5_0",
 		shaderFlags, 0,
 		&shaderBlob,
-		&errorBlob);
+		&errorBlob
+	);
 	if (errorBlob != nullptr && errorBlob->GetBufferPointer() != nullptr)
 	{
 		LOG("%s", static_cast<const char*>(errorBlob->GetBufferPointer()));
 	}
 	ASSERT(SUCCEEDED(hr), "Failed to compile vertex shader");
+
 	hr = device->CreateVertexShader(
 		shaderBlob->GetBufferPointer(),
 		shaderBlob->GetBufferSize(),
 		nullptr,
-		&mVertexShader);
+		&mVertexShader
+	);
 	ASSERT(SUCCEEDED(hr), "Failed to create vertex shader");
 
 	//=================================================
-	//create inpout layer
+	//create input layout
 	std::vector<D3D11_INPUT_ELEMENT_DESC> vertexLayout = GetVertexLayout(format);
 
-	hr = device->CreateInputLayout(
-		vertexLayout.data(),
-		(UINT)vertexLayout.size(),
-		shaderBlob->GetBufferPointer(),
-		shaderBlob->GetBufferSize(),
-		&mInputLayout);
-	ASSERT(SUCCEEDED(hr), "Failed to create input layout");
-	SafeRelease(shaderBlob);
-	SafeRelease(errorBlob);
+    hr = device->CreateInputLayout(
+        vertexLayout.data(),
+        (UINT)vertexLayout.size(),
+        shaderBlob->GetBufferPointer(),
+        shaderBlob->GetBufferSize(),
+        &mInputLayout
+    );
+    ASSERT(SUCCEEDED(hr), "Failed to create input layout");
+    SafeRelease(shaderBlob);
+    SafeRelease(errorBlob);
 }
 
 void VertexShader::Terminate()

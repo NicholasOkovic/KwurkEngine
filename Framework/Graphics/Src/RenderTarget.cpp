@@ -8,12 +8,12 @@ using namespace KwurkEngine::Graphics;
 
 RenderTarget::~RenderTarget()
 {
-	ASSERT(mRenderTargetView == nullptr && mDepthStencilView == nullptr, "RenderTarget: not eworking");
+	ASSERT(mRenderTargetView == nullptr && mDepthStencilView == nullptr, "RenderTarget: not working");
 }
 
 void RenderTarget::Initialize(const std::filesystem::path& fileName)
 {
-	ASSERT(false, "RenderTarget: not available in render targer");
+	ASSERT(false, "RenderTarget: initialize not available in render targer");
 }
 
 void RenderTarget::Initialize(uint32_t width, uint32_t height, Format format)
@@ -35,10 +35,10 @@ void RenderTarget::Initialize(uint32_t width, uint32_t height, Format format)
 
 	ID3D11Texture2D* texture = nullptr;
 	HRESULT hr = device->CreateTexture2D(&desc, nullptr, &texture);
-	ASSERT(SUCCEEDED(hr), "RenderTarget: failed to create");
+	ASSERT(SUCCEEDED(hr), "RenderTarget: failed to create texture");
 
 	hr = device->CreateShaderResourceView(texture, nullptr, &mShaderResourceView);
-	ASSERT(SUCCEEDED(hr), "RenderTarget: failed to create shader");
+	ASSERT(SUCCEEDED(hr), "RenderTarget: failed to create shader resource view");
 
 	hr = device->CreateRenderTargetView(texture, nullptr, &mRenderTargetView);
 	ASSERT(SUCCEEDED(hr), "RenderTarget: failed to create render taget view");
@@ -62,9 +62,6 @@ void RenderTarget::Initialize(uint32_t width, uint32_t height, Format format)
 	mViewport.Height = static_cast<float>(height);
 	mViewport.MinDepth = 0.0f;
 	mViewport.MaxDepth = 1.0f;
-
-
-
 }
 
 void RenderTarget::Terminate()
@@ -100,5 +97,4 @@ void RenderTarget::EndRender()
 	context->RSSetViewports(1, &mOldViewport);
 	SafeRelease(mOldRenderTargetView);
 	SafeRelease(mOldDepthStencilView);
-
 }

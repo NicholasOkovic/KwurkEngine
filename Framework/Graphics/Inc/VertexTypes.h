@@ -20,7 +20,7 @@ namespace KwurkEngine::Graphics
 	struct VertexP
 	{
 		VERTEX_FORMAT(VE_Position);
-		Math::Vector3 position;
+		KwurkEngine::Math::Vector3 position;
 	};
 
 	struct VertexPC
@@ -33,8 +33,8 @@ namespace KwurkEngine::Graphics
 	struct VertexPX
 	{
 		VERTEX_FORMAT(VE_Position | VE_TexCoord);
-		Math::Vector3 position;
-		Math::Vector2 uvCoord;
+		KwurkEngine::Math::Vector3 position;
+		KwurkEngine::Math::Vector2 uvCoord;
 	};
 
 	struct Vertex
@@ -42,10 +42,10 @@ namespace KwurkEngine::Graphics
 		VERTEX_FORMAT(VE_Position | VE_Normal | VE_Tangent | VE_TexCoord | VE_BlendIndex | VE_BlendWeight);
 		static constexpr int MaxBoneWeights = 4;
 
-		Math::Vector3 position;
-		Math::Vector3 normal;
-		Math::Vector3 tangent;
-		Math::Vector2 uvCoord;
+		KwurkEngine::Math::Vector3 position;
+		KwurkEngine::Math::Vector3 normal;
+		KwurkEngine::Math::Vector3 tangent;
+		KwurkEngine::Math::Vector2 uvCoord;
 		int boneIndices[MaxBoneWeights] = {};
 		float boneWeights[MaxBoneWeights] = {};
 	};

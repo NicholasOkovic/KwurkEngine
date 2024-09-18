@@ -98,8 +98,8 @@ Math::Matrix4 Camera::GetPerspectiveMatrix() const
 	const float a = (mAspectRatio == 0.0f)? GraphicsSystem::Get()->GetBackBufferAspectRatio() : mAspectRatio;
 	const float h = 1.0f / tan(mFov * 0.5f);
 	const float w = h / a;
-	const float zn = mFarPlane;
-	const float zf = mNearPlane;
+	const float zf = mFarPlane;
+	const float zn = mNearPlane;
 	const float q = zf / (zf- zn);
 	return
 	{
@@ -125,8 +125,6 @@ Math::Matrix4 Camera::GetOrthographicMatrix() const
 		0.0f, 0.0f, 1/(f-n),  0.0f,
 		0.0f, 0.0f, n / (n-f), 1.0f
 	};
-
-	return Math::Matrix4();
 }
 
 void Camera::Walk(float distance)

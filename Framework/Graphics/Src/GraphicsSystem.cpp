@@ -122,7 +122,6 @@ void GraphicsSystem::BeginRender()
 	mImmediateContext->OMSetRenderTargets(1, &mRenderTargetView, mDepthStencilView);
 	mImmediateContext->ClearRenderTargetView(mRenderTargetView, (FLOAT*)(&mClearColor));
 	mImmediateContext->ClearDepthStencilView(mDepthStencilView, D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0.0f);
-	
 }
 
 void GraphicsSystem::EndRender()
@@ -135,7 +134,6 @@ void GraphicsSystem::ToggleFullScreen()
 	BOOL fullscreen;
 	mSwapChain->GetFullscreenState(&fullscreen, nullptr);
 	mSwapChain->SetFullscreenState(!fullscreen, nullptr);
-
 }
 
 void GraphicsSystem::Resize(uint32_t width, uint32_t height)

@@ -20,7 +20,8 @@ void PixelShader::Initialize(const std::filesystem::path& filePath)
 		"PS", "ps_5_0",
 		shaderFlags, 0,
 		&shaderBlob,
-		&errorBlob);
+		&errorBlob
+	);
 	if (errorBlob != nullptr && errorBlob->GetBufferPointer() != nullptr)
 	{
 		LOG("%s", static_cast<const char*>(errorBlob->GetBufferPointer()));

@@ -10,7 +10,13 @@ using namespace KwurkEngine::Input;
 void GameState::Initialize()
 {
 	//MeshPX mesh = Meshbuilder::CreateSkySpherePX(30, 30, 100.0f);
-	MeshPX mesh = Meshbuilder::CreateSpherePX(60, 60, 1.0f);
+	//MeshPX mesh = Meshbuilder::CreateSpherePX(60, 60, 1.0f);
+	MeshPX meshes[9];
+
+	//all the planets
+
+	meshes[0] = Meshbuilder::CreateSpherePX(60, 60, 1.0f);
+	//meshes[1] = Meshbuilder::CreateSkySpherePX(30, 30, 100.0f);
 
 	mCamera.SetPosition({ 0.0f, 1.0f, -3.0f });
 	mCamera.SetLookAt({ 0.0f, 0.0f, 0.0f });
@@ -18,12 +24,15 @@ void GameState::Initialize()
 	mRenderTargetCamera.SetLookAt({ 0.0f, 0.0f, 0.0f });
 	mRenderTargetCamera.SetAspectRatio(1.0f);
 
-	mMeshBuffer.Initialize<MeshPX>(mesh);
+	mMeshBuffer.Initialize<MeshPX>(meshes[0]);
+	//mMeshBuffer.Initialize<MeshPX>(meshes[1]);
 
 	mConstantBuffer.Initialize(sizeof(Matrix4));
 
 	//std::filesystem::path shaderFile = L"../../Assets/Shaders/DoTransform.fx";
 	std::filesystem::path shaderFile = L"../../Assets/Shaders/DoTexture.fx";
+
+
 	mVertexShader.Initialize<VertexPX>(shaderFile);
 	mPixelShader.Initialize(shaderFile);
 
@@ -172,7 +181,7 @@ void GameState::DebugUI()
 	case true:
 		//then	
 		//mRenderTargetCamera.SetPosition(Vector3(matWorldVar._11, matWorldVar._22, matWorldVar._33));
-		mRenderTargetCamera.SetLookAt(Vector3(matWorldVar._11, matWorldVar._22,matWorldVar._33));
+		mRenderTargetCamera.SetLookAt(Vector3(matWorldVar._41, matWorldVar._42,matWorldVar._43));
 		break;
 	default:
 		break;

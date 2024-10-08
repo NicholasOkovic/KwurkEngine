@@ -1,5 +1,1 @@
-﻿  ShapeState.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\03_HelloCube\ShapeState.cpp(81,73): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
-  WinMain.cpp
-  Generating Code...
-  03_HelloCube.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\03_HelloCube.exe
+﻿

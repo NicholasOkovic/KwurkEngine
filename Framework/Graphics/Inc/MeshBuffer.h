@@ -32,7 +32,7 @@ namespace KwurkEngine::Graphics
 
 		void Update(const void* vertices, uint32_t vertexCount);
 
-		void Render();
+		void Render() const;
 
 
 	private:

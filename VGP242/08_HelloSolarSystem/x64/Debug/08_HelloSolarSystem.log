@@ -1,13 +1,1 @@
-﻿  GameState.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(72,30): warning C4305: '=': truncation from 'double' to 'float'
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(77,30): warning C4305: '=': truncation from 'double' to 'float'
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(82,30): warning C4305: '=': truncation from 'double' to 'float'
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(87,30): warning C4305: '=': truncation from 'double' to 'float'
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(102,30): warning C4305: '=': truncation from 'double' to 'float'
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(107,30): warning C4305: '=': truncation from 'double' to 'float'
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(112,30): warning C4305: '=': truncation from 'double' to 'float'
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(117,30): warning C4305: '=': truncation from 'double' to 'float'
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(122,31): warning C4305: '=': truncation from 'double' to 'float'
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(172,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(172,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-  08_HelloSolarSystem.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\08_HelloSolarSystem.exe
+﻿

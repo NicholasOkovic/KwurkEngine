@@ -16,8 +16,8 @@ public:
 protected:
 	void UpdateCamera(float deltaTime);
 	KwurkEngine::Graphics::Camera mCamera;
-	KwurkEngine::Graphics::RenderObject mPlanet;
-	KwurkEngine::Graphics::RenderObject mPlanet2;
+	std::vector<KwurkEngine::Graphics::RenderObject> mPlanets;
+
 
 	KwurkEngine::Graphics::StandardEffect mStandardEffect;
 

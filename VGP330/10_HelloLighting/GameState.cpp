@@ -17,9 +17,9 @@ void GameState::Initialize()
 	for (int i = 0; i < 9; i++)
 	{
 		RenderObject& planet = mPlanets.emplace_back();
-		mPlanet.meshBuffer.Initialize(mesh);
-		mPlanet.diffuseTextureId = TextureCache::Get()->LoadTexture("misc/basketball.jpg");
-		mPlanet.transform.position.x = x;
+		planet.meshBuffer.Initialize(mesh);
+		planet.diffuseTextureId = TextureCache::Get()->LoadTexture("misc/basketball.jpg");
+		planet.transform.position.x = x;
 		x += 1.0f;
 	}
 	
@@ -80,10 +80,10 @@ void GameState::UpdateCamera(float deltaTime)
 	}
 }
 
-Vector3 minExtents = Vector3::Zero;
-Vector3 maxExtents = Vector3::Zero;
-Vector3 centerPos = Vector3::Zero;
-Color lineColor = Colors::Green;
+//Vector3 minExtents = Vector3::Zero;
+//Vector3 maxExtents = Vector3::Zero;
+//Vector3 centerPos = Vector3::Zero;
+//Color lineColor = Colors::Green;
 
 void GameState::Render()
 {
@@ -97,6 +97,7 @@ void GameState::Render()
 
 void GameState::DebugUI()
 {
-
+	ImGui::Begin("Debug", nullptr, ImGuiWindowFlags_AlwaysAutoResize);
+	ImGui::End();
 }
 

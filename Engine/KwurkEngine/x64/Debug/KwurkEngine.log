@@ -1,7 +1,5 @@
 ﻿  Precompiled.cpp
-C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\Framework\Graphics\Inc\RenderObject.h(15,13): error C3646: 'transform': unknown override specifier
-  (compiling source file 'Src/Precompiled.cpp')
-  
-C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\Framework\Graphics\Inc\RenderObject.h(15,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'Src/Precompiled.cpp')
-  
+  App.cpp
+  KwurkEngine.cpp
+  Generating Code...
+  KwurkEngine.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\KwurkEngine.lib

@@ -1,1 +1,34 @@
-﻿
+﻿  GameState.cpp
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Inc\ConstantBuffer.h(30,4): error C2062: type 'void' unexpected
+  (compiling source file 'GameState.cpp')
+  D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Inc\ConstantBuffer.h(30,4):
+  the template instantiation context (the oldest one first) is
+  	D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Inc\ConstantBuffer.h(39,3):
+  	see reference to class template instantiation 'KwurkEngine::Graphics::TypedConstantBuffer<DataType>' being compiled
+  
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Inc\ConstantBuffer.h(31,3): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'GameState.cpp')
+  
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(72,30): warning C4305: '=': truncation from 'double' to 'float'
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(77,30): warning C4305: '=': truncation from 'double' to 'float'
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(82,30): warning C4305: '=': truncation from 'double' to 'float'
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(87,30): warning C4305: '=': truncation from 'double' to 'float'
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(102,30): warning C4305: '=': truncation from 'double' to 'float'
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(107,30): warning C4305: '=': truncation from 'double' to 'float'
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(112,30): warning C4305: '=': truncation from 'double' to 'float'
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(117,30): warning C4305: '=': truncation from 'double' to 'float'
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(122,31): warning C4305: '=': truncation from 'double' to 'float'
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(172,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP242\08_HelloSolarSystem\GameState.cpp(172,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+  WinMain.cpp
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Inc\ConstantBuffer.h(30,4): error C2062: type 'void' unexpected
+  (compiling source file 'WinMain.cpp')
+  D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Inc\ConstantBuffer.h(30,4):
+  the template instantiation context (the oldest one first) is
+  	D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Inc\ConstantBuffer.h(39,3):
+  	see reference to class template instantiation 'KwurkEngine::Graphics::TypedConstantBuffer<DataType>' being compiled
+  
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Inc\ConstantBuffer.h(31,3): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'WinMain.cpp')
+  
+  Generating Code...

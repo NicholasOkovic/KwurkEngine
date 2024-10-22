@@ -15,9 +15,6 @@ namespace KwurkEngine::Graphics
 		Transform transform;
 		MeshBuffer meshBuffer;
 		TextureId diffuseTextureId;
-
-	private:
-
 	};
 }
 

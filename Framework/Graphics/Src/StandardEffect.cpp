@@ -13,7 +13,7 @@ void StandardEffect::Initialize(const std::filesystem::path& path)
 	mPixelShader.Initialize(path);
 	mSampler.Initialize(Sampler::Filter::Linear, Sampler::AddressMode::Wrap);
 
-	mTransformBuffer.Initialize(sizeof(Math::Matrix4));
+	mTransformBuffer.Initialize();
 }
 
 void StandardEffect::Terminate()
@@ -41,7 +41,7 @@ void StandardEffect::End()
 
 void StandardEffect::Render(const RenderObject& renderObject)
 {
-	ASSERT(mCamera != nullptr, "standard effect must have a camera");
+	ASSERT(mCamera != nullptr, "standard effect: must have a camera");
 	const Math::Matrix4 matWorld = renderObject.transform.GetMatrix4();
 	const Math::Matrix4 matView = mCamera->GetViewMatrix();
 	const Math::Matrix4 matProj = mCamera->GetProjectionMatrix();

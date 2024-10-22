@@ -68,7 +68,7 @@ void* Texture::GetRawData() const
 	return mShaderResourceView;
 }
 
-DXGI_FORMAT KwurkEngine::Graphics::Texture::GetDXGIFormat(Format format)
+DXGI_FORMAT Texture::GetDXGIFormat(Format format)
 {
 	switch (format)
 	{

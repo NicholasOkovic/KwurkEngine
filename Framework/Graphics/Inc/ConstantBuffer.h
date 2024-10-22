@@ -26,13 +26,13 @@ namespace KwurkEngine::Graphics
 	template<class DataType>
 	class TypedConstantBuffer final : public ConstantBuffer
 	{
-		public
-			void Initialize()
+	public:
+		void Initialize()
 		{
 			static_assert(sizeof(DataType) % 16 == 0, "Data must be 16 byte aligned");
 			ConstantBuffer::Initialize(sizeof(DataType));
 		}
-		void Updata(const DataType& data) const
+		void Update(const DataType& data) const
 		{
 			ConstantBuffer::Update(&data);
 		}

@@ -38,7 +38,6 @@ namespace KwurkEngine::Graphics
 		using TransformBuffer = TypedConstantBuffer<TransformData>;
 		TransformBuffer mTransformBuffer;
 
-		ConstantBuffer mConstantBuffer;
 		VertexShader mVertexShader;
 		PixelShader mPixelShader;
 		Sampler mSampler;

@@ -19,7 +19,9 @@ protected:
 	std::vector<KwurkEngine::Graphics::RenderObject> mPlanets;
 
 
+	KwurkEngine::Graphics::DirectionalLight mDirectionalLight;
 	KwurkEngine::Graphics::StandardEffect mStandardEffect;
+
 
 };
 

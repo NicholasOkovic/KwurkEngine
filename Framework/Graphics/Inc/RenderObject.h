@@ -3,6 +3,7 @@
 #include "MeshBuffer.h"
 #include "Transform.h"
 #include "TextureCache.h"
+#include "Material.h"
 
 namespace KwurkEngine::Graphics
 {
@@ -14,7 +15,12 @@ namespace KwurkEngine::Graphics
 
 		Transform transform;
 		MeshBuffer meshBuffer;
-		TextureId diffuseTextureId;
+
+		Material material;
+		TextureId diffuseMapId;
+		TextureId normalMapId;
+		TextureId specMapId;
+		TextureId bumpMapId;
 	};
 }
 

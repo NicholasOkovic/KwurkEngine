@@ -1,21 +1,2 @@
-﻿  ConstantBuffer.cpp
-  SimpleDraw.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\SimpleDraw.cpp(223,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/Src/SimpleDraw.cpp')
-  
-  StandardEffect.cpp
-  Texture.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Texture.cpp(39,2): warning C4477: 'snprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 4 has type 'const std::filesystem::path::value_type *'
-  (compiling source file '/Src/Texture.cpp')
-  D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Texture.cpp(39,2):
-  consider using '%ls' in the format string
-  D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Texture.cpp(39,2):
-  consider using '%lls' in the format string
-  D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Texture.cpp(39,2):
-  consider using '%Ls' in the format string
-  D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Texture.cpp(39,2):
-  consider using '%ws' in the format string
-  
-  VertexShader.cpp
-  Generating Code...
+﻿  StandardEffect.cpp
   Graphics.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\Graphics.lib

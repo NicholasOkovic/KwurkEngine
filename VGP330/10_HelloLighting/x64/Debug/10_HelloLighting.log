@@ -1,4 +1,7 @@
 ﻿  GameState.cpp
 D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\10_HelloLighting\GameState.cpp(60,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\10_HelloLighting\GameState.cpp(60,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+  WinMain.cpp
+  Generating Code...
+  LINK : D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\10_HelloLighting.exe not found or not built by the last incremental link; performing full link
   10_HelloLighting.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\10_HelloLighting.exe

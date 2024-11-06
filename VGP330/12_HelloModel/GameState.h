@@ -16,11 +16,15 @@ public:
 protected:
 	void UpdateCamera(float deltaTime);
 	KwurkEngine::Graphics::Camera mCamera;
+	
 
 
 	KwurkEngine::Graphics::RenderGroup mCharacter;
+	KwurkEngine::Graphics::RenderGroup mCharacter2;
 	KwurkEngine::Graphics::DirectionalLight mDirectionalLight;
 	KwurkEngine::Graphics::StandardEffect mStandardEffect;
+	KwurkEngine::Graphics::StandardEffect mRenderTargetStandardEffect;
+	KwurkEngine::Graphics::RenderTarget mRenderTarget;
 
 
 };

@@ -16,24 +16,30 @@ void GameState::Initialize()
 	mDirectionalLight.ambient = { 0.3f, 0.3f, 0.3f, 1.0f };
 	mDirectionalLight.diffuse = { 0.7f, 0.7f, 0.7f, 1.0f };
 	mDirectionalLight.specular = { 0.9f, 0.9f, 0.9f, 1.0f };
-
-
 	
 	std::filesystem::path shaderfile = L"../../Assets/Shaders/Standard.fx";	
 	mStandardEffect.Initialize(shaderfile);
 	mStandardEffect.SetCamera(mCamera);
-
 	mStandardEffect.SetDirectionalLight(mDirectionalLight);
 
-	Model model;
-	ModelIO::LoadModel(L"../../Assets/Models/Paladin/PaladinJNordstrom.model", model);
-	mCharacter.Initialize(model);
+	shaderfile = L"../../Assets/Shaders/CelShading.fx";
+	mRenderTargetStandardEffect.Initialize(shaderfile);
+	mRenderTargetStandardEffect.SetCamera(mCamera);
+	mRenderTargetStandardEffect.SetDirectionalLight(mDirectionalLight);
 
+	mCharacter.Initialize(L"../../Assets/Models/Paladin/PaladinJNordstrom.model");
+	mCharacter2.Initialize(L"../../Assets/Models/Character2/PumpkinhulkShaw.model");
+
+	const uint32_t size = 512;
+	mRenderTarget.Initialize(size, size, Texture::Format::RGBA_U8);
 }
 
 void GameState::Terminate()
 {
+	mRenderTarget.Terminate();
+	mCharacter2.Terminate();
 	mCharacter.Terminate();
+	mRenderTargetStandardEffect.Terminate();
 	mStandardEffect.Terminate();
 	
 }
@@ -80,12 +86,52 @@ void GameState::UpdateCamera(float deltaTime)
 		mCamera.Pitch(input->GetMouseMoveY() * turnSpeed);
 	}
 }
+bool viewCharacter1 = true;
 
 void GameState::Render()
 {
+	mCamera.SetAspectRatio(1.0f);
+	mRenderTarget.BeginRender();
+
+	mRenderTargetStandardEffect.Begin();
+	switch (viewCharacter1)
+	{
+	case true:
+		mRenderTargetStandardEffect.Render(mCharacter2);
+		break;
+
+	case false:
+		mRenderTargetStandardEffect.Render(mCharacter);
+		break;
+	default:
+		break;
+	}
+
+	mRenderTargetStandardEffect.End();
+
+	mRenderTarget.EndRender();
+
+	mCamera.SetAspectRatio(0.0f);
+
 	mStandardEffect.Begin();
-	mStandardEffect.Render(mCharacter);
+
+	switch (viewCharacter1)
+	{
+	case true:
+		mStandardEffect.Render(mCharacter);
+		break;
+
+	case false:
+		mStandardEffect.Render(mCharacter2);
+		break;
+	default:
+		break;
+	}
+
 	mStandardEffect.End();
+
+	SimpleDraw::AddGroundPlane(10.0f, Colors::White);
+	SimpleDraw::Render(mCamera);
 }
 
 void GameState::DebugUI()
@@ -100,11 +146,20 @@ void GameState::DebugUI()
 		ImGui::ColorEdit4("Ambient##Light", &mDirectionalLight.ambient.r);
 		ImGui::ColorEdit4("Diffuse##Light", &mDirectionalLight.diffuse.r);
 		ImGui::ColorEdit4("Specular##Light", &mDirectionalLight.specular.r);
-
 	}
+	ImGui::Separator();
+	ImGui::Text("RenderTarget");
+	ImGui::Image(
+		mRenderTarget.GetRawData(),
+		{ 128, 128 },
+		{ 0, 0 },
+		{ 1, 1 },
+		{ 1, 1, 1, 1 },
+		{ 1, 1, 1, 1 });
+
+	ImGui::Checkbox("Swap", &viewCharacter1);
 
 	mStandardEffect.DebugUI();
-
 
 	ImGui::End();
 }

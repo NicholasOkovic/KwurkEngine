@@ -1,0 +1,2 @@
+-scale 0.01 ../../Assets/Models/Paladin/PaladinJNordstrom.fbx ../../Assets/Models/Paladin/PaladinJNordstrom.model
+

@@ -7,6 +7,7 @@
 
 namespace KwurkEngine::Graphics
 {
+	struct Model;
 
 	class RenderObject
 	{
@@ -22,5 +23,16 @@ namespace KwurkEngine::Graphics
 		TextureId specMapId;
 		TextureId bumpMapId;
 	};
+
+	class RenderGroup
+	{
+	public:
+		void Initialize(const Model& model);
+		void Terminate();
+
+		Transform transform;
+		std::vector<RenderObject> renderObjects;
+	};
+
 }
 

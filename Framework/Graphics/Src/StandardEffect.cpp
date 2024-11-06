@@ -53,6 +53,47 @@ void StandardEffect::End()
 	//blends clear blend states
 }
 
+void StandardEffect::Render(const RenderGroup& renderGroup)
+{
+	ASSERT(mCamera != nullptr, "standard effect: must have a camera");
+
+
+	const Math::Matrix4 matWorld = renderGroup.transform.GetMatrix4();
+	const Math::Matrix4 matView = mCamera->GetViewMatrix();
+	const Math::Matrix4 matProj = mCamera->GetProjectionMatrix();
+
+	const Math::Matrix4 matFinal = matWorld * matView * matProj;
+
+	TransformData transformData;
+	transformData.wvp = Transpose(matFinal);
+	transformData.world = Transpose(matWorld);
+	transformData.viewPosition = mCamera->GetPosition();
+	mTransformBuffer.Update(transformData);
+
+	mLightBuffer.Update(*mDirectionalLight);
+
+	for (const RenderObject& renderObject : renderGroup.renderObjects)
+	{
+		mMaterialBuffer.Update(renderObject.material);
+
+		SettingsData settingsData;
+		settingsData.useDiffuseMap = mSettingsData.useDiffuseMap > 0 && renderObject.diffuseMapId > 0;
+		settingsData.useNormalMap = mSettingsData.useNormalMap > 0 && renderObject.normalMapId > 0;
+		settingsData.useSpecMap = mSettingsData.useSpecMap > 0 && renderObject.specMapId > 0;
+		settingsData.useBumpMap = mSettingsData.useBumpMap > 0 && renderObject.bumpMapId > 0;
+		settingsData.bumpWeight = mSettingsData.bumpWeight;
+		mSettingsBuffer.Update(settingsData);
+
+		TextureCache* tc = TextureCache::Get();
+		tc->BindPS(renderObject.diffuseMapId, 0);
+		tc->BindPS(renderObject.normalMapId, 1);
+		tc->BindPS(renderObject.specMapId, 2);
+		tc->BindVS(renderObject.bumpMapId, 3);
+
+		renderObject.meshBuffer.Render();
+	}
+}
+
 void StandardEffect::Render(const RenderObject& renderObject)
 {
 	ASSERT(mCamera != nullptr, "standard effect: must have a camera");
@@ -87,7 +128,7 @@ void StandardEffect::Render(const RenderObject& renderObject)
 	tc->BindPS(renderObject.normalMapId, 1);
 	tc->BindPS(renderObject.specMapId, 2);
 	tc->BindVS(renderObject.bumpMapId, 3);
-	
+
 	renderObject.meshBuffer.Render();
 }
 

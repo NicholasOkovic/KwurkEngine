@@ -382,6 +382,39 @@ MeshPX Meshbuilder::CreatePlanePX(int numRows, int numCols, float spacing)
 	return mesh;
 }
 
+Mesh Meshbuilder::CreateGroundPlane(int numRows, int numCols, float spacing)
+{
+	Mesh mesh;
+
+	const float hpw = static_cast<float>(numCols) * spacing * 0.5;
+	const float hph = static_cast<float>(numRows) * spacing * 0.5;
+
+	float x = -hpw;
+	float z = -hph;
+	float uInc = 1.0f / static_cast<float>(numCols);
+	float vInc = -1.0f / static_cast<float>(numRows);
+	float u = 0.0f;
+	float v = 1.0f;
+
+	for (int r = 0; r <= numRows; r++)
+	{
+		for (int c = 0; c <= numCols; c++)
+		{
+			mesh.vertices.push_back({ {x, 0.0f, z}, Math::Vector3::YAxis, Math::Vector3::XAxis, {u, v} });
+			x += spacing;
+			u += uInc;
+		}
+		x = -hpw;
+		z += spacing;
+		u = 0.0f;
+		v += vInc;
+	}
+
+	CreatePlaneIndices(mesh.indices, numRows, numCols);
+
+	return mesh;
+}
+
 MeshPC Meshbuilder::CreateCylinderPC(int slices, int rings)
 {
 	MeshPC mesh;
@@ -515,6 +548,19 @@ Mesh Meshbuilder::CreateSphere(int slices, int rings, float radius)
 	}
 
 	CreatePlaneIndices(mesh.indices, slices, rings);
+
+	return mesh;
+}
+
+MeshPX KwurkEngine::Graphics::Meshbuilder::CreateScreenQuad()
+{
+	MeshPX mesh;
+	mesh.vertices.push_back({ {-1.0f, -1.0f, 0.0f}, {0.0f, 1.0f} });
+	mesh.vertices.push_back({ {-1.0f, 1.0f, 0.0f}, {0.0f, 0.0f} });
+	mesh.vertices.push_back({ {1.0f, 1.0f, 0.0f}, {1.0f, 0.0f} });
+	mesh.vertices.push_back({ {1.0f, -1.0f, 0.0f}, {1.0f, 1.0f} });
+	mesh.indices = { 0,1, 2, 0, 2, 3 };
+
 
 	return mesh;
 }

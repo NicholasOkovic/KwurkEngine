@@ -1,0 +1,6 @@
+﻿  GameState.cpp
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\14_HelloGaussianBlur\GameState.cpp(74,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\14_HelloGaussianBlur\GameState.cpp(74,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+  WinMain.cpp
+  Generating Code...
+  14_HelloGaussianBlur.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\14_HelloGaussianBlur.exe

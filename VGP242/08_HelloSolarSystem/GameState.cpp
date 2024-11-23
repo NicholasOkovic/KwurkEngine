@@ -27,17 +27,17 @@ void GameState::Initialize()
 
 	//all the planets
 	//Actual size of planets / 1000 rounded(minus the sun)
-	meshes[0] = Meshbuilder::CreateSpherePX(60, 60, 1.0f);	//Sun
-	meshes[1] = Meshbuilder::CreateSpherePX(60, 60, 0.03f);	//Mercury
-	meshes[2] = Meshbuilder::CreateSpherePX(60, 60, 0.1f);	//Venus
-	meshes[3] = Meshbuilder::CreateSpherePX(60, 60, 0.12f);	//Earth
-	meshes[4] = Meshbuilder::CreateSpherePX(60, 60, 0.05f);	//Mars
-	meshes[5] = Meshbuilder::CreateSpherePX(60, 60, 1.0f);	//Jupiter
-	meshes[6] = Meshbuilder::CreateSpherePX(60, 60, 1.0f);	//Saturn
-	meshes[7] = Meshbuilder::CreateSpherePX(60, 60, 0.4f);	//Uranus
-	meshes[8] = Meshbuilder::CreateSpherePX(60, 60, 0.4f);	//Neptune
-	meshes[9] = Meshbuilder::CreateSpherePX(60, 60, 0.03f);	//Pluto
-	meshes[10] = Meshbuilder::CreateSkySpherePX(60, 60, 50.0f); //space
+	meshes[0] = MeshBuilder::CreateSpherePX(60, 60, 1.0f);	//Sun
+	meshes[1] = MeshBuilder::CreateSpherePX(60, 60, 0.03f);	//Mercury
+	meshes[2] = MeshBuilder::CreateSpherePX(60, 60, 0.1f);	//Venus
+	meshes[3] = MeshBuilder::CreateSpherePX(60, 60, 0.12f);	//Earth
+	meshes[4] = MeshBuilder::CreateSpherePX(60, 60, 0.05f);	//Mars
+	meshes[5] = MeshBuilder::CreateSpherePX(60, 60, 1.0f);	//Jupiter
+	meshes[6] = MeshBuilder::CreateSpherePX(60, 60, 1.0f);	//Saturn
+	meshes[7] = MeshBuilder::CreateSpherePX(60, 60, 0.4f);	//Uranus
+	meshes[8] = MeshBuilder::CreateSpherePX(60, 60, 0.4f);	//Neptune
+	meshes[9] = MeshBuilder::CreateSpherePX(60, 60, 0.03f);	//Pluto
+	meshes[10] = MeshBuilder::CreateSkySpherePX(60, 60, 50.0f); //space
 
 
 

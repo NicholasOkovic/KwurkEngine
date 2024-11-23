@@ -2,6 +2,7 @@
 
 #include "Common.h"
 
+#include "BillBoardEffect.h"
 #include "BlendState.h"
 #include "Color.h"
 #include "Camera.h"

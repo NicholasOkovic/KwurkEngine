@@ -4,7 +4,7 @@
 
 namespace KwurkEngine::Graphics
 {
-	class Meshbuilder
+	class MeshBuilder
 	{
 	public:
 		//cube
@@ -33,6 +33,9 @@ namespace KwurkEngine::Graphics
 
 		//Screen quad
 		static MeshPX CreateScreenQuad();
+
+		//sprite quad
+		static MeshPX CreateSpriteQuad(float width, float height);
 
 	};
 }

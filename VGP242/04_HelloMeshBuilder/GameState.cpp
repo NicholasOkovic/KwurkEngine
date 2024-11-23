@@ -15,7 +15,7 @@ void GameState::Initialize()
 
 	//Vertices for each face(6 for each)
 
-	MeshPX mesh = Meshbuilder::CreateCubePX(2/*, 60, 1.0f*/);
+	MeshPX mesh = MeshBuilder::CreateCubePX(2/*, 60, 1.0f*/);
 	//MeshPX mesh = Meshbuilder::CreateCubePX(30.0f);
 	
 	mCamera.SetPosition({ 0.0f, 1.0f, -3.0f });

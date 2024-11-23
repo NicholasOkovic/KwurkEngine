@@ -29,10 +29,10 @@ void GameState::Initialize()
 
 	mCharacter.Initialize(L"../../Assets/Models/Paladin/PaladinJNordstrom.model");
 
-	MeshPX screenQuad = Meshbuilder::CreateScreenQuad();
+	MeshPX screenQuad = MeshBuilder::CreateScreenQuad();
 	mScreenQuad.meshBuffer.Initialize(screenQuad);
 
-	Mesh groundMesh = Meshbuilder::CreateGroundPlane(10, 10, 1.0f);
+	Mesh groundMesh = MeshBuilder::CreateGroundPlane(10, 10, 1.0f);
 	mGround.meshBuffer.Initialize(groundMesh);
 	mGround.diffuseMapId = TextureCache::Get()->LoadTexture("misc/concrete.jpg");
 

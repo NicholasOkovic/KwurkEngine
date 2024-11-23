@@ -17,7 +17,7 @@ void GameState::Initialize()
 	mDirectionalLight.diffuse = { 0.7f, 0.7f, 0.7f, 1.0f };
 	mDirectionalLight.specular = { 0.9f, 0.9f, 0.9f, 1.0f };
 
-	Mesh mesh = Meshbuilder::CreateSphere(30, 30, 1.0f);
+	Mesh mesh = MeshBuilder::CreateSphere(30, 30, 1.0f);
 	float x = -5.0f;
 	for (int i = 0; i < 3; i++)
 	{

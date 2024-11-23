@@ -90,7 +90,7 @@ namespace
 
 }
 
-MeshPC Meshbuilder::CreateCubePC(float size)
+MeshPC MeshBuilder::CreateCubePC(float size)
 {
 
 	MeshPC mesh;
@@ -117,7 +117,7 @@ MeshPC Meshbuilder::CreateCubePC(float size)
 	return mesh;
 }
 
-MeshPX Meshbuilder::CreateCubePX(float size)
+MeshPX MeshBuilder::CreateCubePX(float size)
 {
 	MeshPX mesh;
 
@@ -190,7 +190,7 @@ MeshPX Meshbuilder::CreateCubePX(float size)
 
 }
 
-MeshPX Meshbuilder::CreateSkyBoxPX(float size)
+MeshPX MeshBuilder::CreateSkyBoxPX(float size)
 {
 	MeshPX mesh;
 
@@ -261,7 +261,7 @@ MeshPX Meshbuilder::CreateSkyBoxPX(float size)
 
 }
 
-MeshPX Meshbuilder::CreateSkySpherePX(int slices, int rings, float radius)
+MeshPX MeshBuilder::CreateSkySpherePX(int slices, int rings, float radius)
 {
 	MeshPX mesh;
 
@@ -294,7 +294,7 @@ MeshPX Meshbuilder::CreateSkySpherePX(int slices, int rings, float radius)
 	return mesh;
 }
 
-MeshPC Meshbuilder::CreateRectPC(float width, float length, float height)
+MeshPC MeshBuilder::CreateRectPC(float width, float length, float height)
 {
 	MeshPC mesh;
 
@@ -322,7 +322,7 @@ MeshPC Meshbuilder::CreateRectPC(float width, float length, float height)
 	return mesh;
 }
 
-MeshPC Meshbuilder::CreatePlanePC(int numRows, int numCols, float spacing)
+MeshPC MeshBuilder::CreatePlanePC(int numRows, int numCols, float spacing)
 {
 	MeshPC mesh;
 	int index = rand() % 10;
@@ -349,7 +349,7 @@ MeshPC Meshbuilder::CreatePlanePC(int numRows, int numCols, float spacing)
 	return mesh;
 }
 
-MeshPX Meshbuilder::CreatePlanePX(int numRows, int numCols, float spacing)
+MeshPX MeshBuilder::CreatePlanePX(int numRows, int numCols, float spacing)
 {
 	MeshPX mesh;
 
@@ -382,7 +382,7 @@ MeshPX Meshbuilder::CreatePlanePX(int numRows, int numCols, float spacing)
 	return mesh;
 }
 
-Mesh Meshbuilder::CreateGroundPlane(int numRows, int numCols, float spacing)
+Mesh MeshBuilder::CreateGroundPlane(int numRows, int numCols, float spacing)
 {
 	Mesh mesh;
 
@@ -415,7 +415,7 @@ Mesh Meshbuilder::CreateGroundPlane(int numRows, int numCols, float spacing)
 	return mesh;
 }
 
-MeshPC Meshbuilder::CreateCylinderPC(int slices, int rings)
+MeshPC MeshBuilder::CreateCylinderPC(int slices, int rings)
 {
 	MeshPC mesh;
 
@@ -451,7 +451,7 @@ MeshPC Meshbuilder::CreateCylinderPC(int slices, int rings)
 
 }
 
-MeshPC Meshbuilder::CreateSpherePC(int slices, int rings, float radius)
+MeshPC MeshBuilder::CreateSpherePC(int slices, int rings, float radius)
 {
 	MeshPC mesh;
 
@@ -482,7 +482,7 @@ MeshPC Meshbuilder::CreateSpherePC(int slices, int rings, float radius)
 	return mesh;
 }
 
-MeshPX Meshbuilder::CreateSpherePX(int slices, int rings, float radius)
+MeshPX MeshBuilder::CreateSpherePX(int slices, int rings, float radius)
 {
 	MeshPX mesh;
 
@@ -515,7 +515,7 @@ MeshPX Meshbuilder::CreateSpherePX(int slices, int rings, float radius)
 	return mesh;
 }
 
-Mesh Meshbuilder::CreateSphere(int slices, int rings, float radius)
+Mesh MeshBuilder::CreateSphere(int slices, int rings, float radius)
 {
 	Mesh mesh;
 
@@ -552,7 +552,7 @@ Mesh Meshbuilder::CreateSphere(int slices, int rings, float radius)
 	return mesh;
 }
 
-MeshPX KwurkEngine::Graphics::Meshbuilder::CreateScreenQuad()
+MeshPX MeshBuilder::CreateScreenQuad()
 {
 	MeshPX mesh;
 	mesh.vertices.push_back({ {-1.0f, -1.0f, 0.0f}, {0.0f, 1.0f} });
@@ -561,6 +561,26 @@ MeshPX KwurkEngine::Graphics::Meshbuilder::CreateScreenQuad()
 	mesh.vertices.push_back({ {1.0f, -1.0f, 0.0f}, {1.0f, 1.0f} });
 	mesh.indices = { 0,1, 2, 0, 2, 3 };
 
+
+	return mesh;
+}
+
+MeshPX MeshBuilder::CreateSpriteQuad(float width, float height)
+{
+	MeshPX mesh;
+
+	const float hw = width * 0.5f;
+	const float hh = height * 0.5f;
+
+	mesh.vertices.push_back({ {-hw, -hh, 0.0f}, {0.0f, 1.0f} });
+	mesh.vertices.push_back({ {-hw,  hh, 0.0f}, {0.0f, 0.0f} });
+	mesh.vertices.push_back({ { hw,  hh, 0.0f}, {1.0f, 0.0f} });
+	mesh.vertices.push_back({ { hw, -hh, 0.0f}, {1.0f, 1.0f} });
+
+	mesh.indices = {
+		0, 1, 2,
+		0, 2, 3
+	};
 
 	return mesh;
 }

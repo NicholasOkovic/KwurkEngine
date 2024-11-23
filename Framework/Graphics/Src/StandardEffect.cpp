@@ -64,6 +64,8 @@ void StandardEffect::Render(const RenderObject& renderObject)
 	settingsData.useSpecMap = mSettingsData.useSpecMap > 0 && renderObject.specMapId > 0;
 	settingsData.useBumpMap = mSettingsData.useBumpMap > 0 && renderObject.bumpMapId > 0;
 	settingsData.bumpWeight = mSettingsData.bumpWeight;
+	settingsData.useShadowMap = mSettingsData.useShadowMap > 0 && mShadowMap != nullptr;
+	settingsData.depthBias = mSettingsData.depthBias;
 
 	const Math::Matrix4 matWorld = renderObject.transform.GetMatrix4();
 	const Math::Matrix4 matView = mCamera->GetViewMatrix();

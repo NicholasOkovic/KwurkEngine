@@ -1,4 +1,6 @@
 ﻿  GameState.cpp
 D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\15_HelloTerrain\GameState.cpp(59,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\15_HelloTerrain\GameState.cpp(59,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+  WinMain.cpp
+  Generating Code...
   15_HelloTerrain.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\15_HelloTerrain.exe

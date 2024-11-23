@@ -11,7 +11,7 @@ namespace KwurkEngine::Graphics
 	class Camera;
 	class RenderObject;
 	class RenderGroup;
-
+	class Texture;
 
 
 	class StandardEffect final
@@ -27,7 +27,9 @@ namespace KwurkEngine::Graphics
 		void Render(const RenderGroup& renderGroup);
 
 		void SetCamera(const Camera& camera);
+		void SetLightCamera(const Camera& camera);
 		void SetDirectionalLight(const DirectionalLight& directionalLight);
+		void SetShadowMap(const Texture& shadowMap);
 
 		void DebugUI();
 
@@ -35,10 +37,10 @@ namespace KwurkEngine::Graphics
 		struct TransformData
 		{
 			Math::Matrix4 wvp;
+			Math::Matrix4 lwvp;
 			Math::Matrix4 world;
 			Math::Vector3 viewPosition;
 			float padding = 0.0f;
-
 		};
 		
 		struct SettingsData
@@ -47,8 +49,10 @@ namespace KwurkEngine::Graphics
 			int useNormalMap = 1;
 			int useSpecMap = 1;
 			int useBumpMap = 1;
+			int useShadowMap = 1;
 			float bumpWeight = 0.1f;
-			float padding[3] = { 0.0f };
+			float depthBias = 0.000003f;
+			float padding = 0.0f;
 		};
 
 		using TransformBuffer = TypedConstantBuffer<TransformData>;
@@ -67,7 +71,9 @@ namespace KwurkEngine::Graphics
 
 		SettingsData mSettingsData;
 		const Camera* mCamera = nullptr;
+		const Camera* mLightCamera = nullptr;
 		const DirectionalLight* mDirectionalLight = nullptr;
+		const Texture* mShadowMap = nullptr;
 	};
 	
 }

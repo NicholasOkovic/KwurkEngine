@@ -1,8 +1,2 @@
-﻿  Terrain.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Terrain.cpp(71,30): warning C4018: '>=': signed/unsigned mismatch
-  (compiling source file '/Src/Terrain.cpp')
-  
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Terrain.cpp(71,51): warning C4018: '>=': signed/unsigned mismatch
-  (compiling source file '/Src/Terrain.cpp')
-  
+﻿  StandardEffect.cpp
   Graphics.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\Graphics.lib

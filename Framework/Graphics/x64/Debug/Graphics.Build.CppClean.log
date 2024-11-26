@@ -1,20 +1,58 @@
-c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\graphics.pch
-c:\users\lcv2242596\documents\github\kwurkengine\x64\debug\graphics.pdb
-c:\users\lcv2242596\documents\github\kwurkengine\x64\debug\graphics.idb
-c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\precompiled.obj
-c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\vertexshader.obj
-c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\texture.obj
-c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\simpledraw.obj
-c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\sampler.obj
-c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\rendertarget.obj
-c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\pixelshader.obj
-c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\meshbuilder.obj
-c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\meshbuffer.obj
-c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\graphicssystem.obj
-c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\debugui.obj
-c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\constantbuffer.obj
-c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\camera.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\graphics.pch
+d:\lasalleprojects\3d graphics programming\kwurkengine\x64\debug\graphics.pdb
+d:\lasalleprojects\3d graphics programming\kwurkengine\x64\debug\graphics.idb
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\precompiled.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\vertexshader.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\texture.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\sampler.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\rendertarget.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\renderobject.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\pixelshader.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\meshbuilder.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\meshbuffer.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\graphicssystem.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\debugui.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\camera.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\blendstate.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\texturecache.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\simpledraw.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\constantbuffer.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\standardeffect.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\modelio.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\modelcache.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\postprocessingeffect.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\gaussianblureffect.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\terrain.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\terraineffect.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\shadoweffect.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\framework\graphics\x64\debug\billboardeffect.obj
+d:\lasalleprojects\3d graphics programming\kwurkengine\x64\debug\graphics.lib
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\billboardeffect.obj
 c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\blendstate.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\camera.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\constantbuffer.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\debugui.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\gaussianblureffect.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\graphicssystem.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\meshbuffer.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\meshbuilder.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\modelcache.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\modelio.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\pixelshader.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\postprocessingeffect.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\precompiled.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\renderobject.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\rendertarget.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\sampler.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\shadoweffect.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\simpledraw.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\standardeffect.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\terrain.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\terraineffect.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\texture.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\texturecache.obj
+c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\vertexshader.obj
+c:\users\lcv2242596\documents\github\kwurkengine\x64\debug\graphics.pdb
 c:\users\lcv2242596\documents\github\kwurkengine\x64\debug\graphics.lib
 c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\graphics.tlog\cl.command.1.tlog
 c:\users\lcv2242596\documents\github\kwurkengine\framework\graphics\x64\debug\graphics.tlog\cl.items.tlog

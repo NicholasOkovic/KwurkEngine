@@ -38,17 +38,17 @@
     vs_2_0
     dcl_texcoord v0  // vin<0,1,2,3>
 
-#line 40 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
+#line 40 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
     dp4 oPos.z, v0, c4  // ::VSBasicNoFog<6>
     dp4 r0.x, v0, c2  // ::vout<0>
     dp4 r0.y, v0, c3  // ::vout<1>
     dp4 r0.z, v0, c5  // ::vout<3>
 
-#line 52 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\BasicEffect.fx"
+#line 52 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\BasicEffect.fx"
     mad oPos.xy, r0.z, c0, r0  // ::VSBasicNoFog<4,5>
     mov oPos.w, r0.z  // ::VSBasicNoFog<7>
 
-#line 41 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
+#line 41 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
     mov oT0, c1  // ::VSBasicNoFog<0,1,2,3>
 
 // approximately 7 instruction slots used
@@ -68,10 +68,10 @@ ret
 
 const BYTE BasicEffect_VSBasicNoFog[] =
 {
-     68,  88,  66,  67,  57, 135, 
-     34, 184, 233, 190, 177,  26, 
-     51,   8, 106,  66,  12,  20, 
-    254, 125,   1,   0,   0,   0, 
+     68,  88,  66,  67, 163,  70, 
+     44,   6,  63,  77,  26, 160, 
+    149, 250, 155, 211, 134,  16, 
+     52,   2,   1,   0,   0,   0, 
      76,   5,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     224,   3,   0,   0, 196,   4, 
@@ -98,7 +98,7 @@ const BYTE BasicEffect_VSBasicNoFog[] =
       0,   0, 124,   2,   0,   0, 
      44,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
-     92, 108,  99, 118,  50,  50, 
+     92,  76,  67,  86,  50,  50, 
      52,  50,  53,  57,  54,  92, 
      68, 111,  99, 117, 109, 101, 
     110, 116, 115,  92,  71, 105, 
@@ -113,7 +113,7 @@ const BYTE BasicEffect_VSBasicNoFog[] =
      67, 111, 109, 109, 111, 110, 
      46, 102, 120, 104,   0,  67, 
      58,  92,  85, 115, 101, 114, 
-    115,  92, 108,  99, 118,  50, 
+    115,  92,  76,  67,  86,  50, 
      50,  52,  50,  53,  57,  54, 
      92,  68, 111,  99, 117, 109, 
     101, 110, 116, 115,  92,  71, 

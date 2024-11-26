@@ -1,4 +1,1 @@
-﻿  GameState.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\17_HelloBillboard\GameState.cpp(56,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\17_HelloBillboard\GameState.cpp(56,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-  17_HelloBillboard.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\17_HelloBillboard.exe
+﻿  17_HelloBillboard.vcxproj -> C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\x64\Debug\17_HelloBillboard.exe

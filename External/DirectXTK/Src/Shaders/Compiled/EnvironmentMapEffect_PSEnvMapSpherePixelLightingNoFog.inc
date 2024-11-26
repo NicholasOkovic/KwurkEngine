@@ -46,7 +46,7 @@
     dcl_2d s0
     dcl_2d s1
 
-#line 121 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\EnvironmentMapEffect.fx"
+#line 121 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\EnvironmentMapEffect.fx"
     add r0.xyz, -t1, c10
     nrm r1.xyz, r0  // ::eyeVector<0,1,2>
     nrm r0.xyz, t2  // ::worldNormal<0,1,2>
@@ -70,7 +70,7 @@
 #line 119
     texld r2, t0, s0
 
-#line 33 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Lighting.fxh"
+#line 33 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Lighting.fxh"
     dp3 r3.x, -c4, r0  // ::dotL<0>
     dp3 r3.y, -c5, r0  // ::dotL<1>
     dp3 r3.z, -c6, r0  // ::dotL<2>
@@ -86,7 +86,7 @@
     mov r3.xyz, c2  // Parameters::DiffuseColor<0,1,2>
     mad r0.xyz, r0, r3, c3  // ::result<0,1,2>
 
-#line 119 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\EnvironmentMapEffect.fx"
+#line 119 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\EnvironmentMapEffect.fx"
     mul r2, r2, t3  // ::color<0,1,2,3>
 
 #line 126
@@ -158,10 +158,10 @@ ret
 
 const BYTE EnvironmentMapEffect_PSEnvMapSpherePixelLightingNoFog[] =
 {
-     68,  88,  66,  67,  40,  67, 
-     69, 101, 216,  34, 174, 103, 
-     56, 151,  88,  62,  65,  78, 
-     90, 119,   1,   0,   0,   0, 
+     68,  88,  66,  67, 139,  13, 
+    228, 255,  61, 197,  14, 139, 
+      0, 185,   0, 198, 222,  68, 
+     76,  36,   1,   0,   0,   0, 
      32,  15,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
      60,   9,   0,   0, 108,  14, 
@@ -186,8 +186,8 @@ const BYTE EnvironmentMapEffect_PSEnvMapSpherePixelLightingNoFog[] =
       0,   0,  14,   0,   0,   0, 
     216,   4,   0,   0, 124,   2, 
       0,   0,  67,  58,  92,  85, 
-    115, 101, 114, 115,  92, 108, 
-     99, 118,  50,  50,  52,  50, 
+    115, 101, 114, 115,  92,  76, 
+     67,  86,  50,  50,  52,  50, 
      53,  57,  54,  92,  68, 111, 
      99, 117, 109, 101, 110, 116, 
     115,  92,  71, 105, 116,  72, 
@@ -204,7 +204,7 @@ const BYTE EnvironmentMapEffect_PSEnvMapSpherePixelLightingNoFog[] =
      69, 102, 102, 101,  99, 116, 
      46, 102, 120,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
-     92, 108,  99, 118,  50,  50, 
+     92,  76,  67,  86,  50,  50, 
      52,  50,  53,  57,  54,  92, 
      68, 111,  99, 117, 109, 101, 
     110, 116, 115,  92,  71, 105, 

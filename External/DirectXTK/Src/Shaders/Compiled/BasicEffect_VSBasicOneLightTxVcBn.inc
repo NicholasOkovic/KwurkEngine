@@ -51,7 +51,7 @@
     dcl_texcoord2 v2  // vin<7,8>
     dcl_texcoord3 v3  // vin<9,10,11,12>
 
-#line 54 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Lighting.fxh"
+#line 54 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Lighting.fxh"
     dp4 r0.x, v0, c9  // ::pos_ws<0>
     dp4 r0.y, v0, c10  // ::pos_ws<1>
     dp4 r0.z, v0, c11  // ::pos_ws<2>
@@ -62,10 +62,10 @@
     add r0.xyz, r1, -c4
     nrm r1.xyz, r0  // ::halfVectors<0,1,2>
 
-#line 11 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Utilities.fxh"
+#line 11 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Utilities.fxh"
     mad r0.xyz, v1, c19.x, c19.y  // ::BiasX2<0,1,2>
 
-#line 56 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Lighting.fxh"
+#line 56 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Lighting.fxh"
     dp3 r2.x, r0, c12
     dp3 r2.y, r0, c13
     dp3 r2.z, r0, c14
@@ -90,10 +90,10 @@
     mov r2.xyz, c1  // Parameters::DiffuseColor<0,1,2>
     mad r1.xyz, r1, r2, c2  // ::result<0,1,2>
 
-#line 363 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\BasicEffect.fx"
+#line 363 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\BasicEffect.fx"
     mul oT0.xyz, r1, v3  // ::VSBasicOneLightTxVcBn<0,1,2>
 
-#line 39 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Lighting.fxh"
+#line 39 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Lighting.fxh"
     pow r1.x, r0.y, c3.w
     mul r0.x, r0.x, r1.x  // ::specular<0>
 
@@ -104,20 +104,20 @@
 #line 60
     dp4 oPos.z, v0, c17  // ::VSBasicOneLightTxVcBn<12>
 
-#line 11 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
+#line 11 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
     dp4 r0.x, v0, c8
     max r0.x, r0.x, c19.z
     min oT1.w, r0.x, c19.w  // ::VSBasicOneLightTxVcBn<7>
 
-#line 363 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\BasicEffect.fx"
+#line 363 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\BasicEffect.fx"
     mul oT0.w, v3.w, c1.w  // ::VSBasicOneLightTxVcBn<3>
 
-#line 60 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Lighting.fxh"
+#line 60 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Lighting.fxh"
     dp4 r0.x, v0, c15  // ::vout<0>
     dp4 r0.y, v0, c16  // ::vout<1>
     dp4 r0.z, v0, c18  // ::vout<3>
 
-#line 353 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\BasicEffect.fx"
+#line 353 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\BasicEffect.fx"
     mad oPos.xy, r0.z, c0, r0  // ::VSBasicOneLightTxVcBn<10,11>
     mov oPos.w, r0.z  // ::VSBasicOneLightTxVcBn<13>
 
@@ -182,10 +182,10 @@ ret
 
 const BYTE BasicEffect_VSBasicOneLightTxVcBn[] =
 {
-     68,  88,  66,  67, 215, 227, 
-    194,   8, 109, 155, 229, 133, 
-     69,  50, 251,  68,  52, 105, 
-    145,  46,   1,   0,   0,   0, 
+     68,  88,  66,  67,  37,  17, 
+    255,  77, 153, 118,  55, 187, 
+    247, 133, 165, 220,  87, 131, 
+     66, 182,   1,   0,   0,   0, 
     120,  17,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
       8,  11,   0,   0,  88,  16, 
@@ -220,7 +220,7 @@ const BYTE BasicEffect_VSBasicOneLightTxVcBn[] =
       0,   0, 112,   6,   0,   0, 
      88,   3,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
-     92, 108,  99, 118,  50,  50, 
+     92,  76,  67,  86,  50,  50, 
      52,  50,  53,  57,  54,  92, 
      68, 111,  99, 117, 109, 101, 
     110, 116, 115,  92,  71, 105, 
@@ -235,8 +235,8 @@ const BYTE BasicEffect_VSBasicOneLightTxVcBn[] =
      76, 105, 103, 104, 116, 105, 
     110, 103,  46, 102, 120, 104, 
       0,  67,  58,  92,  85, 115, 
-    101, 114, 115,  92, 108,  99, 
-    118,  50,  50,  52,  50,  53, 
+    101, 114, 115,  92,  76,  67, 
+     86,  50,  50,  52,  50,  53, 
      57,  54,  92,  68, 111,  99, 
     117, 109, 101, 110, 116, 115, 
      92,  71, 105, 116,  72, 117, 
@@ -251,7 +251,7 @@ const BYTE BasicEffect_VSBasicOneLightTxVcBn[] =
     108, 105, 116, 105, 101, 115, 
      46, 102, 120, 104,   0,  67, 
      58,  92,  85, 115, 101, 114, 
-    115,  92, 108,  99, 118,  50, 
+    115,  92,  76,  67,  86,  50, 
      50,  52,  50,  53,  57,  54, 
      92,  68, 111,  99, 117, 109, 
     101, 110, 116, 115,  92,  71, 
@@ -267,7 +267,7 @@ const BYTE BasicEffect_VSBasicOneLightTxVcBn[] =
      69, 102, 102, 101,  99, 116, 
      46, 102, 120,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
-     92, 108,  99, 118,  50,  50, 
+     92,  76,  67,  86,  50,  50, 
      52,  50,  53,  57,  54,  92, 
      68, 111,  99, 117, 109, 101, 
     110, 116, 115,  92,  71, 105, 

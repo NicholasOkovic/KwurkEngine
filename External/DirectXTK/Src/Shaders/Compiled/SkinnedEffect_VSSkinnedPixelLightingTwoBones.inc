@@ -49,7 +49,7 @@
     dcl_texcoord3 v3  // vin<9,10,11,12>
     dcl_texcoord4 v4  // vin<13,14,15,16>
 
-#line 15 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Skinning.fxh"
+#line 15 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Skinning.fxh"
     mul r0.xy, v3, c243.x
     mova a0.xy, r0.yxzw
     mul r0, v4.y, c26[a0.x]
@@ -71,7 +71,7 @@
     dp4 r1.z, v0, r3  // Skin::vin<2>
     dp3 r0.z, v1, r3  // ::Skin<2>
 
-#line 82 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Lighting.fxh"
+#line 82 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Lighting.fxh"
     mov r1.w, v0.w
     dp4 oPos.z, r1, c24  // ::VSSkinnedPixelLightingTwoBones<15>
     dp4 oT1.x, r1, c15  // ::VSSkinnedPixelLightingTwoBones<2>
@@ -84,17 +84,17 @@
     rsq r0.x, r0.x
     mul oT2.xyz, r0.x, r2  // ::VSSkinnedPixelLightingTwoBones<6,7,8>
 
-#line 11 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
+#line 11 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
     dp4 r0.x, r1, c14
     max r0.x, r0.x, c243.y
     min oT1.w, r0.x, c243.z  // ::VSSkinnedPixelLightingTwoBones<5>
 
-#line 82 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Lighting.fxh"
+#line 82 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Lighting.fxh"
     dp4 r0.x, r1, c22  // ::vout<0>
     dp4 r0.y, r1, c23  // ::vout<1>
     dp4 r0.z, r1, c25  // ::vout<3>
 
-#line 268 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\SkinnedEffect.fx"
+#line 268 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\SkinnedEffect.fx"
     mad oPos.xy, r0.z, c242, r0  // ::VSSkinnedPixelLightingTwoBones<13,14>
     mov oPos.w, r0.z  // ::VSSkinnedPixelLightingTwoBones<16>
 
@@ -156,10 +156,10 @@ ret
 
 const BYTE SkinnedEffect_VSSkinnedPixelLightingTwoBones[] =
 {
-     68,  88,  66,  67, 150,  62, 
-    205, 116, 252, 214,  89, 208, 
-    198, 237,  74, 101,  28, 241, 
-    159,  83,   1,   0,   0,   0, 
+     68,  88,  66,  67, 254,  86, 
+    190,  38, 243,   2,  47,  31, 
+     36, 164, 124, 141,  87, 170, 
+    180, 197,   1,   0,   0,   0, 
     204,  15,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     216,   9,   0,   0, 104,  14, 
@@ -184,7 +184,7 @@ const BYTE SkinnedEffect_VSSkinnedPixelLightingTwoBones[] =
       0,   0,  20,   6,   0,   0, 
      60,   3,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
-     92, 108,  99, 118,  50,  50, 
+     92,  76,  67,  86,  50,  50, 
      52,  50,  53,  57,  54,  92, 
      68, 111,  99, 117, 109, 101, 
     110, 116, 115,  92,  71, 105, 
@@ -199,8 +199,8 @@ const BYTE SkinnedEffect_VSSkinnedPixelLightingTwoBones[] =
      83, 107, 105, 110, 110, 105, 
     110, 103,  46, 102, 120, 104, 
       0,  67,  58,  92,  85, 115, 
-    101, 114, 115,  92, 108,  99, 
-    118,  50,  50,  52,  50,  53, 
+    101, 114, 115,  92,  76,  67, 
+     86,  50,  50,  52,  50,  53, 
      57,  54,  92,  68, 111,  99, 
     117, 109, 101, 110, 116, 115, 
      92,  71, 105, 116,  72, 117, 
@@ -215,7 +215,7 @@ const BYTE SkinnedEffect_VSSkinnedPixelLightingTwoBones[] =
     104, 116, 105, 110, 103,  46, 
     102, 120, 104,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
-     92, 108,  99, 118,  50,  50, 
+     92,  76,  67,  86,  50,  50, 
      52,  50,  53,  57,  54,  92, 
      68, 111,  99, 117, 109, 101, 
     110, 116, 115,  92,  71, 105, 
@@ -230,7 +230,7 @@ const BYTE SkinnedEffect_VSSkinnedPixelLightingTwoBones[] =
      67, 111, 109, 109, 111, 110, 
      46, 102, 120, 104,   0,  67, 
      58,  92,  85, 115, 101, 114, 
-    115,  92, 108,  99, 118,  50, 
+    115,  92,  76,  67,  86,  50, 
      50,  52,  50,  53,  57,  54, 
      92,  68, 111,  99, 117, 109, 
     101, 110, 116, 115,  92,  71, 

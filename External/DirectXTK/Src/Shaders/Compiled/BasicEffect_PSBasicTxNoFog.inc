@@ -32,7 +32,7 @@
     dcl t1.xy  // pin<4,5>
     dcl_2d s0
 
-#line 521 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\BasicEffect.fx"
+#line 521 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\BasicEffect.fx"
     texld r0, t1, s0
     mul r0, r0, t0  // ::PSBasicTxNoFog<0,1,2,3>
     mov oC0, r0  // ::PSBasicTxNoFog<0,1,2,3>
@@ -53,10 +53,10 @@ ret
 
 const BYTE BasicEffect_PSBasicTxNoFog[] =
 {
-     68,  88,  66,  67, 167, 142, 
-      1, 144, 117,  94, 176,  60, 
-     24, 129,  68, 198, 167, 173, 
-    136, 198,   1,   0,   0,   0, 
+     68,  88,  66,  67,  57, 171, 
+    245, 210, 228, 186, 163,  89, 
+    241, 221,  29, 117, 147,  30, 
+    214, 122,   1,   0,   0,   0, 
     148,   3,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     116,   2,   0,   0,  16,   3, 
@@ -79,7 +79,7 @@ const BYTE BasicEffect_PSBasicTxNoFog[] =
       0,   0, 100,   1,   0,   0, 
     188,   0,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
-     92, 108,  99, 118,  50,  50, 
+     92,  76,  67,  86,  50,  50, 
      52,  50,  53,  57,  54,  92, 
      68, 111,  99, 117, 109, 101, 
     110, 116, 115,  92,  71, 105, 

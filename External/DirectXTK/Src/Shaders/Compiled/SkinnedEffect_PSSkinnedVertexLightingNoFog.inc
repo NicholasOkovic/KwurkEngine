@@ -34,11 +34,11 @@
     dcl t2.xy  // pin<8,9>
     dcl_2d s0
 
-#line 350 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\SkinnedEffect.fx"
+#line 350 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\SkinnedEffect.fx"
     texld r0, t2, s0
     mul r0, r0, t0  // ::color<0,1,2,3>
 
-#line 23 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
+#line 23 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
     mad r0.xyz, t1, r0.w, r0  // AddSpecular::color<0,1,2>
     mov oC0, r0  // ::PSSkinnedVertexLightingNoFog<0,1,2,3>
 
@@ -61,10 +61,10 @@ ret
 
 const BYTE SkinnedEffect_PSSkinnedVertexLightingNoFog[] =
 {
-     68,  88,  66,  67, 200, 178, 
-     33,  51, 133,  83, 183,  10, 
-    233, 207, 139, 212, 205, 151, 
-     43, 106,   1,   0,   0,   0, 
+     68,  88,  66,  67,  71,  38, 
+    255,  69, 182,  80, 197,  70, 
+     21,  95,  74, 162, 184, 226, 
+    255, 175,   1,   0,   0,   0, 
     244,   4,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     120,   3,   0,   0,  88,   4, 
@@ -87,7 +87,7 @@ const BYTE SkinnedEffect_PSSkinnedVertexLightingNoFog[] =
       0,   0,  32,   2,   0,   0, 
      44,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
-     92, 108,  99, 118,  50,  50, 
+     92,  76,  67,  86,  50,  50, 
      52,  50,  53,  57,  54,  92, 
      68, 111,  99, 117, 109, 101, 
     110, 116, 115,  92,  71, 105, 
@@ -103,7 +103,7 @@ const BYTE SkinnedEffect_PSSkinnedVertexLightingNoFog[] =
     100,  69, 102, 102, 101,  99, 
     116,  46, 102, 120,   0,  67, 
      58,  92,  85, 115, 101, 114, 
-    115,  92, 108,  99, 118,  50, 
+    115,  92,  76,  67,  86,  50, 
      50,  52,  50,  53,  57,  54, 
      92,  68, 111,  99, 117, 109, 
     101, 110, 116, 115,  92,  71, 

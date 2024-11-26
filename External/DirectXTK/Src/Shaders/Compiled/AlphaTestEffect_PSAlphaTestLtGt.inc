@@ -41,14 +41,14 @@
     dcl t2.xy  // pin<8,9>
     dcl_2d s0
 
-#line 86 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\AlphaTestEffect.fx"
+#line 86 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\AlphaTestEffect.fx"
     texld r0, t2, s0
     mad r1.w, r0.w, t0.w, -c0.x
     mul r0, r0, t0  // ::color<0,1,2,3>
     cmp r1, r1.w, c0.w, c0.z
     texkill r1
 
-#line 17 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
+#line 17 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
     mad r1.xyz, c1, r0.w, -r0
     mad r0.xyz, t1.w, r1, r0  // ApplyFog::color<0,1,2>
     mov oC0, r0  // ::PSAlphaTestLtGt<0,1,2,3>
@@ -78,10 +78,10 @@ ret
 
 const BYTE AlphaTestEffect_PSAlphaTestLtGt[] =
 {
-     68,  88,  66,  67, 187, 130, 
-     15,  25, 188, 236, 104,  57, 
-    220,   3,  25, 152,  14, 246, 
-     88, 166,   1,   0,   0,   0, 
+     68,  88,  66,  67, 144, 105, 
+    182, 237,  28, 143, 244,   5, 
+    182,  70, 235,  32, 235,  86, 
+    190, 204,   1,   0,   0,   0, 
       4,   6,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     216,   3,   0,   0, 104,   5, 
@@ -106,7 +106,7 @@ const BYTE AlphaTestEffect_PSAlphaTestLtGt[] =
       0,   0,  48,   2,   0,   0, 
      80,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
-     92, 108,  99, 118,  50,  50, 
+     92,  76,  67,  86,  50,  50, 
      52,  50,  53,  57,  54,  92, 
      68, 111,  99, 117, 109, 101, 
     110, 116, 115,  92,  71, 105, 
@@ -122,8 +122,8 @@ const BYTE AlphaTestEffect_PSAlphaTestLtGt[] =
     101, 115, 116,  69, 102, 102, 
     101,  99, 116,  46, 102, 120, 
       0,  67,  58,  92,  85, 115, 
-    101, 114, 115,  92, 108,  99, 
-    118,  50,  50,  52,  50,  53, 
+    101, 114, 115,  92,  76,  67, 
+     86,  50,  50,  52,  50,  53, 
      57,  54,  92,  68, 111,  99, 
     117, 109, 101, 110, 116, 115, 
      92,  71, 105, 116,  72, 117, 

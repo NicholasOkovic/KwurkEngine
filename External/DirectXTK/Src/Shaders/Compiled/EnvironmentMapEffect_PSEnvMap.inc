@@ -45,7 +45,7 @@
     dcl_2d s0
     dcl_cube s1
 
-#line 279 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\EnvironmentMapEffect.fx"
+#line 279 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\EnvironmentMapEffect.fx"
     texld r0, t3, s1
     texld r1, t2, s0
     mul r1, r1, t0  // ::color<0,1,2,3>
@@ -54,7 +54,7 @@
     mad r0.xyz, r0, r1.w, -r1
     mad r0.xyz, t1, r0, r1  // ::color<0,1,2>
 
-#line 17 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
+#line 17 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
     mad r2.xyz, c0, r1.w, -r0
     mad r1.xyz, t1.w, r2, r0  // ApplyFog::color<0,1,2>
     mov oC0, r1  // ::PSEnvMap<0,1,2,3>
@@ -86,10 +86,10 @@ ret
 
 const BYTE EnvironmentMapEffect_PSEnvMap[] =
 {
-     68,  88,  66,  67, 148, 184, 
-    204, 192,  94, 203,  76, 238, 
-    114,  12, 151, 184, 194, 127, 
-     24, 109,   1,   0,   0,   0, 
+     68,  88,  66,  67,  84, 104, 
+    219, 123, 249, 129, 242,  40, 
+     64,  40,  11, 192, 123,   8, 
+    137, 142,   1,   0,   0,   0, 
     176,   6,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
      72,   4,   0,   0, 252,   5, 
@@ -114,8 +114,8 @@ const BYTE EnvironmentMapEffect_PSEnvMap[] =
       0,   0,   4,   0,   0,   0, 
     124,   2,   0,   0, 100,   1, 
       0,   0,  67,  58,  92,  85, 
-    115, 101, 114, 115,  92, 108, 
-     99, 118,  50,  50,  52,  50, 
+    115, 101, 114, 115,  92,  76, 
+     67,  86,  50,  50,  52,  50, 
      53,  57,  54,  92,  68, 111, 
      99, 117, 109, 101, 110, 116, 
     115,  92,  71, 105, 116,  72, 
@@ -132,7 +132,7 @@ const BYTE EnvironmentMapEffect_PSEnvMap[] =
      69, 102, 102, 101,  99, 116, 
      46, 102, 120,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
-     92, 108,  99, 118,  50,  50, 
+     92,  76,  67,  86,  50,  50, 
      52,  50,  53,  57,  54,  92, 
      68, 111,  99, 117, 109, 101, 
     110, 116, 115,  92,  71, 105, 

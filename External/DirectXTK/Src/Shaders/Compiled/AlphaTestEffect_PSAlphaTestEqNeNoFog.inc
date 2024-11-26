@@ -39,7 +39,7 @@
     dcl t1.xy  // pin<4,5>
     dcl_2d s0
 
-#line 123 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\AlphaTestEffect.fx"
+#line 123 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\AlphaTestEffect.fx"
     texld r0, t1, s0
     mad r1.w, r0.w, t0.w, -c0.x
     mul r0, r0, t0  // ::color<0,1,2,3>
@@ -72,10 +72,10 @@ ret
 
 const BYTE AlphaTestEffect_PSAlphaTestEqNeNoFog[] =
 {
-     68,  88,  66,  67, 131,   3, 
-     13,  50, 190,  14, 185,  29, 
-    126,   8,  85, 255, 232, 229, 
-    192,  99,   1,   0,   0,   0, 
+     68,  88,  66,  67, 138,  80, 
+     23,  49, 175,  50, 120, 110, 
+     92, 230, 220, 116, 181, 210, 
+    185,  66,   1,   0,   0,   0, 
       4,   5,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
      28,   3,   0,   0, 128,   4, 
@@ -100,7 +100,7 @@ const BYTE AlphaTestEffect_PSAlphaTestEqNeNoFog[] =
       0,   0, 160,   1,   0,   0, 
     232,   0,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
-     92, 108,  99, 118,  50,  50, 
+     92,  76,  67,  86,  50,  50, 
      52,  50,  53,  57,  54,  92, 
      68, 111,  99, 117, 109, 101, 
     110, 116, 115,  92,  71, 105, 

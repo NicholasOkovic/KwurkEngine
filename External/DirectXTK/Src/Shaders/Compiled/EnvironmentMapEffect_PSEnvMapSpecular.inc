@@ -46,7 +46,7 @@
     dcl_2d s0
     dcl_cube s1
 
-#line 305 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\EnvironmentMapEffect.fx"
+#line 305 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\EnvironmentMapEffect.fx"
     texld r0, t3, s1
     texld r1, t2, s0
     mul r1, r1, t0  // ::color<0,1,2,3>
@@ -57,7 +57,7 @@
     mad r0.xyz, t1, r0, r1  // ::color<0,1,2>
     mad r0.xyz, c0, r0.w, r0  // ::color<0,1,2>
 
-#line 17 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
+#line 17 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\Common.fxh"
     mad r2.xyz, c1, r1.w, -r0
     mad r1.xyz, t1.w, r2, r0  // ApplyFog::color<0,1,2>
     mov oC0, r1  // ::PSEnvMapSpecular<0,1,2,3>
@@ -91,10 +91,10 @@ ret
 
 const BYTE EnvironmentMapEffect_PSEnvMapSpecular[] =
 {
-     68,  88,  66,  67, 127, 158, 
-    167,  94, 230, 182,  84, 136, 
-      9, 136, 157, 168, 119,  23, 
-    120,  41,   1,   0,   0,   0, 
+     68,  88,  66,  67, 244, 171, 
+    206, 170, 112, 140, 202, 111, 
+    222,  95, 208, 200, 139,  51, 
+    154,  91,   1,   0,   0,   0, 
     112,   7,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     196,   4,   0,   0, 188,   6, 
@@ -121,8 +121,8 @@ const BYTE EnvironmentMapEffect_PSEnvMapSpecular[] =
       0,   0,   5,   0,   0,   0, 
     180,   2,   0,   0, 116,   1, 
       0,   0,  67,  58,  92,  85, 
-    115, 101, 114, 115,  92, 108, 
-     99, 118,  50,  50,  52,  50, 
+    115, 101, 114, 115,  92,  76, 
+     67,  86,  50,  50,  52,  50, 
      53,  57,  54,  92,  68, 111, 
      99, 117, 109, 101, 110, 116, 
     115,  92,  71, 105, 116,  72, 
@@ -139,7 +139,7 @@ const BYTE EnvironmentMapEffect_PSEnvMapSpecular[] =
      69, 102, 102, 101,  99, 116, 
      46, 102, 120,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
-     92, 108,  99, 118,  50,  50, 
+     92,  76,  67,  86,  50,  50, 
      52,  50,  53,  57,  54,  92, 
      68, 111,  99, 117, 109, 101, 
     110, 116, 115,  92,  71, 105, 

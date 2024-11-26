@@ -53,7 +53,7 @@
     dcl t4.xyz  // pixel<16,17,18>
     dcl_2d s0
 
-#line 200 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\DGSLPhong.hlsl"
+#line 200 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\DGSLPhong.hlsl"
     texld r0, t1, s0
     mul r1.w, r0.w, t0.w  // ::local6<0>
 
@@ -209,10 +209,10 @@ ret
 
 const BYTE DGSLPhong_mainTxTk[] =
 {
-     68,  88,  66,  67, 172,  85, 
-    178, 136, 106, 202, 160, 190, 
-     20, 174, 147, 250, 173, 247, 
-     77, 216,   1,   0,   0,   0, 
+     68,  88,  66,  67, 198,  42, 
+    129,   8, 244,  57,  70,  18, 
+      3,  15, 174, 130, 240,   1, 
+    134, 242,   1,   0,   0,   0, 
      36,  18,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
      56,  10,   0,   0,   4,  17, 
@@ -247,7 +247,7 @@ const BYTE DGSLPhong_mainTxTk[] =
       0,   0,  32,   5,   0,   0, 
      92,   3,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
-     92, 108,  99, 118,  50,  50, 
+     92,  76,  67,  86,  50,  50, 
      52,  50,  53,  57,  54,  92, 
      68, 111,  99, 117, 109, 101, 
     110, 116, 115,  92,  71, 105, 

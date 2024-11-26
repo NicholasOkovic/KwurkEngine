@@ -89,13 +89,13 @@ void GameState::UpdateCamera(float deltaTime)
 void GameState::Render()
 {
 
-	mBillBoardEffect.Begin();
-	mBillBoardEffect.Render(mSprite);
-	mBillBoardEffect.End();
-
 	mStandardEffect.Begin();
 		mStandardEffect.Render(mGround);
 	mStandardEffect.End();
+
+	mBillBoardEffect.Begin();
+	mBillBoardEffect.Render(mSprite);
+	mBillBoardEffect.End();
 
 }
 

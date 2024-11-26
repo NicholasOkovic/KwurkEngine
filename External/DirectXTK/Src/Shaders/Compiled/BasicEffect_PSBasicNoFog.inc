@@ -22,7 +22,7 @@
     ps_2_0
     dcl t0  // pin<0,1,2,3>
 
-#line 503 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\BasicEffect.fx"
+#line 503 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\BasicEffect.fx"
     mov oC0, t0  // ::PSBasicNoFog<0,1,2,3>
 
 // approximately 1 instruction slot used
@@ -36,10 +36,10 @@ ret
 
 const BYTE BasicEffect_PSBasicNoFog[] =
 {
-     68,  88,  66,  67,  58, 132, 
-     52,  80, 198,  15, 255,   0, 
-     18,  72, 183, 235, 143, 196, 
-     19,  97,   1,   0,   0,   0, 
+     68,  88,  66,  67,  31, 148, 
+     40, 120,  44, 105,  24, 129, 
+     47, 200,  92, 253, 165, 138, 
+    141,  95,   1,   0,   0,   0, 
     128,   2,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     220,   1,   0,   0,  28,   2, 
@@ -61,7 +61,7 @@ const BYTE BasicEffect_PSBasicNoFog[] =
       2,   0,   0,   0,   8,   1, 
       0,   0, 156,   0,   0,   0, 
      67,  58,  92,  85, 115, 101, 
-    114, 115,  92, 108,  99, 118, 
+    114, 115,  92,  76,  67,  86, 
      50,  50,  52,  50,  53,  57, 
      54,  92,  68, 111,  99, 117, 
     109, 101, 110, 116, 115,  92, 

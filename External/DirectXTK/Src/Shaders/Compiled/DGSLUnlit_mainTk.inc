@@ -30,7 +30,7 @@
     def c0, -1, -0, 0, 0
     dcl t0  // pixel<4,5,6,7>
 
-#line 89 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\DGSLUnlit.hlsl"
+#line 89 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\DGSLUnlit.hlsl"
     mul r0.w, t0.w, t0.w
     cmp r0, -r0.w, c0.x, c0.y
     texkill r0
@@ -51,10 +51,10 @@ ret
 
 const BYTE DGSLUnlit_mainTk[] =
 {
-     68,  88,  66,  67, 243, 219, 
-    210, 194,  95, 135, 181, 170, 
-     69, 198, 213,  91,  33, 155, 
-    221,  21,   1,   0,   0,   0, 
+     68,  88,  66,  67,  22, 164, 
+    237,  48, 175,  48, 250, 173, 
+     39,  18,  16,  14,  28, 242, 
+     43,  60,   1,   0,   0,   0, 
     136,   4,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     248,   2,   0,   0, 104,   3, 
@@ -76,7 +76,7 @@ const BYTE DGSLUnlit_mainTk[] =
       2,   0,   0,   0, 212,   1, 
       0,   0, 196,   0,   0,   0, 
      67,  58,  92,  85, 115, 101, 
-    114, 115,  92, 108,  99, 118, 
+    114, 115,  92,  76,  67,  86, 
      50,  50,  52,  50,  53,  57, 
      54,  92,  68, 111,  99, 117, 
     109, 101, 110, 116, 115,  92, 

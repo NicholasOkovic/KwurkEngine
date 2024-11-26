@@ -32,7 +32,7 @@
     dcl t1.xy  // texCoord<0,1>
     dcl_2d s0
 
-#line 28 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\SpriteEffect.fx"
+#line 28 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\SpriteEffect.fx"
     texld r0, t1, s0
     mul r0, r0, t0  // ::SpritePixelShader<0,1,2,3>
     mov oC0, r0  // ::SpritePixelShader<0,1,2,3>
@@ -53,10 +53,10 @@ ret
 
 const BYTE SpriteEffect_SpritePixelShader[] =
 {
-     68,  88,  66,  67, 141, 186, 
-     58, 118, 136, 104, 220,  55, 
-    235, 136, 160, 250,  94, 122, 
-     48,  52,   1,   0,   0,   0, 
+     68,  88,  66,  67, 220, 159, 
+    236, 205,  15, 114, 223,  75, 
+    220, 244,  84, 206, 218,  41, 
+     32,  30,   1,   0,   0,   0, 
     136,   3,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     104,   2,   0,   0,   4,   3, 
@@ -79,7 +79,7 @@ const BYTE SpriteEffect_SpritePixelShader[] =
       0,   0,  68,   1,   0,   0, 
     188,   0,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
-     92, 108,  99, 118,  50,  50, 
+     92,  76,  67,  86,  50,  50, 
      52,  50,  53,  57,  54,  92, 
      68, 111,  99, 117, 109, 101, 
     110, 116, 115,  92,  71, 105, 

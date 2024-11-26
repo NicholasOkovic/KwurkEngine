@@ -8,7 +8,7 @@ using namespace KwurkEngine::Graphics;
 
 ConstantBuffer::~ConstantBuffer()
 {
-	ASSERT(mConstantBuffer = nullptr, "ConstantBuffer: terminate must be called");
+	ASSERT(mConstantBuffer == nullptr, "ConstantBuffer: terminate must be called");
 }
 
 void ConstantBuffer::Initialize(uint32_t bufferSize)

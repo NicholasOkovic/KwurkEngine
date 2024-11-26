@@ -38,7 +38,7 @@
     dcl_2d s0
     dcl_cube s1
 
-#line 293 "C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\EnvironmentMapEffect.fx"
+#line 293 "C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\src\Shaders\EnvironmentMapEffect.fx"
     texld r0, t3, s1
     texld r1, t2, s0
     mul r1, r1, t0  // ::color<0,1,2,3>
@@ -72,10 +72,10 @@ ret
 
 const BYTE EnvironmentMapEffect_PSEnvMapNoFog[] =
 {
-     68,  88,  66,  67,  48, 134, 
-    210,  40,  33,  98, 171,  17, 
-     60, 226, 237, 242, 153,  45, 
-     60, 101,   1,   0,   0,   0, 
+     68,  88,  66,  67,  22,  12, 
+    101, 189, 223, 251, 174, 151, 
+     56,  90, 129, 176, 103,  94, 
+    202, 134,   1,   0,   0,   0, 
     136,   5,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     128,   3,   0,   0, 212,   4, 
@@ -98,8 +98,8 @@ const BYTE EnvironmentMapEffect_PSEnvMapNoFog[] =
       0,   0,   3,   0,   0,   0, 
     252,   1,   0,   0, 244,   0, 
       0,   0,  67,  58,  92,  85, 
-    115, 101, 114, 115,  92, 108, 
-     99, 118,  50,  50,  52,  50, 
+    115, 101, 114, 115,  92,  76, 
+     67,  86,  50,  50,  52,  50, 
      53,  57,  54,  92,  68, 111, 
      99, 117, 109, 101, 110, 116, 
     115,  92,  71, 105, 116,  72, 

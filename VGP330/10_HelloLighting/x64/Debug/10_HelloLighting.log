@@ -1,7 +1,1 @@
-﻿  GameState.cpp
-  WinMain.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\10_HelloLighting\GameState.cpp(20,14): error C2653: 'Meshbuilder': is not a class or namespace name
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\10_HelloLighting\GameState.cpp(20,27): error C3861: 'CreateSphere': identifier not found
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\10_HelloLighting\GameState.cpp(60,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\10_HelloLighting\GameState.cpp(60,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-  Generating Code...
+﻿

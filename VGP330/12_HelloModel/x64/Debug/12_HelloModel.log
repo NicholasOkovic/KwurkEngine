@@ -1,6 +1,1 @@
-﻿  GameState.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\12_HelloModel\GameState.cpp(57,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\12_HelloModel\GameState.cpp(57,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\12_HelloModel\GameState.cpp(108,2): warning C4809: switch statement has redundant 'default' label; all possible 'case' labels are given
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\12_HelloModel\GameState.cpp(129,2): warning C4809: switch statement has redundant 'default' label; all possible 'case' labels are given
-  12_HelloModel.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\12_HelloModel.exe
+﻿

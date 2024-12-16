@@ -103,7 +103,6 @@ void StandardEffect::Render(const RenderObject& renderObject)
 void StandardEffect::Render(const RenderGroup& renderGroup)
 {
 	ASSERT(mCamera != nullptr, "standard effect: must have a camera");
-	ASSERT(mLightCamera != nullptr, "standard effect: must have a camera");
 
 	const Math::Matrix4 matWorld = renderGroup.transform.GetMatrix4();
 	const Math::Matrix4 matView = mCamera->GetViewMatrix();

@@ -22,6 +22,7 @@ void GameState::Initialize()
 	mStandardEffect.SetCamera(mCamera);
 	mStandardEffect.SetDirectionalLight(mDirectionalLight);
 
+
 	shaderfile = L"../../Assets/Shaders/PostProcessing.fx";
 	mPostProcessingEffect.Initialize(shaderfile);
 	mPostProcessingEffect.SetTexture(&mRenderTarget);

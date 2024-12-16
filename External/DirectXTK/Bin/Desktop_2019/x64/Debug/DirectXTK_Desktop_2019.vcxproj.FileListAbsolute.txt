@@ -1,2 +1,2 @@
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
 C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\External\DirectXTK\Bin\Desktop_2019\x64\Debug\DirectXTK.lib

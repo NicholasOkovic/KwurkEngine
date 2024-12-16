@@ -1,2 +1,5 @@
-﻿  StandardEffect.cpp
+﻿  ShadowEffect.cpp
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ShadowEffect.cpp(107,63): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '/Src/ShadowEffect.cpp')
+  
   Graphics.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\Graphics.lib

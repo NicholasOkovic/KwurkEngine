@@ -16,7 +16,14 @@ namespace KwurkEngine::Graphics
 	class ShadowEffect
 	{
 	public:
-		void Initialize();
+		enum class Type
+		{
+			None,
+			Stippling,
+			CrossHatching
+		};
+
+		void Initialize(const std::filesystem::path& path);
 		void Terminate();
 
 		void Begin();
@@ -30,6 +37,9 @@ namespace KwurkEngine::Graphics
 		void SetDirectionalLight(const DirectionalLight& directionalLight);
 		void SetFocus(const Math::Vector3& focusPoint);
 		void SetSize(float size);
+		void SetType(Type type);																////
+		void SetTexture(const Texture* texture, uint32_t slot = 0);
+
 		const Camera& GetLightCamera() const;
 		const Texture& GetDepthMap() const;
 
@@ -39,10 +49,17 @@ namespace KwurkEngine::Graphics
 		struct TransformData
 		{
 			Math::Matrix4 wvp;
+			int type;
+			float param0 = 0.0f;
+			float param1 = 0.0f;
+			float param2 = 0.0f;
 		};
 
 		using TransformBuffer = TypedConstantBuffer<TransformData>;
 		TransformBuffer mTransformBuffer;
+
+		Type mType;
+		std::array<const Texture*, 4> mTextures;
 
 		VertexShader mVertexShader;
 		PixelShader mPixelShader;

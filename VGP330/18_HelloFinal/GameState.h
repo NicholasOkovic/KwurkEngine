@@ -22,11 +22,11 @@ protected:
 	KwurkEngine::Graphics::ShadowEffect mShadowEffect;
 
 	KwurkEngine::Graphics::PostProcessingEffect mPostProcessingEffect;
-	//KwurkEngine::Graphics::RenderTarget mRenderTarget;
 
 	KwurkEngine::Graphics::RenderGroup mCharacter;
 	KwurkEngine::Graphics::RenderObject mGround;
-
+	KwurkEngine::Graphics::RenderObject mScreenQuad;
+	KwurkEngine::Graphics::RenderTarget mRenderTarget;
 };
 
 

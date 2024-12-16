@@ -23,7 +23,8 @@ namespace KwurkEngine::Graphics
 			Combine2,
 			MotionBlur,
 			ChromaticAberration,
-			Wave
+			Wave,
+			InkShader
 		};
 
 		void Initialize(const std::filesystem::path filePath);

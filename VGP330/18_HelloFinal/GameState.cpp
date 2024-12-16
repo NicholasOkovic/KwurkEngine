@@ -26,25 +26,37 @@ void GameState::Initialize()
 
 	shaderfile = L"../../Assets/Shaders/PostProcessing.fx";
 	mPostProcessingEffect.Initialize(shaderfile);
-	//mPostProcessingEffect.SetTexture(&groundMesh);
-	//mPostProcessingEffect.SetTexture(&mRenderTarget);
+	mPostProcessingEffect.SetMode(PostProcessingEffect::Mode::InkShader);		
 
+	MeshPX screenQuad = MeshBuilder::CreateScreenQuad();
+	mScreenQuad.meshBuffer.Initialize(screenQuad);
+	mPostProcessingEffect.SetTexture(&mRenderTarget);
 
-	mShadowEffect.Initialize();
+	shaderfile = L"../../Assets/Shaders/Shadow.fx";
+	mShadowEffect.Initialize(shaderfile);
 	mShadowEffect.SetDirectionalLight(mDirectionalLight);
+	mShadowEffect.SetType(ShadowEffect::Type::CrossHatching);
+
 
 	mCharacter.Initialize(L"../../Assets/Models/Paladin/PaladinJNordstrom.model");
 
 	Mesh groundMesh = MeshBuilder::CreateGroundPlane(10, 10, 1.0f);
 	mGround.meshBuffer.Initialize(groundMesh);
 	mGround.diffuseMapId = TextureCache::Get()->LoadTexture("misc/concrete.jpg");
+
+	GraphicsSystem* gs = GraphicsSystem::Get();
+	const uint32_t screenWidth = gs->GetBackBufferWidth();
+	const uint32_t screenHeight = gs->GetBackBufferHeight();
+	mRenderTarget.Initialize(screenWidth, screenHeight, Texture::Format::RGBA_U8);
 }
 
 void GameState::Terminate()
 {
+	mRenderTarget.Terminate();
 	mGround.Terminate();
 	mCharacter.Terminate();
 	mShadowEffect.Terminate();
+	mScreenQuad.Terminate();
 	mPostProcessingEffect.Terminate();
 	mStandardEffect.Terminate();
 }
@@ -99,13 +111,15 @@ void GameState::Render()
 	mShadowEffect.Render(mCharacter);
 	mShadowEffect.End();
 
+	mRenderTarget.BeginRender();
 	mStandardEffect.Begin();
-		mStandardEffect.Render(mCharacter);
-		mStandardEffect.Render(mGround);
+	mStandardEffect.Render(mCharacter);
+	mStandardEffect.Render(mGround);
 	mStandardEffect.End();
+	mRenderTarget.EndRender();
 
 	mPostProcessingEffect.Begin();
-		mPostProcessingEffect.Render(mGround);	//character is group for some reason
+	mPostProcessingEffect.Render(mScreenQuad);
 	mPostProcessingEffect.End();
 
 }

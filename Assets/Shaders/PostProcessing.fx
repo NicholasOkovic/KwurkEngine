@@ -119,6 +119,11 @@ float4 PS(VS_OUTPUT input) : SV_Target
         texCoord.y += sin(waveValue) * param0;
         finalColor = textureMap0.Sample(textureSampler, texCoord);
     }
+    else if (mode == 9)
+    {
+        float4 color = textureMap0.Sample(textureSampler, input.texCoord);
+        finalColor = (color.r + color.g + color.b) / 3;
+    }
     
         return finalColor;
 }

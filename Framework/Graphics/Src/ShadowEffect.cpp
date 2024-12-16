@@ -7,11 +7,18 @@
 using namespace KwurkEngine;
 using namespace KwurkEngine::Graphics;
 
-void ShadowEffect::Initialize()
+const char* sTypeNames[] =
 {
-	std::filesystem::path shaderFile = L"../../Assets/Shaders/Shadow.fx";
-	mVertexShader.Initialize<Vertex>(shaderFile);
-	mPixelShader.Initialize(shaderFile);
+	"None",
+	"Stippling",
+	"CrossHatching"
+};
+
+void ShadowEffect::Initialize(const std::filesystem::path& path)
+{
+
+	mVertexShader.Initialize<Vertex>(path);
+	mPixelShader.Initialize(path);
 	mTransformBuffer.Initialize();
 	mLightCamera.SetMode(Camera::ProjectionMode::Orthographic);
 	mLightCamera.SetNearPlane(1.0f);
@@ -32,11 +39,13 @@ void ShadowEffect::Terminate()
 void ShadowEffect::Begin()
 {
 	UpdateLightCamera();
-
 	mVertexShader.Bind();
 	mPixelShader.Bind();
-	mTransformBuffer.BindVS(0);
+	TransformData data;
 
+	mTransformBuffer.Update(data);
+	mTransformBuffer.BindVS(0);
+	
 	mDepthMapRenderTarget.BeginRender();
 }
 
@@ -53,6 +62,9 @@ void ShadowEffect::Render(const RenderObject& renderObject)
 
 	TransformData data;
 	data.wvp = Math::Transpose(matWorld * matView * matProj);
+
+	data.type = static_cast<int>(mType);
+
 	mTransformBuffer.Update(data);
 	renderObject.meshBuffer.Render();
 }
@@ -65,6 +77,9 @@ void ShadowEffect::Render(const RenderGroup& renderGroup)
 
 	TransformData data;
 	data.wvp = Math::Transpose(matWorld * matView * matProj);
+
+	data.type = static_cast<int>(mType);
+
 	mTransformBuffer.Update(data);
 	for (const RenderObject& renderObject : renderGroup.renderObjects)
 	{
@@ -76,6 +91,7 @@ void ShadowEffect::DebugUI()
 {
 	if (ImGui::CollapsingHeader("ShadowEffect", ImGuiTreeNodeFlags_DefaultOpen))
 	{
+
 		ImGui::Text("DepthMap");
 		ImGui::Image(
 			mDepthMapRenderTarget.GetRawData(),
@@ -85,6 +101,14 @@ void ShadowEffect::DebugUI()
 			{ 1, 1, 1 ,1 },
 			{ 1, 1, 1 ,1 });
 		ImGui::DragFloat("Size##Shadow", &mSize, 1.0f, 1.0f, 1000.0f);
+
+		////////create space
+		int currentType = static_cast<int>(mType);
+		if (ImGui::Combo("Type", &currentType, sTypeNames, std::size(sTypeNames)))
+		{
+			mType = static_cast<Type>(currentType);
+		}
+
 	}
 }
 
@@ -101,6 +125,17 @@ void ShadowEffect::SetFocus(const Math::Vector3& focusPoint)
 void ShadowEffect::SetSize(float size)
 {
 	mSize = size;
+}
+
+void ShadowEffect::SetType(Type type)
+{
+	mType = type;
+}
+
+void ShadowEffect::SetTexture(const Texture* texture, uint32_t slot)
+{
+	ASSERT(slot < mTextures.size(), "ShadowEffect: invalid slot index");
+	mTextures[slot] = texture;
 }
 
 const Camera& ShadowEffect::GetLightCamera() const
@@ -120,4 +155,5 @@ void ShadowEffect::UpdateLightCamera()
 	mLightCamera.SetDirection(direction);
 	mLightCamera.SetPosition(mFocusPoint - (direction * 1000.0f));
 	mLightCamera.SetSize(mSize, mSize);
+
 }

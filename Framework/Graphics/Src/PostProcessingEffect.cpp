@@ -21,7 +21,8 @@ namespace
 		"Combine2",
 		"MotionBlur",
 		"ChromaticAberration",
-		"Wave"
+		"Wave",
+		"InkShader"
 	};
 }
 
@@ -153,5 +154,6 @@ void PostProcessingEffect::DebugUI()
 			ImGui::DragFloat("WaveLength", &mWaveLength, 0.001f, 0.0f, 1.0f);
 			ImGui::DragFloat("NumWaves", &mNumWaves, 1.0f, 0.0f, 1000.0f);
 		}
+		
 	}
 }

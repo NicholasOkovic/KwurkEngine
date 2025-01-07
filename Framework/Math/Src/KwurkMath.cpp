@@ -134,11 +134,35 @@ Quaternion Quaternion::CreateFromRotationMatrix(const Matrix4& m) noexcept
 }
 Quaternion Quaternion::Lerp(const Quaternion& q0, const Quaternion& q1, float t)
 {
-
+    return q0 * (1.0f - t) + (q1 * t);
 }
 Quaternion Quaternion::Slerp(const Quaternion& q0, const Quaternion& q1, float t)
 {
+    float dot = q0.Dot(q1);
+    float q1Scale = 1.0f;
+    if (dot < 0.0f)
+    {
+        dot = -dot;
+        q1Scale = -1.0f;
+    }
+    if (dot > 0.9999999f)
+    {
+        return Normalize(Lerp(q0, q1, t));
+    }
 
+    const float theta = acosf(dot);
+    const float sinTheta = sinf(theta);
+    const float scale0 = sinf(theta * (1.0f - t)) / sinTheta;
+    const float scale1 = q1Scale * sinf(theta * t) / sinTheta;
+
+    Quaternion q = {
+        q0.x * scale0 + q1.x * scale1,
+        q0.y * scale0 + q1.y * scale1,
+        q0.z * scale0 + q1.z * scale1,
+        q0.w * scale0 + q1.w * scale1
+    };
+    return Normalize(q);
+    
 }
 
 

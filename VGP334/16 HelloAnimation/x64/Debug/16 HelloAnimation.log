@@ -1,0 +1,4 @@
+﻿  GameState.cpp
+C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\VGP334\16 HelloAnimation\GameState.cpp(74,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\VGP334\16 HelloAnimation\GameState.cpp(74,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+  16 HelloAnimation.vcxproj -> C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\x64\Debug\16 HelloAnimation.exe

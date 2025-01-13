@@ -19,6 +19,7 @@ protected:
 
 	KwurkEngine::Graphics::RenderObject mBall;
 	KwurkEngine::Graphics::RenderObject mGround;
+	KwurkEngine::Graphics::RenderObject mWall;
 	KwurkEngine::Graphics::DirectionalLight mDirectionalLight;
 	KwurkEngine::Graphics::StandardEffect mStandardEffect;
 

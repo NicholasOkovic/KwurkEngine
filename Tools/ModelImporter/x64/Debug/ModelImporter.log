@@ -1,1 +1,7 @@
-﻿
+﻿  main.cpp
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Tools\ModelImporter\main.cpp(76,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Tools\ModelImporter\main.cpp(129,4): warning C4018: '<': signed/unsigned mismatch
+  ModelImporter.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\ModelImporter.exe
+  D:\LaSalleProjects\3D graphics programming\KwurkEngine\External\assimp-5.2.5\bin\assimp-vc143-mt.dll
+  D:\LaSalleProjects\3D graphics programming\KwurkEngine\External\assimp-5.2.5\bin\assimp-vc143-mtd.dll
+          2 file(s) copied.

@@ -5,6 +5,7 @@
 #include "TextureCache.h"
 #include "ModelCache.h"
 #include "Material.h"
+#include "Animator.h"
 
 namespace KwurkEngine::Graphics
 {
@@ -28,12 +29,14 @@ namespace KwurkEngine::Graphics
 	class RenderGroup
 	{
 	public:
-		void Initialize(const std::filesystem::path& modelFilePath);
-		void Initialize(const Model& model);
+		void Initialize(const std::filesystem::path& modelFilePath, const Animator* anim = nullptr);
+		void Initialize(const Model& model, const Animator* anim = nullptr);
 		void Terminate();
 
 		ModelId modelId;
 		Transform transform;
+		const Skeleton* skeleton = nullptr;
+		const Animator* animator = nullptr;
 		std::vector<RenderObject> renderObjects;
 	};
 

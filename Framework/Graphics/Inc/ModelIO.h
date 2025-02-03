@@ -5,6 +5,13 @@
 namespace KwurkEngine::Graphics
 {
 	struct Model;
+	class Animation;
+	class AnimationIO
+	{
+	public:
+		static void Write(FILE* file, const Animation& animation);
+		static void Read(FILE* file,  Animation& animation);
+	};
 
 	namespace ModelIO
 	{
@@ -16,6 +23,9 @@ namespace KwurkEngine::Graphics
 
 		void SaveSkeleton(std::filesystem::path filePath, const Model& model);
 		void LoadSkeleton(std::filesystem::path filePath, Model& model);
+
+		void SaveAnimations(std::filesystem::path filePath, const Model& model);
+		void LoadAnimations(std::filesystem::path filePath, Model& model);
 	}
 
 }

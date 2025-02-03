@@ -4,7 +4,9 @@
 
 #include "Animation.h"
 #include "AnimationBuilder.h"
+#include "AnimationClip.h"
 #include "AnimationUtil.h"
+#include "Animator.h"
 #include "BillBoardEffect.h"
 #include "BlendState.h"
 #include "Bone.h"

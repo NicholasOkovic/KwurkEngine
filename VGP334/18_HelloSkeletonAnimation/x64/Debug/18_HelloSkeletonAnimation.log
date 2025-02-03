@@ -1,0 +1,5 @@
+﻿  GameState.cpp
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP334\18_HelloSkeletonAnimation\GameState.cpp(64,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP334\18_HelloSkeletonAnimation\GameState.cpp(64,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP334\18_HelloSkeletonAnimation\GameState.cpp(132,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  18_HelloSkeletonAnimation.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\18_HelloSkeletonAnimation.exe

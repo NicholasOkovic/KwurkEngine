@@ -1,3 +1,6 @@
 -scale 0.01 ../../Assets/Models/Paladin/PaladinJNordstrom.fbx ../../Assets/Models/Paladin/PaladinJNordstrom.model
+-scale 0.01 -animOnly 1 ../../Assets/Models/Paladin/Taunt.fbx ../../Assets/Models/Paladin/Taunt.model
 
 -scale 0.01 ../../Assets/Models/Character2/PumpkinhulkShaw.fbx ../../Assets/Models/Character2/PumpkinhulkShaw.model
+
+-scale 0.01 -animOnly 1 ../../Assets/Models/Animations/Joyful_Jump.fbx ../../Assets/Models/Animations/Joyful_Jump.model

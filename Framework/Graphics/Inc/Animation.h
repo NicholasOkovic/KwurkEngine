@@ -16,7 +16,9 @@ namespace KwurkEngine::Graphics
 		Math::Vector3 GetPosition(float time) const;
 		Math::Quaternion GetRotation(float time) const;
 		Math::Vector3 GetScale(float time) const;
+
 		friend class AnimationBuilder;
+		friend class AnimationIO;
 
 		PositionKeys mPositionKeys;
 		RotationKeys mRotationKeys;

@@ -1,11 +1,26 @@
 ﻿  ModelIO.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(90,18): warning C4477: 'fscanf_s' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'const uint32_t *'
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(11,17): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
   (compiling source file '/Src/ModelIO.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(201,21): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(17,38): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
   (compiling source file '/Src/ModelIO.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(211,23): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(23,35): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+  (compiling source file '/Src/ModelIO.cpp')
+  
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(141,18): warning C4477: 'fscanf_s' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'const uint32_t *'
+  (compiling source file '/Src/ModelIO.cpp')
+  
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(252,21): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+  (compiling source file '/Src/ModelIO.cpp')
+  
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(262,23): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+  (compiling source file '/Src/ModelIO.cpp')
+  
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(354,25): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+  (compiling source file '/Src/ModelIO.cpp')
+  
+D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(363,26): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
   (compiling source file '/Src/ModelIO.cpp')
   
   Graphics.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\Graphics.lib

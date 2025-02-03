@@ -24,6 +24,7 @@ namespace KwurkEngine::Graphics
 
 		ModelId GetModelId(const std::filesystem::path& filePath);
 		ModelId LoadModel(const std::filesystem::path& filePath);
+		void AddAnimation(ModelId id,const std::filesystem::path& filePath);
 		const Model* GetModel(ModelId id);
 
 	private:

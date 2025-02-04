@@ -1,4 +1,1 @@
-﻿  GameState.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\18_HelloFinal\GameState.cpp(74,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP330\18_HelloFinal\GameState.cpp(74,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-  18_HelloFinal.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\18_HelloFinal.exe
+﻿

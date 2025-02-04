@@ -1,5 +1,1 @@
-﻿  GameState.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP334\16 HelloAnimation\GameState.cpp(37,35): warning C4305: '+=': truncation from 'double' to 'float'
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP334\16 HelloAnimation\GameState.cpp(111,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\VGP334\16 HelloAnimation\GameState.cpp(111,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-  16 HelloAnimation.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\16 HelloAnimation.exe
+﻿

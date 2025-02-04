@@ -23,10 +23,10 @@ void GameState::Initialize()
 	mStandardEffect.SetDirectionalLight(mDirectionalLight);
 
 	mCharacter.Initialize(L"../../Assets/Models/Paladin/PaladinJNordstrom.model", &mCharacterAnimator);
-	ModelCache::Get()->AddAnimation(mCharacter.modelId, L"../../Assets/Models/Paladin/Taunt.animset"); 
+	ModelCache::Get()->AddAnimation(mCharacter.modelId, L"../../Assets/Models/Animations/Taunt.animset"); 
 	ModelCache::Get()->AddAnimation(mCharacter.modelId, L"../../Assets/Models/Animations/Joyful_Jump.animset"); 
 	ModelCache::Get()->AddAnimation(mCharacter.modelId, L"../../Assets/Models/Animations/Capoeira.animset"); 
-	ModelCache::Get()->AddAnimation(mCharacter.modelId, L"../../Assets/Models/Animations/Walk_Forward.animset"); 
+	ModelCache::Get()->AddAnimation(mCharacter.modelId, L"../../Assets/Models/Animations/Walk.animset"); 
 	
 	mCharacterAnimator.Initialize(mCharacter.modelId);
 

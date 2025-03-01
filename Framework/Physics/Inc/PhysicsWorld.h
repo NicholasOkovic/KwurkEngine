@@ -1,5 +1,6 @@
 #pragma once
 
+#include "PhysicsDebugDraw.h"
 
 namespace KwurkEngine::Physics
 {
@@ -26,7 +27,7 @@ namespace KwurkEngine::Physics
 		void Terminate();
 
 		void Update(float deltaTime);
-		void Debug();
+		void DebugUI();
 
 		void Register(PhysicsObject* physicsObject);
 		void UnRegister(PhysicsObject* physicsObject);
@@ -46,6 +47,8 @@ namespace KwurkEngine::Physics
 		using PhysicsObjects = std::vector<PhysicsObject*>;
 		PhysicsObjects mPhysicsObjects;
 
+		PhysicsDebugDraw mPhysicsDebugDraw;
+		bool mDebugDraw = false;
 
 	};
 

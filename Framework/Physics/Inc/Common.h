@@ -68,5 +68,5 @@ inline KwurkEngine::Color ToColor(const btVector3& c)
 
 inline btTransform ConvertTobtTransform(const KwurkEngine::Graphics::Transform& transform)
 {
-	return btTransform(TobtQuaternion(transform.rotation));
+	return btTransform(TobtQuaternion(transform.rotation), TobtVector3(transform.position));
 }

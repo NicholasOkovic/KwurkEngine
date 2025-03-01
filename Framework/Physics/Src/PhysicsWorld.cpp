@@ -46,6 +46,7 @@ void PhysicsWorld::Initialize(const Settings& settings)
 	mSolver = new btSequentialImpulseConstraintSolver();
 	mDynamicsWorld = new btDiscreteDynamicsWorld(mDispatcher, mInterface, mSolver, mCollisionConfiguration);
 	mDynamicsWorld->setGravity(TobtVector3(settings.gravity));
+	mDynamicsWorld->setDebugDrawer(&mPhysicsDebugDraw);
 }
 
 void PhysicsWorld::Terminate()
@@ -66,11 +67,37 @@ void PhysicsWorld::Update(float deltaTime)
 	}
 }
 
-void PhysicsWorld::Debug()
+void PhysicsWorld::DebugUI()
 {
 	if (ImGui::CollapsingHeader("Physics", ImGuiTreeNodeFlags_DefaultOpen))
 	{
+		if (ImGui::DragFloat3("Gravity", &mSettings.gravity.x, 0.1f))
+		{
+			mDynamicsWorld->setGravity(TobtVector3(mSettings.gravity));
+		}
+		ImGui::Checkbox("DebugDraw", &mDebugDraw);
+		if (mDebugDraw)
+		{
+			ImGui::Indent();
+			int debugMode = mPhysicsDebugDraw.getDebugMode();
+			bool isEnabled = (debugMode & btIDebugDraw::DBG_DrawWireframe);
+			if (ImGui::Checkbox("WireFrame", &isEnabled))
+			{
+				debugMode = (isEnabled) ? debugMode | btIDebugDraw::DBG_DrawWireframe : debugMode & ~btIDebugDraw::DBG_DrawWireframe;
+			}
+			isEnabled = (debugMode & btIDebugDraw::DBG_DrawAabb);
+			if (ImGui::Checkbox("DrawAABB", &isEnabled))
+			{
+				debugMode = (isEnabled) ? debugMode | btIDebugDraw::DBG_DrawAabb : debugMode & ~btIDebugDraw::DBG_DrawAabb;
+			}
+			isEnabled = (debugMode & btIDebugDraw::DBG_DrawNormals);
+			
+				
+			mPhysicsDebugDraw.setDebugMode(debugMode);
+			mDynamicsWorld->debugDrawWorld();
+			ImGui::Unindent();
 
+		}
 	}
 }
 

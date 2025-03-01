@@ -28,6 +28,17 @@ protected:
 	KwurkEngine::Graphics::RenderObject mGround;
 	KwurkEngine::Physics::CollisionShape mGroundShape;
 	KwurkEngine::Physics::RigidBody mGroundRB;
+
+	struct BoxData
+	{
+		KwurkEngine::Graphics::RenderObject box;
+		KwurkEngine::Physics::CollisionShape boxShape;
+		KwurkEngine::Physics::RigidBody boxRB;
+	};
+	using Boxes = std::vector<BoxData>;
+	Boxes mBoxes;
+
+
 };
 
 

@@ -10,6 +10,7 @@ namespace KwurkEngine::Graphics
 		//cube
 		static MeshPC CreateCubePC(float size);
 		static MeshPX CreateCubePX(float size);
+		static Mesh CreateCube(float size);
 
 		//skyboxPX
 		static MeshPX CreateSkyBoxPX(float size);

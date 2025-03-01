@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\20_HelloPhysics.exe</FullPath>
+      <FullPath>D:\LaSalleProjects\KwurkEngine\KwurkEngine\x64\Debug\20_HelloPhysics.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

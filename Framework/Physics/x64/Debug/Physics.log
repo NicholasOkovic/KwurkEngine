@@ -1,27 +1,27 @@
 ﻿  Precompiled.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(38,50): warning C4305: 'initializing': truncation from 'double' to 'btScalar'
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(38,50): warning C4305: 'initializing': truncation from 'double' to 'btScalar'
   (compiling source file 'Src/Precompiled.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1232,17): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1232,17): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
   (compiling source file 'Src/Precompiled.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1357,21): warning C4244: '+=': conversion from 'double' to 'btScalar', possible loss of data
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1357,21): warning C4244: '+=': conversion from 'double' to 'btScalar', possible loss of data
   (compiling source file 'Src/Precompiled.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1361,21): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1361,21): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
   (compiling source file 'Src/Precompiled.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1385,20): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1385,20): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
   (compiling source file 'Src/Precompiled.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1387,23): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1387,23): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
   (compiling source file 'Src/Precompiled.cpp')
   
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1269,17): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1269,17): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
   (compiling source file 'Src/Precompiled.cpp')
-  D:\LaSalleProjects\3D graphics programming\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1269,17):
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1269,17):
   the template instantiation context (the oldest one first) is
-  	D:\LaSalleProjects\3D graphics programming\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1303,4):
+  	D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1303,4):
   	see reference to function template instantiation 'void btSoftBody::updateFace<btDbvtNode>(DBVTNODE *,bool,bool)' being compiled
           with
           [
@@ -31,12 +31,28 @@ D:\LaSalleProjects\3D graphics programming\KwurkEngine\External\Bullet\BulletSof
   CollisionShape.cpp
   PhysicsDebugDraw.cpp
   PhysicsWorld.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(14,50): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(15,50): warning C4305: 'argument': truncation from 'double' to 'float'
   (compiling source file '/Src/PhysicsWorld.cpp')
   
   RigidBody.cpp
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(14,50): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(15,50): warning C4305: 'argument': truncation from 'double' to 'float'
   (compiling source file '/Src/RigidBody.cpp')
   
+  SoftBody.cpp
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(15,50): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file '/Src/SoftBody.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Src\SoftBody.cpp(23,71): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '/Src/SoftBody.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Src\SoftBody.cpp(31,15): warning C4305: '=': truncation from 'double' to 'btScalar'
+  (compiling source file '/Src/SoftBody.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Src\SoftBody.cpp(40,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '/Src/SoftBody.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Src\SoftBody.cpp(75,62): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '/Src/SoftBody.cpp')
+  
   Generating Code...
-  Physics.vcxproj -> D:\LaSalleProjects\3D graphics programming\KwurkEngine\x64\Debug\Physics.lib
+  Physics.vcxproj -> D:\LaSalleProjects\KwurkEngine\KwurkEngine\x64\Debug\Physics.lib

@@ -1,29 +1,29 @@
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Animation.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\Animation.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\AnimationBuilder.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\AnimationBuilder.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\AnimationUtil.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\AnimationUtil.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Animator.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\Animator.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\BillBoardEffect.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\BillBoardEffect.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\BlendState.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\BlendState.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Camera.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\Camera.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ConstantBuffer.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\ConstantBuffer.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\DebugUI.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\DebugUI.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\GaussianBlurEffect.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\GaussianBlurEffect.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\GraphicsSystem.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\GraphicsSystem.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuffer.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\MeshBuffer.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\MeshBuilder.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ModelCache.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\ModelCache.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\ModelIO.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\PixelShader.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\PixelShader.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\PostProcessingEffect.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\PostProcessingEffect.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Precompiled.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\Precompiled.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\RenderObject.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\RenderObject.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\RenderTarget.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\RenderTarget.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Sampler.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\Sampler.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\ShadowEffect.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\ShadowEffect.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\SimpleDraw.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\SimpleDraw.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\StandardEffect.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\StandardEffect.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Terrain.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\Terrain.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\TerrainEffect.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\TerrainEffect.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\Texture.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\Texture.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\TextureCache.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\TextureCache.obj
-D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\Src\VertexShader.cpp;D:\LaSalleProjects\3D graphics programming\KwurkEngine\Framework\Graphics\x64\Debug\VertexShader.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Animation.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\Animation.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\AnimationBuilder.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\AnimationBuilder.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\AnimationUtil.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\AnimationUtil.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Animator.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\Animator.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\BillBoardEffect.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\BillBoardEffect.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\BlendState.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\BlendState.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Camera.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\Camera.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ConstantBuffer.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\ConstantBuffer.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\DebugUI.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\DebugUI.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\GaussianBlurEffect.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\GaussianBlurEffect.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\GraphicsSystem.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\GraphicsSystem.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuffer.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\MeshBuffer.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\MeshBuilder.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ModelCache.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\ModelCache.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\ModelIO.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\PixelShader.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\PixelShader.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\PostProcessingEffect.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\PostProcessingEffect.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Precompiled.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\Precompiled.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\RenderObject.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\RenderObject.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\RenderTarget.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\RenderTarget.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Sampler.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\Sampler.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ShadowEffect.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\ShadowEffect.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\SimpleDraw.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\SimpleDraw.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\StandardEffect.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\StandardEffect.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Terrain.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\Terrain.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\TerrainEffect.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\TerrainEffect.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Texture.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\Texture.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\TextureCache.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\TextureCache.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\VertexShader.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\VertexShader.obj

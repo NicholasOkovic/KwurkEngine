@@ -11,6 +11,8 @@ namespace KwurkEngine::Graphics
 		Transform GetTranform(float time) const;
 		float GetDuration() const;
 
+		void PlayEvents(float prevTime, float curTime);
+
 
 	private:
 		Math::Vector3 GetPosition(float time) const;
@@ -23,7 +25,7 @@ namespace KwurkEngine::Graphics
 		PositionKeys mPositionKeys;
 		RotationKeys mRotationKeys;
 		ScaleKeys mScaleKeys;
-
+		EventKeys mEventKeys;
 		//using KeyFrame = std::vector<KeyFrames>;
 		//KeyFrame mKeyFrames;
 		float mDuration;

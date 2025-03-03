@@ -36,9 +36,10 @@ D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(
   (compiling source file '/Src/App.cpp')
   D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(18,3):
   This diagnostic occurred in the compiler generated function 'KwurkEngine::Physics::PhysicsWorld::Settings::Settings(void)'
-  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Engine\KwurkEngine\Src\App.cpp(31,25):
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Engine\KwurkEngine\Src\App.cpp(37,25):
   see reference to function 'KwurkEngine::Physics::PhysicsWorld::Settings::Settings(void)'
   
+  EventManager.cpp
   KwurkEngine.cpp
   Generating Code...
   KwurkEngine.vcxproj -> D:\LaSalleProjects\KwurkEngine\KwurkEngine\x64\Debug\KwurkEngine.lib

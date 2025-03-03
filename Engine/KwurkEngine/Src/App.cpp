@@ -1,12 +1,14 @@
 #include "Precompiled.h"
 #include "App.h"
 #include "AppState.h"
+#include "EventManager.h"
 
 using namespace KwurkEngine;
 using namespace KwurkEngine::Core;
 using namespace KwurkEngine::Graphics;
 using namespace KwurkEngine::Input;
 using namespace KwurkEngine::Physics;
+using namespace KwurkEngine::Audio;
 
 void App::Run(const AppConfig& config)
 {
@@ -27,6 +29,10 @@ void App::Run(const AppConfig& config)
 	SimpleDraw::StaticInitialize(config.maxDrawLines);
 	TextureCache::StaticInitialize("../../Assets/Images/");
 	ModelCache::StaticInitialize();
+	EventManager::StaticInitialize();
+	AudioSystem::StaticInitialize();
+	SoundEffectManager::StaticInitialize("../../Assets/Sounds/");
+
 
 	PhysicsWorld::Settings settings;
 	PhysicsWorld::StaticInitialize(settings);
@@ -50,6 +56,9 @@ void App::Run(const AppConfig& config)
 			Quit();
 			break;
 		}
+
+		AudioSystem::Get()->Update();
+
 		if (mNextState != nullptr)
 		{
 			mCurrentState->Terminate();
@@ -79,6 +88,9 @@ void App::Run(const AppConfig& config)
 
 	//terminate singletons
 	PhysicsWorld::StaticTerminate();
+	SoundEffectManager::StaticTerminate();
+	AudioSystem::StaticTerminate();
+	EventManager::StaticTerminate();
 	ModelCache::StaticTerminate();
 	TextureCache::StaticTerminate();
 	SimpleDraw::StaticTerminate();

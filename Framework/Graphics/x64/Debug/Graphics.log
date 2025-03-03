@@ -1,92 +1,16 @@
-﻿  Precompiled.cpp
-  Animation.cpp
+﻿  Animation.cpp
   AnimationBuilder.cpp
   AnimationUtil.cpp
   Animator.cpp
   BillBoardEffect.cpp
-  BlendState.cpp
-  Camera.cpp
-  ConstantBuffer.cpp
-  DebugUI.cpp
   GaussianBlurEffect.cpp
-  GraphicsSystem.cpp
+  ModelCache.cpp
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\GaussianBlurEffect.cpp(76,25): warning C4018: '<': signed/unsigned mismatch
   (compiling source file '/Src/GaussianBlurEffect.cpp')
   
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\GaussianBlurEffect.cpp(103,57): warning C4305: 'argument': truncation from 'double' to 'float'
   (compiling source file '/Src/GaussianBlurEffect.cpp')
   
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\GraphicsSystem.cpp(124,109): warning C4244: 'argument': conversion from 'float' to 'UINT8', possible loss of data
-  (compiling source file '/Src/GraphicsSystem.cpp')
-  
-  MeshBuffer.cpp
-  MeshBuilder.cpp
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(80,22): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(80,22): warning C4267:         with
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(80,22): warning C4267:         [
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(80,22): warning C4267:             _Ty=std::seed_seq::result_type
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(80,22): warning C4267:         ]
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(81,24): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(81,24): warning C4267:         with
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(81,24): warning C4267:         [
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(81,24): warning C4267:             _Ty=std::seed_seq::result_type
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(81,24): warning C4267:         ]
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(84,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(402,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(402,18): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(403,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(403,18): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(428,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(428,18): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(429,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(429,18): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(461,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(461,18): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(462,58): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(462,18): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(496,45): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(496,17): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(519,85): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp(519,61): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file '/Src/MeshBuilder.cpp')
-  
-  ModelCache.cpp
   ModelIO.cpp
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(11,17): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
   (compiling source file '/Src/ModelIO.cpp')
@@ -113,7 +37,6 @@ D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(36
   (compiling source file '/Src/ModelIO.cpp')
   
   ParticleSystemEffect.cpp
-  PixelShader.cpp
   PostProcessingEffect.cpp
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\PostProcessingEffect.cpp(80,51): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
   (compiling source file '/Src/PostProcessingEffect.cpp')
@@ -131,40 +54,11 @@ D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\PostProcessing
   (compiling source file '/Src/PostProcessingEffect.cpp')
   
   RenderObject.cpp
-  RenderTarget.cpp
-  Generating Code...
-  Compiling...
-  Sampler.cpp
   ShadowEffect.cpp
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ShadowEffect.cpp(107,63): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file '/Src/ShadowEffect.cpp')
   
-  SimpleDraw.cpp
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\SimpleDraw.cpp(223,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  (compiling source file '/Src/SimpleDraw.cpp')
-  
   StandardEffect.cpp
-  Terrain.cpp
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Terrain.cpp(71,30): warning C4018: '>=': signed/unsigned mismatch
-  (compiling source file '/Src/Terrain.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Terrain.cpp(71,51): warning C4018: '>=': signed/unsigned mismatch
-  (compiling source file '/Src/Terrain.cpp')
-  
   TerrainEffect.cpp
-  Texture.cpp
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Texture.cpp(39,2): warning C4477: 'snprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 4 has type 'const std::filesystem::path::value_type *'
-  (compiling source file '/Src/Texture.cpp')
-  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Texture.cpp(39,2):
-  consider using '%ls' in the format string
-  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Texture.cpp(39,2):
-  consider using '%lls' in the format string
-  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Texture.cpp(39,2):
-  consider using '%Ls' in the format string
-  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Texture.cpp(39,2):
-  consider using '%ws' in the format string
-  
-  TextureCache.cpp
-  VertexShader.cpp
   Generating Code...
   Graphics.vcxproj -> D:\LaSalleProjects\KwurkEngine\KwurkEngine\x64\Debug\Graphics.lib

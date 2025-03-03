@@ -138,11 +138,14 @@
     <ClInclude Include="Inc\App.h" />
     <ClInclude Include="Inc\AppState.h" />
     <ClInclude Include="Inc\Common.h" />
+    <ClInclude Include="Inc\Event.h" />
+    <ClInclude Include="Inc\EventManager.h" />
     <ClInclude Include="Inc\KwurkEngine.h" />
     <ClInclude Include="Src\Precompiled.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\App.cpp" />
+    <ClCompile Include="Src\EventManager.cpp" />
     <ClCompile Include="Src\KwurkEngine.cpp" />
     <ClCompile Include="Src\Precompiled.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -150,6 +153,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Framework\Audio\Audio.vcxproj">
+      <Project>{ae98bc7a-2452-4009-b71b-9f0f0e43f458}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\..\Framework\Core\Core.vcxproj">
       <Project>{22a4014b-8a83-4350-b984-1bdf5d2b32e4}</Project>
     </ProjectReference>

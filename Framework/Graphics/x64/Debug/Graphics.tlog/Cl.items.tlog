@@ -13,6 +13,7 @@ D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuffer.cpp
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\MeshBuilder.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\MeshBuilder.obj
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ModelCache.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\ModelCache.obj
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\ModelIO.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ParticleSystemEffect.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\ParticleSystemEffect.obj
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\PixelShader.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\PixelShader.obj
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\PostProcessingEffect.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\PostProcessingEffect.obj
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\Precompiled.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\x64\Debug\Precompiled.obj

@@ -1,4 +1,6 @@
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Src\CollisionShape.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\x64\Debug\CollisionShape.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Src\Particle.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\x64\Debug\Particle.obj
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Src\ParticleSystem.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\x64\Debug\ParticleSystem.obj
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Src\PhysicsDebugDraw.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\x64\Debug\PhysicsDebugDraw.obj
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Src\PhysicsWorld.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\x64\Debug\PhysicsWorld.obj
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Src\Precompiled.cpp;D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\x64\Debug\Precompiled.obj

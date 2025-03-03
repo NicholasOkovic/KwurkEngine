@@ -29,6 +29,8 @@ D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoft
           ]
   
   CollisionShape.cpp
+  Particle.cpp
+  ParticleSystem.cpp
   PhysicsDebugDraw.cpp
   PhysicsWorld.cpp
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(15,50): warning C4305: 'argument': truncation from 'double' to 'float'

@@ -1,1 +1,75 @@
-﻿  Core.vcxproj -> D:\LaSalleProjects\KwurkEngine\KwurkEngine\x64\Debug\Core.lib
+﻿  BlockAllocator.cpp
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2059: syntax error: '}'
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2143: syntax error: missing ';' before '}'
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2238: unexpected token(s) preceding ';'
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(11,4): error C2614: 'KwurkEngine::Core::BlockAllocator': illegal member initialization: 'mBlockSize' is not a base or member
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(12,4): error C2614: 'KwurkEngine::Core::BlockAllocator': illegal member initialization: 'mCapacity' is not a base or member
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(13,4): error C2614: 'KwurkEngine::Core::BlockAllocator': illegal member initialization: 'mFreeBlocks' is not a base or member
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(19,2): error C2065: 'mData': undeclared identifier
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(23,3): error C2065: 'mFreeBlocks': undeclared identifier
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(23,42): error C2065: 'mData': undeclared identifier
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(31,2): error C2065: 'mBlocksAllocatedTotal': undeclared identifier
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(31,2): error C2065: 'mBlocksFreed': undeclared identifier
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(32,12): error C2065: 'mData': undeclared identifier
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(34,2): error C2065: 'mData': undeclared identifier
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(35,2): warning C4473: 'snprintf' : not enough arguments passed for format string
+  (compiling source file '/Src/BlockAllocator.cpp')
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(35,2):
+  placeholders and their parameters expect 5 variadic arguments, but 1 were provided
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(35,2):
+  the missing variadic argument 2 is required by format string '%s'
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(43,6): error C2065: 'mFreeBlocks': undeclared identifier
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(52,3): error C2059: syntax error: 'return'
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(62,47): error C2065: 'mData': undeclared identifier
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(63,45): error C2065: 'mData': undeclared identifier
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(63,55): error C2065: 'mBlockSize': undeclared identifier
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(63,68): error C2065: 'mCapacity': undeclared identifier
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(66,2): error C2065: 'mBlockSize': undeclared identifier
+  (compiling source file '/Src/BlockAllocator.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(69,2): warning C4473: 'snprintf' : not enough arguments passed for format string
+  (compiling source file '/Src/BlockAllocator.cpp')
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(69,2):
+  placeholders and their parameters expect 3 variadic arguments, but 1 were provided
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Src\BlockAllocator.cpp(69,2):
+  the missing variadic argument 2 is required by format string '%s'
+  

@@ -1,4 +1,30 @@
 ﻿  Precompiled.cpp
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2059: syntax error: '}'
+  (compiling source file 'Src/Precompiled.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2143: syntax error: missing ';' before '}'
+  (compiling source file 'Src/Precompiled.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Src/Precompiled.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(9,33): error C3861: 'BlockAllocator': identifier not found
+  (compiling source file 'Src/Precompiled.cpp')
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(9,33):
+  the template instantiation context (the oldest one first) is
+  	D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(36,3):
+  	see reference to class template instantiation 'kwurkEngine::Core::TypedAllocator<DataType>' being compiled
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(13,6): error C3861: 'BlockAllocator': identifier not found
+  (compiling source file 'Src/Precompiled.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(21,48): error C3861: 'Allocate': identifier not found
+  (compiling source file 'Src/Precompiled.cpp')
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(21,56):
+  'Allocate': function declaration must be available as none of the arguments depend on a template parameter
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(19,13):
+  This diagnostic occurred in the compiler generated function 'DataType *kwurkEngine::Core::TypedAllocator<DataType>::New(Args &&...)'
+  
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(38,50): warning C4305: 'initializing': truncation from 'double' to 'btScalar'
   (compiling source file 'Src/Precompiled.cpp')
   
@@ -17,44 +43,3 @@ D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoft
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1387,23): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
   (compiling source file 'Src/Precompiled.cpp')
   
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1269,17): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
-  (compiling source file 'Src/Precompiled.cpp')
-  D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1269,17):
-  the template instantiation context (the oldest one first) is
-  	D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1303,4):
-  	see reference to function template instantiation 'void btSoftBody::updateFace<btDbvtNode>(DBVTNODE *,bool,bool)' being compiled
-          with
-          [
-              DBVTNODE=btDbvtNode
-          ]
-  
-  CollisionShape.cpp
-  Particle.cpp
-  ParticleSystem.cpp
-  PhysicsDebugDraw.cpp
-  PhysicsWorld.cpp
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(15,50): warning C4305: 'argument': truncation from 'double' to 'float'
-  (compiling source file '/Src/PhysicsWorld.cpp')
-  
-  RigidBody.cpp
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(15,50): warning C4305: 'argument': truncation from 'double' to 'float'
-  (compiling source file '/Src/RigidBody.cpp')
-  
-  SoftBody.cpp
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(15,50): warning C4305: 'argument': truncation from 'double' to 'float'
-  (compiling source file '/Src/SoftBody.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Src\SoftBody.cpp(23,71): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file '/Src/SoftBody.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Src\SoftBody.cpp(31,15): warning C4305: '=': truncation from 'double' to 'btScalar'
-  (compiling source file '/Src/SoftBody.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Src\SoftBody.cpp(40,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file '/Src/SoftBody.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Src\SoftBody.cpp(75,62): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file '/Src/SoftBody.cpp')
-  
-  Generating Code...
-  Physics.vcxproj -> D:\LaSalleProjects\KwurkEngine\KwurkEngine\x64\Debug\Physics.lib

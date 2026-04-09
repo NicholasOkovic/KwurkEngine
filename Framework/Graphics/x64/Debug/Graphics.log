@@ -1,64 +1,27 @@
-﻿  Animation.cpp
-  AnimationBuilder.cpp
-  AnimationUtil.cpp
-  Animator.cpp
-  BillBoardEffect.cpp
-  GaussianBlurEffect.cpp
-  ModelCache.cpp
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\GaussianBlurEffect.cpp(76,25): warning C4018: '<': signed/unsigned mismatch
-  (compiling source file '/Src/GaussianBlurEffect.cpp')
+﻿  Precompiled.cpp
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2059: syntax error: '}'
+  (compiling source file 'Src/Precompiled.cpp')
   
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\GaussianBlurEffect.cpp(103,57): warning C4305: 'argument': truncation from 'double' to 'float'
-  (compiling source file '/Src/GaussianBlurEffect.cpp')
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2143: syntax error: missing ';' before '}'
+  (compiling source file 'Src/Precompiled.cpp')
   
-  ModelIO.cpp
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(11,17): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
-  (compiling source file '/Src/ModelIO.cpp')
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Src/Precompiled.cpp')
   
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(17,38): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
-  (compiling source file '/Src/ModelIO.cpp')
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(9,33): error C3861: 'BlockAllocator': identifier not found
+  (compiling source file 'Src/Precompiled.cpp')
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(9,33):
+  the template instantiation context (the oldest one first) is
+  	D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(36,3):
+  	see reference to class template instantiation 'kwurkEngine::Core::TypedAllocator<DataType>' being compiled
   
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(23,35): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
-  (compiling source file '/Src/ModelIO.cpp')
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(13,6): error C3861: 'BlockAllocator': identifier not found
+  (compiling source file 'Src/Precompiled.cpp')
   
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(141,18): warning C4477: 'fscanf_s' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'const uint32_t *'
-  (compiling source file '/Src/ModelIO.cpp')
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(21,48): error C3861: 'Allocate': identifier not found
+  (compiling source file 'Src/Precompiled.cpp')
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(21,56):
+  'Allocate': function declaration must be available as none of the arguments depend on a template parameter
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(19,13):
+  This diagnostic occurred in the compiler generated function 'DataType *kwurkEngine::Core::TypedAllocator<DataType>::New(Args &&...)'
   
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(252,21): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
-  (compiling source file '/Src/ModelIO.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(262,23): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
-  (compiling source file '/Src/ModelIO.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(354,25): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
-  (compiling source file '/Src/ModelIO.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ModelIO.cpp(363,26): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
-  (compiling source file '/Src/ModelIO.cpp')
-  
-  ParticleSystemEffect.cpp
-  PostProcessingEffect.cpp
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\PostProcessingEffect.cpp(80,51): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
-  (compiling source file '/Src/PostProcessingEffect.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\PostProcessingEffect.cpp(80,27): warning C4244: 'initializing': conversion from 'uint32_t' to 'const float', possible loss of data
-  (compiling source file '/Src/PostProcessingEffect.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\PostProcessingEffect.cpp(81,53): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
-  (compiling source file '/Src/PostProcessingEffect.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\PostProcessingEffect.cpp(81,28): warning C4244: 'initializing': conversion from 'uint32_t' to 'const float', possible loss of data
-  (compiling source file '/Src/PostProcessingEffect.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\PostProcessingEffect.cpp(134,63): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file '/Src/PostProcessingEffect.cpp')
-  
-  RenderObject.cpp
-  ShadowEffect.cpp
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Graphics\Src\ShadowEffect.cpp(107,63): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file '/Src/ShadowEffect.cpp')
-  
-  StandardEffect.cpp
-  TerrainEffect.cpp
-  Generating Code...
-  Graphics.vcxproj -> D:\LaSalleProjects\KwurkEngine\KwurkEngine\x64\Debug\Graphics.lib

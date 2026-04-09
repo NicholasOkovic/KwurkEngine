@@ -1,1 +1,100 @@
-﻿  23_HelloEvents.vcxproj -> D:\LaSalleProjects\KwurkEngine\KwurkEngine\x64\Debug\23_HelloEvents.exe
+﻿  GameState.cpp
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2059: syntax error: '}'
+  (compiling source file 'GameState.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2143: syntax error: missing ';' before '}'
+  (compiling source file 'GameState.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'GameState.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(9,33): error C3861: 'BlockAllocator': identifier not found
+  (compiling source file 'GameState.cpp')
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(9,33):
+  the template instantiation context (the oldest one first) is
+  	D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(36,3):
+  	see reference to class template instantiation 'kwurkEngine::Core::TypedAllocator<DataType>' being compiled
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(13,6): error C3861: 'BlockAllocator': identifier not found
+  (compiling source file 'GameState.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(21,48): error C3861: 'Allocate': identifier not found
+  (compiling source file 'GameState.cpp')
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(21,56):
+  'Allocate': function declaration must be available as none of the arguments depend on a template parameter
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(19,13):
+  This diagnostic occurred in the compiler generated function 'DataType *kwurkEngine::Core::TypedAllocator<DataType>::New(Args &&...)'
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(38,50): warning C4305: 'initializing': truncation from 'double' to 'btScalar'
+  (compiling source file 'GameState.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1232,17): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'GameState.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1357,21): warning C4244: '+=': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'GameState.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1361,21): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'GameState.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1385,20): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'GameState.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1387,23): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'GameState.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(15,50): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'GameState.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\VGP334\23_HelloEvents\GameState.cpp(38,35): warning C4305: '+=': truncation from 'double' to 'float'
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\VGP334\23_HelloEvents\GameState.cpp(128,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\VGP334\23_HelloEvents\GameState.cpp(128,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+  WinMain.cpp
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2059: syntax error: '}'
+  (compiling source file 'WinMain.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2143: syntax error: missing ';' before '}'
+  (compiling source file 'WinMain.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'WinMain.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(9,33): error C3861: 'BlockAllocator': identifier not found
+  (compiling source file 'WinMain.cpp')
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(9,33):
+  the template instantiation context (the oldest one first) is
+  	D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(36,3):
+  	see reference to class template instantiation 'kwurkEngine::Core::TypedAllocator<DataType>' being compiled
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(13,6): error C3861: 'BlockAllocator': identifier not found
+  (compiling source file 'WinMain.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(21,48): error C3861: 'Allocate': identifier not found
+  (compiling source file 'WinMain.cpp')
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(21,56):
+  'Allocate': function declaration must be available as none of the arguments depend on a template parameter
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(19,13):
+  This diagnostic occurred in the compiler generated function 'DataType *kwurkEngine::Core::TypedAllocator<DataType>::New(Args &&...)'
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(38,50): warning C4305: 'initializing': truncation from 'double' to 'btScalar'
+  (compiling source file 'WinMain.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1232,17): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'WinMain.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1357,21): warning C4244: '+=': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'WinMain.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1361,21): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'WinMain.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1385,20): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'WinMain.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1387,23): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'WinMain.cpp')
+  
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(15,50): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'WinMain.cpp')
+  
+  Generating Code...

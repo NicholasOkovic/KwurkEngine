@@ -1,27 +1,18 @@
 ﻿  Precompiled.cpp
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2059: syntax error: '}'
-  (compiling source file 'Src/Precompiled.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2143: syntax error: missing ';' before '}'
-  (compiling source file 'Src/Precompiled.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\BlockAllocator.h(25,2): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'Src/Precompiled.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(9,33): error C3861: 'BlockAllocator': identifier not found
-  (compiling source file 'Src/Precompiled.cpp')
-  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(9,33):
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypedAllocator.h(9,33): error C3861: 'BlockAllocator': identifier not found
+  (compiling source file '../Audio/Src/Precompiled.cpp')
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypedAllocator.h(9,33):
   the template instantiation context (the oldest one first) is
-  	D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(36,3):
+  	D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypedAllocator.h(36,3):
   	see reference to class template instantiation 'kwurkEngine::Core::TypedAllocator<DataType>' being compiled
   
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(13,6): error C3861: 'BlockAllocator': identifier not found
-  (compiling source file 'Src/Precompiled.cpp')
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypedAllocator.h(13,6): error C3861: 'BlockAllocator': identifier not found
+  (compiling source file '../Audio/Src/Precompiled.cpp')
   
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(21,48): error C3861: 'Allocate': identifier not found
-  (compiling source file 'Src/Precompiled.cpp')
-  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(21,56):
+D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypedAllocator.h(21,48): error C3861: 'Allocate': identifier not found
+  (compiling source file '../Audio/Src/Precompiled.cpp')
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypedAllocator.h(21,56):
   'Allocate': function declaration must be available as none of the arguments depend on a template parameter
-  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypeAllocator.h(19,13):
+  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Core\Inc\TypedAllocator.h(19,13):
   This diagnostic occurred in the compiler generated function 'DataType *kwurkEngine::Core::TypedAllocator<DataType>::New(Args &&...)'
   

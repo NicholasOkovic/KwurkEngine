@@ -4,6 +4,8 @@ d:\lasalleprojects\kwurkengine\kwurkengine\framework\physics\x64\debug\softbody.
 d:\lasalleprojects\kwurkengine\kwurkengine\framework\physics\x64\debug\rigidbody.obj
 d:\lasalleprojects\kwurkengine\kwurkengine\framework\physics\x64\debug\physicsworld.obj
 d:\lasalleprojects\kwurkengine\kwurkengine\framework\physics\x64\debug\physicsdebugdraw.obj
+d:\lasalleprojects\kwurkengine\kwurkengine\framework\physics\x64\debug\particlesystem.obj
+d:\lasalleprojects\kwurkengine\kwurkengine\framework\physics\x64\debug\particle.obj
 d:\lasalleprojects\kwurkengine\kwurkengine\framework\physics\x64\debug\collisionshape.obj
 d:\lasalleprojects\kwurkengine\kwurkengine\x64\debug\physics.lib
 d:\lasalleprojects\kwurkengine\kwurkengine\framework\physics\x64\debug\physics.tlog\cl.command.1.tlog

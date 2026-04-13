@@ -1,6 +1,5 @@
 #pragma once
 
-
 namespace KwurkEngine::Core
 {
 	class BlockAllocator
@@ -16,13 +15,20 @@ namespace KwurkEngine::Core
 
 		void* Allocate();
 		void Free(void* ptr);
+		
 
-	
 	private:
 		std::string mName;
-		std::vector<void*>
+		std::vector<void*> mFreeBlocks;
 
+		void* mData = nullptr;
+		std::size_t mBlockSize = 0;
+		std::size_t mCapacity = 0;
+		std::size_t mBlocksAllocatedCurrent = 0;
+		std::size_t mBlocksAllocatedTotal = 0;
+		std::size_t mBlocksFreed = 0;
+		std::size_t mBlocksHighest = 0;
 	};
 
-	
+
 }

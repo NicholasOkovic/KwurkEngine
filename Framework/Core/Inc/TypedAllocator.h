@@ -2,8 +2,7 @@
 
 #include "BlockAllocator.h"
 
-
-namespace kwurkEngine::Core
+namespace KwurkEngine::Core
 {
 	template<class DataType>
 	class TypedAllocator : private BlockAllocator
@@ -19,6 +18,11 @@ namespace kwurkEngine::Core
 		DataType* New(Args&&... args)
 		{
 			DataType* instance = static_cast<DataType*>(Allocate());
+			if (instance == nullptr)
+			{
+				LOG("instance was nullptr, no allocation");
+				return nullptr;
+			}
 			new(instance) DataType(std::forward<Args>(args)...);
 			return instance;
 		}

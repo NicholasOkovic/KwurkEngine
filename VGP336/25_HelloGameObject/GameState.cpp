@@ -24,6 +24,34 @@ void GameState::Initialize()
 	TransformComponent* playerTransform = playerGO->AddComponent<TransformComponent>();
 	playerTransform->position.x = 2.0f;
 	playerGO->Initialize();
+
+
+	GameObject* rockGO = mGameWorld.CreateGameObject("Rock");
+	TransformComponent* rockTransform = rockGO->AddComponent<TransformComponent>();
+	rockTransform->position.z = 10.0f;
+	rockTransform->position.x = 2.0f;
+	rockGO->Initialize();
+
+	GameObject* treeGO = mGameWorld.CreateGameObject("Tree");
+	TransformComponent* treeTransform = treeGO->AddComponent<TransformComponent>();
+	treeTransform->position.z = 10.0f;
+	treeTransform->position.y = 2.0f;
+	treeGO->Initialize();
+
+	GameObject* waterGO = mGameWorld.CreateGameObject("Water");
+	TransformComponent* waterTransform = waterGO->AddComponent<TransformComponent>();
+	waterTransform->position.z = 10.0f;
+	waterTransform->position.x = -2.0f;
+	waterGO->Initialize();
+
+	GameObject* stickGO = mGameWorld.CreateGameObject("Stick");
+	TransformComponent* stickTransform = stickGO->AddComponent<TransformComponent>();
+	stickTransform->position.z = 10.0f;
+	stickTransform->position.y = 1.0f;
+	stickTransform->position.x = -4.0f;
+	stickGO->Initialize();
+
+
 }
 
 void GameState::Terminate()

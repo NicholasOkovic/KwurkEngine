@@ -1,45 +1,4 @@
-﻿  Precompiled.cpp
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(38,50): warning C4305: 'initializing': truncation from 'double' to 'btScalar'
-  (compiling source file 'Src/Precompiled.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1232,17): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
-  (compiling source file 'Src/Precompiled.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1357,21): warning C4244: '+=': conversion from 'double' to 'btScalar', possible loss of data
-  (compiling source file 'Src/Precompiled.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1361,21): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
-  (compiling source file 'Src/Precompiled.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1385,20): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
-  (compiling source file 'Src/Precompiled.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1387,23): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
-  (compiling source file 'Src/Precompiled.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(15,50): warning C4305: 'argument': truncation from 'double' to 'float'
-  (compiling source file 'Src/Precompiled.cpp')
-  
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1269,17): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
-  (compiling source file 'Src/Precompiled.cpp')
-  D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1269,17):
-  the template instantiation context (the oldest one first) is
-  	D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1303,4):
-  	see reference to function template instantiation 'void btSoftBody::updateFace<btDbvtNode>(DBVTNODE *,bool,bool)' being compiled
-          with
-          [
-              DBVTNODE=btDbvtNode
-          ]
-  
-  App.cpp
-D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(15,50): warning C4305: 'argument': truncation from 'double' to 'float'
-  (compiling source file '/Src/App.cpp')
-  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(18,3):
-  This diagnostic occurred in the compiler generated function 'KwurkEngine::Physics::PhysicsWorld::Settings::Settings(void)'
-  D:\LaSalleProjects\KwurkEngine\KwurkEngine\Engine\KwurkEngine\Src\App.cpp(37,25):
-  see reference to function 'KwurkEngine::Physics::PhysicsWorld::Settings::Settings(void)'
-  
-  EventManager.cpp
+﻿  FPSCameraComponent.cpp
   KwurkEngine.cpp
   Generating Code...
   KwurkEngine.vcxproj -> D:\LaSalleProjects\KwurkEngine\KwurkEngine\x64\Debug\KwurkEngine.lib

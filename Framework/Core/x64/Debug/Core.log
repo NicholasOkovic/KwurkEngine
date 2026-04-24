@@ -1,2 +1,7 @@
-﻿  BlockAllocator.cpp
-  Core.vcxproj -> D:\LaSalleProjects\KwurkEngine\KwurkEngine\x64\Debug\Core.lib
+﻿  Precompiled.cpp
+  BlockAllocator.cpp
+  TimeUtil.cpp
+  Window.cpp
+  WindowMessageHandler.cpp
+  Generating Code...
+  Core.vcxproj -> C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\x64\Debug\Core.lib

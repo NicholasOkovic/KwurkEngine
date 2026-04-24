@@ -22,6 +22,11 @@ namespace KwurkEngine
 		virtual void Update(float deltaTime) {}
 		virtual void DebugUI() {}
 
+		//will add erad in data apply the object
+		virtual void Deserialize(const rapidjson::Value& value){}
+		//will write out data to a a jsoon document, which will be saved to a json file
+		virtual void Serialize(rapidjson::Document& doc, rapidjson::Value& value, const rapidjson::Value& originalValue) {}
+
 		virtual uint32_t GetTypedId() const = 0;
 		
 		GameObject& GetOwner() { return *mOwner; }

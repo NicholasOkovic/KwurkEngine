@@ -1,1 +1,2 @@
 D:\LaSalleProjects\KwurkEngine\KwurkEngine\External\DirectXTK\Audio\Bin\Desktop_2022\x64\Debug\DirectXTKAudioWin8.lib
+C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\External\DirectXTK\Audio\Bin\Desktop_2022\x64\Debug\DirectXTKAudioWin8.lib

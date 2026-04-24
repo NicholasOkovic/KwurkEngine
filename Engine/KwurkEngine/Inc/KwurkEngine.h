@@ -5,11 +5,13 @@
 #include "App.h"
 #include "AppState.h"
 #include "EventManager.h"
+#include "SaveUtil.h"
 
 // game object info
 #include "GameObject.h"
 #include "GameWorld.h"
 #include "GameObjectHandle.h"
+#include "GameObjectFactory.h"
 
 
 // components
@@ -21,6 +23,9 @@
 
 //services
 #include "Service.h"
+#include "CameraService.h"
+#include "RenderService.h"
+
 
 namespace KwurkEngine
 {

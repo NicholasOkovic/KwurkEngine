@@ -8,6 +8,9 @@ namespace KwurkEngine
 		Transform,		//Transform component for location data
 		Camera,			//The camera for viewing
 		FPSCamera,		//move the camera component with fps controls
+		Mesh,			//add a mesh shape on a game object
+		Model,			// adds a model to the game object render
+		Animator,		// adda an animation controller to the game object
 		Count,			// last value, can be used to chain custom components
 	};
 
@@ -15,7 +18,7 @@ namespace KwurkEngine
 	{
 		Invalid,			//default value
 		camera,			//manages the camera
-		
+		Render,			//renders renderobject in the world
 		
 		Count,			// last value, can be used to chain custom components
 	};

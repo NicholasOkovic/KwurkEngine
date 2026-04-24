@@ -14,7 +14,7 @@ namespace KwurkEngine
 		void Render();
 		void DebugUI();
 
-		GameObject* CreateGameObject(std::string name);
+		GameObject* CreateGameObject(std::string name, const std::filesystem::path& templatePath = "");
 		void DestroyGameObject(const GameObjectHandle& handle);
 
 		template<class ServiceType>
@@ -46,7 +46,7 @@ namespace KwurkEngine
 		ServiceType* GetService() 
 		{
 			const GameWorld* thisConst = static_cast<const GameWorld*>(this);
-			return static_cast<ServiceType*>(thisConst->GetService<ServiceType>());
+			return const_cast<ServiceType*>(thisConst->GetService<ServiceType>());
 		}
 
 	private:

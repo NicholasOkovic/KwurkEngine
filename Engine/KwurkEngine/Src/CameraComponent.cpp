@@ -1,11 +1,18 @@
 #include "Precompiled.h"
 #include "CameraComponent.h"
+#include "SaveUtil.h"
+#include "CameraService.h"
+#include"GameObject.h"
 
 using namespace KwurkEngine;
 
 void CameraComponent::Initialize()
 {
-
+	CameraService* camerService = GetOwner().GetWorld().GetService<camerService>();
+	if (camerService != nullptr)
+	{
+		camerService->Register(this);
+	}
 }
 
 void CameraComponent::Terminate()
@@ -25,6 +32,23 @@ void CameraComponent::DebugUI()
 		mCamera.SetDirection(dir);
 	}
 
+}
+
+void CameraComponent::Deserialize(const rapidjson::Value& value)
+{
+	Math::Vector3 readValue = Math::Vector3::Zero;
+	if (SaveUtil::ReadVector3("Position", readValue, value))
+	{
+		mCamera.SetPosition(readValue);
+	}
+	if (SaveUtil::ReadVector3("LookAt", readValue, value))
+	{
+		mCamera.SetLookAt(readValue);
+	}
+	if (SaveUtil::ReadVector3("Direction", readValue, value))
+	{
+		mCamera.SetDirection(readValue);
+	}
 }
 
 Graphics::Camera& CameraComponent::GetCamera()

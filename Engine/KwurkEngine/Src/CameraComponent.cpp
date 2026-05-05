@@ -2,21 +2,27 @@
 #include "CameraComponent.h"
 #include "SaveUtil.h"
 #include "CameraService.h"
-#include"GameObject.h"
+#include "GameObject.h"
+#include "GameWorld.h"
 
 using namespace KwurkEngine;
 
 void CameraComponent::Initialize()
 {
-	CameraService* camerService = GetOwner().GetWorld().GetService<camerService>();
-	if (camerService != nullptr)
+	CameraService* cameraService = GetOwner().GetWorld().GetService<CameraService>();
+	if (cameraService != nullptr)
 	{
-		camerService->Register(this);
+		cameraService->Register(this);
 	}
 }
 
 void CameraComponent::Terminate()
 {
+	CameraService* cameraService = GetOwner().GetWorld().GetService<CameraService>();
+	if (cameraService != nullptr)
+	{
+		cameraService->Unregister(this);
+	}
 }
 
 void CameraComponent::DebugUI()

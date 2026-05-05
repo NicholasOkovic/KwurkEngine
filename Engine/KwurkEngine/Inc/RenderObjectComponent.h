@@ -14,7 +14,7 @@ namespace KwurkEngine
 
 		bool CanCastShadow() const;
 
-		virtual Graphics::ModelId GetModeId() const { return 0; }
+		virtual Graphics::ModelId GetModelId() const { return 0; }
 		virtual const Graphics::Model& GetModel() const = 0;
 
 

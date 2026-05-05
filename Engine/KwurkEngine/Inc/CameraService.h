@@ -12,7 +12,7 @@ namespace KwurkEngine
 		SET_TYPE_ID(ServiceId::Camera);
 
 		void DebugUI() override;
-		const Graphics::Camera GetMain() const;
+		const Graphics::Camera& GetMain() const;
 		void SetMainCamera(uint32_t index);
 
 		void Register(const CameraComponent* cameraComponent);
@@ -21,7 +21,7 @@ namespace KwurkEngine
 	private:
 		using CameraEntries = std::vector<const CameraComponent*>;
 		CameraEntries mCameraEntries;
-		CameraComponent mMainCamera; ///////////////
+		const CameraComponent* mMainCamera = nullptr; 
 	};
 	
 }

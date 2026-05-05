@@ -82,7 +82,7 @@ bool SaveUtil::ReadQuaternion(const char* key, Math::Quaternion& q, const rapidj
 		q.x = quat[0].GetFloat();
 		q.y = quat[1].GetFloat();
 		q.z = quat[2].GetFloat();
-		q.z = quat[3].GetFloat();
+		q.w = quat[3].GetFloat();
 		return true;
 	}
 	return false;

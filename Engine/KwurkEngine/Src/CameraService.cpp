@@ -9,7 +9,7 @@ void CameraService::DebugUI()
 	Graphics::SimpleDraw::Render(GetMain());
 }
 
-const Graphics::Camera CameraService::GetMain() const
+const Graphics::Camera& CameraService::GetMain() const
 {
 	ASSERT(mMainCamera != nullptr, "cameraservice: has no main camera");
 	return mMainCamera->GetCamera();
@@ -19,7 +19,7 @@ void CameraService::SetMainCamera(uint32_t index)
 {
 	if (index < mCameraEntries.size())
 	{
-		mMainCamera = mCameraEntrie[index];
+		mMainCamera = mCameraEntries[index];
 	}
 }
 

@@ -9,6 +9,7 @@ using namespace KwurkEngine::Input;
 
 void GameState::Initialize()
 {
+
 	mGameWorld.Initialize();
 
 	GameObject* transformGO = mGameWorld.CreateGameObject("Transform");

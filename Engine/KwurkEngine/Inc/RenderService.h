@@ -4,14 +4,14 @@
 
 namespace KwurkEngine
 {
-	class CamerService;
+	class CameraService;
 	class RenderObjectComponent;
-	class transformComponent;
+	class TransformComponent;
 
 	class RenderService : public Service
 	{
 	public:
-		SET_TYPE_ID(ServiceId : Render);
+		SET_TYPE_ID(ServiceId::Render);
 
 		void Initialize() override;
 		void Terminate() override;
@@ -19,8 +19,9 @@ namespace KwurkEngine
 		void Render() override;
 		void DebugUI() override;
 
-		void Register(const RenderObjectComponent* renderComponent);
-		void UnRegister(const RenderObjectComponent* renderComponent);
+		void Register(const RenderObjectComponent* renderObjectComponent);
+		void UnRegister(const RenderObjectComponent* renderObjectComponent);
+
 	private:
 		const CameraService* mCameraService = nullptr;
 		Graphics::DirectionalLight mDirectionalLight;
@@ -32,8 +33,6 @@ namespace KwurkEngine
 			const RenderObjectComponent* renderComponent = nullptr;
 			const TransformComponent* transformComponent = nullptr;
 			Graphics::RenderGroup renderGroup;
-
-
 		};
 		using RenderEntries = std::vector<Entry>;
 		RenderEntries mRenderEntries;

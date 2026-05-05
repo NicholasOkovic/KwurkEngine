@@ -1,8 +1,2 @@
-﻿  CameraComponent.cpp
-  EventManager.cpp
-  FPSCameraComponent.cpp
-  GameObject.cpp
-  SaveUtil.cpp
-  TransformComponent.cpp
-  Generating Code...
-  KwurkEngine.vcxproj -> C:\Users\LCV2242596\Documents\GitHub\KwurkEngine\x64\Debug\KwurkEngine.lib
+﻿  RigidBodyComponent.cpp
+  KwurkEngine.vcxproj -> D:\LaSalleProjects\KwurkEngine\KwurkEngine\x64\Debug\KwurkEngine.lib

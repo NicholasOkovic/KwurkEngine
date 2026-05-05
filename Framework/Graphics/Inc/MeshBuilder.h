@@ -20,7 +20,7 @@ namespace KwurkEngine::Graphics
 		static MeshPC CreateRectPC(float width, float length, float height);
 
 		//plane
-		static MeshPC CreatePlanePC(int numRows, int numCols, float spacing);
+		static MeshPC CreatePlanePC(int numRows, int numCols, float spacing); //bool horizontal = true also no standard static mesh
 		static MeshPX CreatePlanePX(int numRows, int numCols, float spacing);
 		static Mesh CreateGroundPlane(int numRows, int numCols, float spacing);
 

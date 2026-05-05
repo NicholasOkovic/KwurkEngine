@@ -10,16 +10,17 @@ namespace KwurkEngine
 		FPSCamera,		//move the camera component with fps controls
 		Mesh,			//add a mesh shape on a game object
 		Model,			// adds a model to the game object render
-		Animator,		// adda an animation controller to the game object
+		Animator,		// adds an animation controller to the game object
+		RigidBody,		//adds a physic object to the gaem object
 		Count,			// last value, can be used to chain custom components
 	};
 
 	enum class ServiceId
 	{
 		Invalid,			//default value
-		camera,			//manages the camera
+		Camera,			//manages the camera
 		Render,			//renders renderobject in the world
-		
+		Physics,		//registers aand monitors physics objects
 		Count,			// last value, can be used to chain custom components
 	};
 

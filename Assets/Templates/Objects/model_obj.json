@@ -1,0 +1,28 @@
+{
+	"Components": {
+		"TransformComponent": {
+			"Position": [ 0.0, 0.0, 0.0 ],
+			"Rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+			"Scale": [ 1.0, 1.0, 1.0 ]
+		},
+		"ModelComponent": {
+			"CastShadow": false,
+			"FileName": "../../Assets/Models/Paladin/PaladinJNordstrom.model",
+			"Animations": [
+				"../../Assets/Models/Animations/Capoeira.animset"
+			]
+		},
+		"AnimatorComponent": {
+
+		},
+		"RigidBodyComponent": {
+			"Mass": 0.0,
+			"ColliderData": {
+				"Shape": "Hull",
+				"HalfExtents": [ 0.5, 1.0, 0.5 ],
+				"Origin": [ 0.0, 1.0, 0.0 ]
+			}
+		}
+	}
+
+}

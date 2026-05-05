@@ -75,7 +75,7 @@ GameWorld& GameObject::GetWorld()
 {
 	return *mWorld;
 }
-const GameWorld& GameObject::GetWorld() const	////////////////
+const GameWorld& GameObject::GetWorld() const	
 {
 	return *mWorld;
 

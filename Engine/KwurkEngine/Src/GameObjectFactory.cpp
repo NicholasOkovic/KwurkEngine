@@ -6,6 +6,11 @@
 #include "TransformComponent.h"
 #include "CameraComponent.h"
 #include "FPSCameraComponent.h"
+#include "MeshComponent.h"
+#include "ModelComponent.h"
+#include "AnimatorComponent.h"
+#include "RigidBodyComponent.h"
+
 
 using namespace KwurkEngine;
 
@@ -16,15 +21,31 @@ namespace
 		Component* newComponent = nullptr;
 		if (componentName == "TransformComponent")
 		{
-			newComponent = gameObject.AddComponent< TransformComponent>();
+			newComponent = gameObject.AddComponent<TransformComponent>();
 		}
 		else if(componentName == "CameraComponent")
 		{
-			newComponent = gameObject.AddComponent< CameraComponent>();
+			newComponent = gameObject.AddComponent<CameraComponent>();
 		}
 		else if (componentName == "FPSCameraComponent")
 		{
-			newComponent = gameObject.AddComponent< FPSCameraComponent>();
+			newComponent = gameObject.AddComponent<FPSCameraComponent>();
+		}
+		else if (componentName == "MeshComponent")
+		{
+			newComponent = gameObject.AddComponent<MeshComponent>();
+		}
+		else if (componentName == "ModelComponent")
+		{
+			newComponent = gameObject.AddComponent<ModelComponent>();
+		}
+		else if (componentName == "AnimatorComponent")
+		{
+			newComponent = gameObject.AddComponent<AnimatorComponent>();
+		}
+		else if (componentName == "RigidBodyComponent")
+		{
+			newComponent = gameObject.AddComponent<RigidBodyComponent>();
 		}
 
 		ASSERT(newComponent != nullptr, "Gameobjectfactory: component type[%s] not foind", componentName.c_str());

@@ -6,6 +6,7 @@
 #include "RenderObjectComponent.h"	///graphics render.object needs work
 #include "TransformComponent.h"
 #include "GameWorld.h"
+#include "AnimatorComponent.h"
 
 using namespace KwurkEngine;
 
@@ -19,7 +20,8 @@ void RenderService::Initialize()
 	mStandardEffect.SetLightCamera(mShadowEffect.GetLightCamera());
 	mStandardEffect.SetShadowMap(mShadowEffect.GetDepthMap());
 
-	mShadowEffect.Initialize();
+	std::filesystem::path shadowFile = L"../../Assets/Shaders/Shadow.fx";
+	mShadowEffect.Initialize(shadowFile);
 	mShadowEffect.SetDirectionalLight(mDirectionalLight);
 
 }
@@ -85,7 +87,7 @@ void RenderService::DebugUI()
 
 void RenderService::Register(const RenderObjectComponent* renderObjectComponent)
 {
-	auto iter = std:find_if(
+	auto iter = std::find_if(
 		mRenderEntries.begin(),
 		mRenderEntries.end(),
 		[&](const Entry& entry)
@@ -94,10 +96,16 @@ void RenderService::Register(const RenderObjectComponent* renderObjectComponent)
 		});
 	if (iter == mRenderEntries.end())
 	{
+		const Graphics::Animator* animator = nullptr;
+		const AnimatorComponent* animatorComponent = renderObjectComponent->GetOwner().GetComponent<AnimatorComponent>();
+		if (animatorComponent != nullptr)
+		{
+			animator = &animatorComponent->GetAnimator();
+		}
 		Entry& entry = mRenderEntries.emplace_back();
 		entry.renderComponent = renderObjectComponent;
 		entry.transformComponent = renderObjectComponent->GetOwner().GetComponent<TransformComponent>();
-		entry.renderGroup.Initialize();
+		entry.renderGroup.Initialize(renderObjectComponent->GetModel(), animator);
 		entry.renderGroup.modelId = renderObjectComponent->GetModelId();
 	}
 
@@ -107,5 +115,17 @@ void RenderService::Register(const RenderObjectComponent* renderObjectComponent)
 
 void RenderService::UnRegister(const RenderObjectComponent* renderObjectComponent)
 {
+	auto iter = std::find_if(
+		mRenderEntries.begin(),
+		mRenderEntries.end(),
+		[&](const Entry& entry)
+		{
+			return entry.renderComponent == renderObjectComponent;
+		});
+	if (iter != mRenderEntries.end())
+	{
+		iter->renderGroup.Terminate();
+		mRenderEntries.erase(iter);
+	}
 
 }

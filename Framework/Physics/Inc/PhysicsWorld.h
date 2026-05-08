@@ -33,6 +33,7 @@ namespace KwurkEngine::Physics
 		void Register(PhysicsObject* physicsObject);
 		void UnRegister(PhysicsObject* physicsObject);
 
+		void UpdateSettings(const Settings& settings);
 		void SetGravity(const KwurkEngine::Math::Vector3& gravity);
 
 	private:

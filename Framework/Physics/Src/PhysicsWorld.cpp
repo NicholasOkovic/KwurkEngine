@@ -108,6 +108,11 @@ void PhysicsWorld::DebugUI()
 		}
 	}
 }
+void PhysicsWorld::UpdateSettings(const Settings& settings)
+{
+	mSettings = settings;
+	SetGravity(settings.gravity);
+}
 
 void PhysicsWorld::Register(PhysicsObject* physicsObject)
 {

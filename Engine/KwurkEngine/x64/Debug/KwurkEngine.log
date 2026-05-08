@@ -1,2 +1,73 @@
-﻿  RigidBodyComponent.cpp
-  KwurkEngine.vcxproj -> D:\LaSalleProjects\KwurkEngine\KwurkEngine\x64\Debug\KwurkEngine.lib
+﻿  Precompiled.cpp
+C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(38,50): warning C4305: 'initializing': truncation from 'double' to 'btScalar'
+  (compiling source file 'Src/Precompiled.cpp')
+  
+C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1232,17): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'Src/Precompiled.cpp')
+  
+C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1357,21): warning C4244: '+=': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'Src/Precompiled.cpp')
+  
+C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1361,21): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'Src/Precompiled.cpp')
+  
+C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1385,20): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'Src/Precompiled.cpp')
+  
+C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1387,23): warning C4244: '=': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'Src/Precompiled.cpp')
+  
+C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(15,49): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'Src/Precompiled.cpp')
+  
+C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1269,17): warning C4244: 'initializing': conversion from 'double' to 'btScalar', possible loss of data
+  (compiling source file 'Src/Precompiled.cpp')
+      C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1269,17):
+      the template instantiation context (the oldest one first) is
+          C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\External\Bullet\BulletSoftBody\btSoftBody.h(1303,4):
+          see reference to function template instantiation 'void btSoftBody::updateFace<btDbvtNode>(DBVTNODE *,bool,bool)' being compiled
+          with
+          [
+              DBVTNODE=btDbvtNode
+          ]
+  
+  AnimatorComponent.cpp
+C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\Engine\KwurkEngine\Src\AnimatorComponent.cpp(22,21): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+  (compiling source file '/Src/AnimatorComponent.cpp')
+  
+  App.cpp
+C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(15,49): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file '/Src/App.cpp')
+      C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(18,3):
+      This diagnostic occurred in the compiler generated function 'KwurkEngine::Physics::PhysicsWorld::Settings::Settings(void)'
+      C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\Engine\KwurkEngine\Src\App.cpp(37,25):
+      see reference to function 'KwurkEngine::Physics::PhysicsWorld::Settings::Settings(void)'
+  
+  CameraComponent.cpp
+  CameraService.cpp
+  EventManager.cpp
+  FPSCameraComponent.cpp
+  GameObject.cpp
+  GameObjectFactory.cpp
+  GameWorld.cpp
+C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\Engine\KwurkEngine\Src\GameWorld.cpp(182,68): warning C4390: ';': empty controlled statement found; is this the intent?
+  (compiling source file '/Src/GameWorld.cpp')
+  
+  KwurkEngine.cpp
+  MeshComponent.cpp
+  ModelComponent.cpp
+  PhysicsService.cpp
+C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(15,49): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file '/Src/PhysicsService.cpp')
+      C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\Framework\Physics\Inc\PhysicsWorld.h(18,3):
+      This diagnostic occurred in the compiler generated function 'KwurkEngine::Physics::PhysicsWorld::Settings::Settings(void)'
+      C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\Engine\KwurkEngine\Src\PhysicsService.cpp(26,34):
+      see reference to function 'KwurkEngine::Physics::PhysicsWorld::Settings::Settings(void)'
+  
+  RenderObjectComponent.cpp
+  RenderService.cpp
+  RigidBodyComponent.cpp
+  SaveUtil.cpp
+  TransformComponent.cpp
+  Generating Code...
+  KwurkEngine.vcxproj -> C:\Users\lcv2242596\Documents\GitHub\KwurkEngine\x64\Debug\KwurkEngine.lib

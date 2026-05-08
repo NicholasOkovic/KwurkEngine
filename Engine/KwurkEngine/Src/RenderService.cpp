@@ -7,6 +7,7 @@
 #include "TransformComponent.h"
 #include "GameWorld.h"
 #include "AnimatorComponent.h"
+#include "SaveUtil.h"
 
 using namespace KwurkEngine;
 
@@ -84,6 +85,21 @@ void RenderService::DebugUI()
 
 	}
 }
+void RenderService::Deserialize(const rapidjson::Value& value)
+{
+	SaveUtil::ReadVector3("Direction", mDirectionalLight.direction, value);
+	mDirectionalLight.direction = Math::Normalize(mDirectionalLight.direction);
+	SaveUtil::ReadColor("Ambient", mDirectionalLight.ambient, value);
+	SaveUtil::ReadColor("Diffuse", mDirectionalLight.diffuse, value);
+	SaveUtil::ReadColor("Specular", mDirectionalLight.specular, value);
+
+	if (value.HasMember("ShadowSize"))
+	{
+		mShadowEffect.SetSize(value["ShadowSize"].GetFloat());
+	}
+
+}
+
 
 void RenderService::Register(const RenderObjectComponent* renderObjectComponent)
 {

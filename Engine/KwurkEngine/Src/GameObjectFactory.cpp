@@ -23,7 +23,7 @@ namespace
 		{
 			newComponent = gameObject.AddComponent<TransformComponent>();
 		}
-		else if(componentName == "CameraComponent")
+		else if (componentName == "CameraComponent")
 		{
 			newComponent = gameObject.AddComponent<CameraComponent>();
 		}
@@ -46,6 +46,42 @@ namespace
 		else if (componentName == "RigidBodyComponent")
 		{
 			newComponent = gameObject.AddComponent<RigidBodyComponent>();
+		}
+
+		ASSERT(newComponent != nullptr, "Gameobjectfactory: component type[%s] not foind", componentName.c_str());
+		return newComponent;
+	}
+
+	Component* GetComponent(const std::string& componentName, GameObject& gameObject)
+	{
+		Component* newComponent = nullptr;
+		if (componentName == "TransformComponent")
+		{
+			newComponent = gameObject.GetComponent<TransformComponent>();
+		}
+		else if (componentName == "CameraComponent")
+		{
+			newComponent = gameObject.GetComponent<CameraComponent>();
+		}
+		else if (componentName == "FPSCameraComponent")
+		{
+			newComponent = gameObject.GetComponent<FPSCameraComponent>();
+		}
+		else if (componentName == "MeshComponent")
+		{
+			newComponent = gameObject.GetComponent<MeshComponent>();
+		}
+		else if (componentName == "ModelComponent")
+		{
+			newComponent = gameObject.GetComponent<ModelComponent>();
+		}
+		else if (componentName == "AnimatorComponent")
+		{
+			newComponent = gameObject.GetComponent<AnimatorComponent>();
+		}
+		else if (componentName == "RigidBodyComponent")
+		{
+			newComponent = gameObject.GetComponent<RigidBodyComponent>();
 		}
 
 		ASSERT(newComponent != nullptr, "Gameobjectfactory: component type[%s] not foind", componentName.c_str());
@@ -76,4 +112,20 @@ void GameObjectFactory::Make(const std::filesystem::path& templatePath, GameObje
 		}
 	}
 
+}
+
+void GameObjectFactory::OverrideDeserialize(const rapidjson::Value& value, GameObject& gameObject)
+{
+	if (value.HasMember("Components"))
+	{
+		auto components = value["Components"].GetObj();
+		for (auto& component : components)
+		{
+			Component* ownedComponent = GetComponent(component.name.GetString(), gameObject);
+			if (ownedComponent != nullptr)
+			{
+				ownedComponent->Deserialize(component.value);
+			}
+		}
+	}
 }

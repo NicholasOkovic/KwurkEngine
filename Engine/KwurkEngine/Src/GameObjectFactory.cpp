@@ -10,12 +10,17 @@
 #include "ModelComponent.h"
 #include "AnimatorComponent.h"
 #include "RigidBodyComponent.h"
+#include "SoundEventComponent.h"
+#include "SoundBankComponent.h"
 
 
 using namespace KwurkEngine;
 
 namespace
 {
+	CustomComponent TryMakeComponent;
+	CustomComponent TryGetComponent;
+
 	Component* AddComponent(const std::string& componentName, GameObject& gameObject)
 	{
 		Component* newComponent = nullptr;
@@ -47,6 +52,18 @@ namespace
 		{
 			newComponent = gameObject.AddComponent<RigidBodyComponent>();
 		}
+		else if (componentName == "SoundEventComponent")
+		{
+			newComponent = gameObject.AddComponent<SoundEventComponent>();
+		}
+		else if (componentName == "SoundBankComponent")
+		{
+			newComponent = gameObject.AddComponent<SoundBankComponent>();
+		}
+		else
+		{
+			newComponent = TryMakeComponent(componentName, gameObject);
+		}
 
 		ASSERT(newComponent != nullptr, "Gameobjectfactory: component type[%s] not foind", componentName.c_str());
 		return newComponent;
@@ -54,39 +71,61 @@ namespace
 
 	Component* GetComponent(const std::string& componentName, GameObject& gameObject)
 	{
-		Component* newComponent = nullptr;
+		Component* Component = nullptr;
 		if (componentName == "TransformComponent")
 		{
-			newComponent = gameObject.GetComponent<TransformComponent>();
+			Component = gameObject.GetComponent<TransformComponent>();
 		}
 		else if (componentName == "CameraComponent")
 		{
-			newComponent = gameObject.GetComponent<CameraComponent>();
+			Component = gameObject.GetComponent<CameraComponent>();
 		}
 		else if (componentName == "FPSCameraComponent")
 		{
-			newComponent = gameObject.GetComponent<FPSCameraComponent>();
+			Component = gameObject.GetComponent<FPSCameraComponent>();
 		}
 		else if (componentName == "MeshComponent")
 		{
-			newComponent = gameObject.GetComponent<MeshComponent>();
+			Component = gameObject.GetComponent<MeshComponent>();
 		}
 		else if (componentName == "ModelComponent")
 		{
-			newComponent = gameObject.GetComponent<ModelComponent>();
+			Component = gameObject.GetComponent<ModelComponent>();
 		}
 		else if (componentName == "AnimatorComponent")
 		{
-			newComponent = gameObject.GetComponent<AnimatorComponent>();
+			Component = gameObject.GetComponent<AnimatorComponent>();
 		}
 		else if (componentName == "RigidBodyComponent")
 		{
-			newComponent = gameObject.GetComponent<RigidBodyComponent>();
+			Component = gameObject.GetComponent<RigidBodyComponent>();
+		}
+		else if (componentName == "SoundEventComponent")
+		{
+			Component = gameObject.GetComponent<SoundEventComponent>();
+		}
+		else if (componentName == "SoundBankComponent")
+		{
+			Component = gameObject.GetComponent<SoundBankComponent>();
+		}
+		else
+		{
+			Component = TryGetComponent(componentName, gameObject);
 		}
 
-		ASSERT(newComponent != nullptr, "Gameobjectfactory: component type[%s] not foind", componentName.c_str());
-		return newComponent;
+		ASSERT(Component != nullptr, "Gameobjectfactory: component type[%s] not foind", componentName.c_str());
+		return Component;
 	}
+}
+
+void GameObjectFactory::SetCustomMake(CustomComponent callback)
+{
+	TryMakeComponent = callback;
+}
+
+void GameObjectFactory::SetCustomGet(CustomComponent callback)
+{
+	TryGetComponent = callback;
 }
 
 void GameObjectFactory::Make(const std::filesystem::path& templatePath, GameObject& gameObject, GameWorld& gameWorld)

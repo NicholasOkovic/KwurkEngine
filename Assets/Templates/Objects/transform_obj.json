@@ -1,10 +1,26 @@
 {
 	"Components": {
 		"TransformComponent": {
-			"Position" : [0.0, 0.0, 0.0 ],
-			"Rotation" : [0.0, 0.0, 0.0, 1.0 ],
-			"Scale" : [1.0, 1.0, 1.0 ]
+			"Position": [ 0.0, 0.0, 0.0 ],
+			"Rotation": [ 0.0, 0.0, 0.0, 1.0 ],
+			"Scale": [ 1.0, 1.0, 1.0 ]
+		},
+		"SoundBankComponent": {
+			"SoundEffects": {
+				"Explosions": {
+					"FileName": "../../Assets/Sounds/photongun1.wav",
+					"Looping": false
+				},
+				"Shots": {
+					"FileName": "../../Assets/Sounds/photongun1.wav",
+					"Looping": false
+				},
+				"Spark": {
+					"FileName": "../../Assets/Sounds/photongun1.wav",
+					"Looping": false
+				}
 			}
 		}
+	}
 
 }

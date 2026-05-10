@@ -12,7 +12,10 @@
 			"ShadowSize": 10.0
 		},
 		"PhysicsService": {
-			"Gravity": [ 0.0, -9.81, 0.0]
+			"Gravity": [ 0.0, -9.81, 0.0 ]
+		},
+		"CustomDebugDrawService": {
+
 		}
 	},
 	"GameObjects": {
@@ -51,12 +54,15 @@
 		"Ground": {
 			"Template": "../../Assets/Templates/Objects/ground.json",
 			"Components": {
-				"MeshComponent":{
+				"MeshComponent": {
 					"Textures": {
 						"DiffuseMap": "../../Assets/Images/misc/concrete.jpg"
 					}
 				}
 			}
+		},
+		"CustomDebugDrawObj": {
+			"Template": "../../Assets/Templates/Objects/customObj.json"
 		}
 	}
 }

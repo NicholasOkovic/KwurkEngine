@@ -12,6 +12,8 @@ namespace KwurkEngine
 		Model,			// adds a model to the game object render
 		Animator,		// adds an animation controller to the game object
 		RigidBody,		//adds a physic object to the gaem object
+		SoundEffect,	//addsa a sound effect to an object
+		SoundBank,		// adds a group of sounds to an object
 		Count,			// last value, can be used to chain custom components
 	};
 
